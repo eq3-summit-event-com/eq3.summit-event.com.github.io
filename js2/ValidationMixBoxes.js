@@ -561,7 +561,7 @@ $("input[type='radio'][name='tromperr_F']").change(function(){
                     /* }
                 })   */       
             }
-            else if ($('choixTromper2').is(':checked'))
+            else if ($('#choixTromper2').is(':checked'))
             {
                 document.getElementById('Tromper_Male').style.visibility = "hidden";
                 button.removeAttr('disabled');
@@ -603,7 +603,7 @@ $("input[type='radio'][name='amis_M']").change(function(){
                                      /*}
                                 }) */         
                             }
-                            else if ($('choixAmis4').is(':checked'))
+                            else if ($('#choixAmis4').is(':checked'))
                             {
                                 document.getElementById('connait_Female').style.visibility = "hidden";
                                 button.removeAttr('disabled');
@@ -629,7 +629,7 @@ $("input[type='radio'][name='amis_M']").change(function(){
                         /* }
                     })  */        
                 }
-                else if ($('choixAmis4').is(':checked'))
+                else if ($('#choixAmis4').is(':checked'))
                 {
                     document.getElementById('connait_Female').style.visibility = "hidden";
                     button.removeAttr('disabled');
@@ -665,7 +665,7 @@ $("input[type='radio'][name='amis_F']").change(function(){
                                      /*}
                                 }) */         
                             }
-                            else if ($('choixAmis2').is(':checked'))
+                            else if ($('#choixAmis2').is(':checked'))
                             {
                                 document.getElementById('connait_Male').style.visibility = "hidden";
                                 button.removeAttr('disabled');
@@ -691,7 +691,7 @@ $("input[type='radio'][name='amis_F']").change(function(){
                         /* }
                     })  */        
                 }
-                else if ($('choixAmis2').is(':checked'))
+                else if ($('#choixAmis2').is(':checked'))
                 {
                     document.getElementById('connait_Male').style.visibility = "hidden";
                     button.removeAttr('disabled');
