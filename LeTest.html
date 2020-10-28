@@ -1,0 +1,2768 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<!--========================== HEAD OF THE PAGE =============================================================-->
+
+  <head>
+    <!--================================================= M E T A ========================================= -->
+      <meta charset="utf-8">
+      <title>Questionnaire</title>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="">
+      <meta name="author" content="">
+
+    <!--=====================================================================================================-->
+
+    <!--================================ENABLE JQUERY & BOOTSTRAP================================================= -->
+     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+     
+     <!--=========================================================================================================-->
+
+    <!--=====================================FONT AWESOME =============================================================-->
+
+     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link href="{{ asset('vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css">
+
+    <!--=========================================================================================================-->
+
+    <!-- ==================================================FONT FAMILY==============================================-->
+
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!--============================================================================================================-->
+
+    <!-- ==================================================Bootstrap================================================ -->
+
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+
+    <!--==============================================================================================================-->
+
+    <!-- ======================================File CSS============================================================== -->
+
+    <link rel="stylesheet" href="./css2/desingquestio.css">
+    <link rel="stylesheet" href="./css2/desingCSSquestio.css">
+
+    <!--============================================================================================================-->
+
+    <!--=========================================== FILE JAVASCRIPT =================================================-->
+
+        <!--Login DIV  JS -->
+    <script type="text/javascript" src="./js2/loginDiv.js" ></script>
+      <!--==================-->
+         <!--INTRODUCTION OF STEPS -->
+    <script type="text/javascript" src="./js2/INTRODUCTION.js" ></script>
+        <!--=============================-->
+        <!--Validation OF SELECT BOX -->
+    <script type="text/javascript" src="./js2/ValidationSelectBox.js" ></script>
+        <!--=============================-->
+         <!--Validation OF RADIO BOX -->
+     <script type="text/javascript" src="./js2/ValidationRadioBox.js" ></script>
+        <!--=============================-->
+      <!--Validation OF CHECKBOX BOX -->
+    <script type="text/javascript" src="./js2/ValidationCheckBox.js" ></script>
+        <!--=============================-->
+        <!--Validation OF MixedBOX BOX -->
+    <script type="text/javascript" src="./js2/ValidationMixBoxes.js" ></script>
+    <!--=============================-->
+        <!--QUESTIONS INSIDE EACH STEP ( UNLESS THE 2 LAST QUESTIONS)
+    <script type="text/javascript" src="./js/Questions.js" ></script>-->
+        <!--=======================================-->
+          <!--QUESTIONS CHAP 1 INSIDE EACH STEP ( UNLESS THE 2 LAST QUESTIONS)-->
+    <script type="text/javascript" src="./js2/QuestionsChap1.js" ></script>
+    <!--=======================================-->
+      <!--QUESTIONS  CHAP2 INSIDE EACH STEP ( UNLESS THE 2 LAST QUESTIONS)-->
+      <script type="text/javascript" src="./js2/QuestionsChap2.js" ></script>
+      <!--=======================================-->
+        <!--QUESTIONS CHAP3 INSIDE EACH STEP ( UNLESS THE 2 LAST QUESTIONS)-->
+    <script type="text/javascript" src="./js2/QuestionsChap3.js" ></script>
+    <!--=======================================-->
+      <!--QUESTIONS CHAP4 INSIDE EACH STEP ( UNLESS THE 2 LAST QUESTIONS)-->
+      <script type="text/javascript" src="./js2/QuestionsChap4.js" ></script>
+      <!--=======================================-->
+        <!--QUESTIONS CHAP5 INSIDE EACH STEP ( UNLESS THE 2 LAST QUESTIONS)-->
+    <script type="text/javascript" src="./js2/QuestionsChap5.js" ></script>
+    <!--=======================================-->
+        <!--AVANT LAST QUESTION OF CHAPITRE 1 -->
+    <script type="text/javascript" src="./js2/AvantLastQstChap1.js" ></script>
+        <!--======================================-->
+        <!--AVANT LAST QUESTION OF CHAPITRE 1 -->
+    <script type="text/javascript" src="./js2/AvantLastQstChap2.js" ></script>
+         <!--=======================================-->
+        <!--AVANT LAST QUESTION OF CHAPITRE 1 -->
+    <script type="text/javascript" src="./js2/AvantLastQstChap3.js" ></script>
+        <!--=======================================-->
+        <!--AVANT LAST QUESTION OF CHAPITRE 1 -->
+    <script type="text/javascript" src="./js2/AvantLastQstChap4.js" ></script>
+        <!--=======================================-->
+        <!--AVANT LAST QUESTION OF CHAPITRE 1 -->
+    <script type="text/javascript" src="./js2/AvantLastQstChap5.js" ></script>
+        <!--=======================================-->
+        <!--LAST QUESTION FOR EACH CHAPITRE -->
+    <script type="text/javascript" src="./js2/LastQuestionChaps.js" ></script>
+
+<!--==================================================================================================================-->
+
+<style>
+</style>
+
+</head>
+<!--===============================================================================================================-->
+
+
+<!-- ===========================================BODY OF THE PAGE==================================================== -->
+
+<body>
+
+<!-- ==========================================LOGO================================================================ -->
+
+<a class="navbar-brand" href="#page-top" style="font-size:23px; color: white; filter: blur(2);">
+     <img class="logo" src="img/logo5.png" width="450px"height="400px"> 
+ </a>
+    
+<!--===========================================================================================================-->
+
+  <!-- ============================================== LOGIN DIV ================================================-->  
+
+    <div class="login">
+       <div class="log">
+        <a href="index.html" style="color: white; width: 100px;height: 100px;position: absolute; left: 50px; top: 20px; font-size: 42px; font-weight: bold;">
+            <i class="fa fa-sign-in" aria-hidden="true" onmouseover="showconnect()" onmouseout="hideconnect()"></i>
+        </a>
+        <h4 id="connect" style="color: white; font-weight: bolder;font-size: 16px; position: absolute; left: 15px; top: 60px;  visibility: hidden;">Connecter-vous !</h4>
+       </div>
+       <div class="home">
+           <a href="index.html" style="color: white;; width: 100px;height: 100px;position: absolute; left: 180px; top: 20px; font-size: 42px; font-weight: bold;">
+            <i class="fa fa-home" aria-hidden="true" onmouseover="showhome()" onmouseout="hidehome()"></i>
+        </a>
+           <h4 id="home" style="color: white; font-weight: bolder;font-size: 16px; position: absolute; left: 65px; top: 60px; visibility: hidden;">Retournez à la page d'accueil</h4>
+       </div>
+    </div>
+
+<!--=====================================================================================================-->
+
+<!-- ===============================================THERMOMETRE ===================================================-->
+
+    <div class="thermo">
+    </div>
+    <div class="thermo_inside"></div>
+    <div id="Pourcentage" class="thermo_purcentage"></div>
+    <div class="heartThermo">   
+        <svg width="75" height="70" viewBox="0 0 75 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="43.1598" height="41.1599" transform="matrix(0.690097 -0.723717 0.728602 0.684937 8.71509 40.8081)" fill="white"/>
+            <ellipse cx="22.5" cy="23.5" rx="21.5" ry="22.5" fill="white"/>
+            <circle cx="52" cy="23" r="22" fill="white"/>
+            <g filter="url(#filter0_f)">
+            <rect width="39.476" height="37.6604" transform="matrix(0.692481 -0.721436 0.730856 0.682531 11.081 40.2956)" fill="#D7D7D7"/>
+            </g>
+            <g filter="url(#filter1_f)">
+            <ellipse cx="24" cy="25" rx="20" ry="21" fill="#D7D7D7"/>
+            </g>
+            <g filter="url(#filter2_f)">
+            <ellipse cx="50.5" cy="25" rx="20.5" ry="21" fill="#D7D7D7"/>
+            </g>
+            <g filter="url(#filter3_f)">
+            <rect width="36.3649" height="34.7686" transform="matrix(0.706846 -0.707367 0.744381 0.667754 13.6582 39.7831)" fill="white"/>
+            </g>
+            <g filter="url(#filter4_f)">
+            <circle cx="26" cy="26" r="19" fill="white"/>
+            </g>
+            <g filter="url(#filter5_f)">
+            <ellipse cx="50.5" cy="26" rx="19.5" ry="19" fill="white"/>
+            </g>
+            <g filter="url(#filter6_b)">
+            <rect width="28.9572" height="26.336" transform="matrix(0.741564 -0.670882 0.7767 0.629871 18.5449 39.4117)" fill="#FF0000"/>
+            </g>
+            <g filter="url(#filter7_b)">
+            <ellipse cx="30.5" cy="28" rx="18.5" ry="15" fill="#FF0000"/>
+            </g>
+            <g filter="url(#filter8_b)">
+            <ellipse cx="48" cy="26.5" rx="17" ry="14.5" fill="#FF0000"/>
+            </g>
+            <rect width="27.1531" height="26.081" transform="matrix(0.736281 -0.676676 0.771816 0.635846 19.1786 37.4165)" fill="white"/>
+            <ellipse cx="29.5" cy="28.5" rx="15.5" ry="12.5" fill="white"/>
+            <ellipse cx="46" cy="28.5" rx="15" ry="13.5" fill="white"/>
+            <ellipse cx="36.5" cy="15" rx="2.5" ry="3" fill="white"/>
+            <circle cx="58" cy="17" r="3" fill="white"/>
+            <defs>
+            <filter id="filter0_f" x="7.08099" y="7.81619" width="62.8607" height="62.1838" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+            <feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur"/>
+            </filter>
+            <filter id="filter1_f" x="0" y="0" width="48" height="50" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+            <feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur"/>
+            </filter>
+            <filter id="filter2_f" x="26" y="0" width="49" height="50" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+            <feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur"/>
+            </filter>
+            <filter id="filter3_f" x="9.65823" y="10.0598" width="59.5855" height="56.9402" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+            <feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur"/>
+            </filter>
+            <filter id="filter4_f" x="3" y="3" width="46" height="46" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+            <feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur"/>
+            </filter>
+            <filter id="filter5_f" x="27" y="3" width="47" height="46" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+            <feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur"/>
+            </filter>
+            <filter id="filter6_b" x="14.5449" y="15.9849" width="49.9288" height="44.0151" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feGaussianBlur in="BackgroundImage" stdDeviation="2"/>
+            <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur" result="shape"/>
+            </filter>
+            <filter id="filter7_b" x="8" y="9" width="45" height="38" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feGaussianBlur in="BackgroundImage" stdDeviation="2"/>
+            <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur" result="shape"/>
+            </filter>
+            <filter id="filter8_b" x="27" y="8" width="42" height="37" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feGaussianBlur in="BackgroundImage" stdDeviation="2"/>
+            <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur" result="shape"/>
+            </filter>
+            </defs>
+            </svg>
+            <span id="NbrPourcentage" style="color: red;
+            font-size: 15px;
+            position: absolute;
+            top: 18px;
+            left: 22px;">0%</span>
+    </div>
+
+<!--====================================================================================================================-->
+
+<!-- ===========================================FORMULAIRE=========================================================-->
+
+
+    <!--LOVE BOY ARROW 
+
+        <div class="arrow"> <img src="img/arrow.png" width="120px" height="120px"></div>
+
+    ==================================================================================================-->
+
+
+
+        <!-- MultiStep Form -->
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+        <form id="msform" action="payment.html" method="POST">
+            <!-- ==========================progressbar =============================================-->
+            <ul id="progressbar" style="
+            width: fit-content;
+            display: inline-flex;
+        ">
+                 <li class="active">Décrivez vous</li>
+                 <li>vos caractères</li>
+                 <li>Situations Familiales</li>
+                 <li>Religions & Traditions</li>
+                 <li>votre relation à votre avis</li>
+                <!---<li>Social Profiles</li>
+                 <li>Account Setup</li>-->
+            </ul>
+
+            <!--=============================================================================================-->
+
+
+          
+           
+            <!-- fieldsets -->   <!-- CHAPITRE 1 -->
+            <fieldset id="fild1">
+               
+                <div class="QST">    <!-- UNE INTRODUCTION DU PREMIER STEP -->
+                 <!--<div class="Introduction">-->
+                    <h3>Vous allez commencer le test</h3>
+                    <h3>Chapitre 1 : Décrivez vous</h3><br>
+                    <p>dans ce chapitre, vous saurez si chacun de vous connaît 
+                        les informations les plus basiques 
+                        et simples sur son conjoint.
+                        vous devez renseigner le questionnaire
+                         vous concernant ainsi que celui de votre partenaire
+                         . Si vous ne connaissez pas les réponses concernant
+                          votre partenaire vous pouvez valider la case “Je ne sais pas”
+                    </p>
+                    <!--</div>-->
+                    <input type="button" id="commenceTestButton"  name="next" class="next22 action-button" value="Commencer Le Test" />
+                </div>
+                 
+              
+            <div class="QST" >  <!--QUESTION NUM 1-->
+              
+                <h2 class="fs-title">Vous vous connaissez vraiment ...?</h2>
+                
+                <div class="row">
+                    <div id="qst1">
+                     <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12" >
+                           
+                            <h3 class="fs-subtitle"><i class="fa fa-female" aria-hidden="true"></i> Quelle est votre date de naissance ?</h3><br>
+                            
+                                <SELECT id ="year_M" name = "yyyy" onchange="change_year(this)">
+                                </SELECT>
+                                <SELECT  id ="month_M" name = "mm" onchange="change_month(this)">
+                                </SELECT>
+                                <SELECT id ="day_M" name = "dd" >
+                                </SELECT>
+                    </div>
+
+                       
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            
+                        <h3 class="fs-subtitle"><i class="fa fa-male" aria-hidden="true"></i> Quel est l'anniversaire de votre partenaire ?</h3><br>
+                        <SELECT id ="year_F" name = "yyyy" onchange="change_year(this)">
+                        </SELECT>
+                        <SELECT  id ="month_F" name = "mm" onchange="change_month(this)">
+                        </SELECT>
+                        <SELECT id ="day_F" name = "dd" >
+                        </SELECT>
+                    </div>
+                 </div>
+                </div>
+                  <!-- <input type="button" name="previous" class="previous2 action-button-previous" value="Previous"/>-->     
+                   <input type="button" name="next" class="next2_1 action-button" id="nextQST1" value="Next"  />
+                
+              </div>
+
+
+
+                <div class="QST">  <!--QUESTION NUM 2-->
+                        <h2 class="fs-title">Vous vous connaissez vraiment ...?</h2>
+                        <div class="row">
+                             <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <h3 class="fs-subtitle" ><i class="fa fa-female" aria-hidden="true"></i>Quelle est votre taille ?</h3>
+                                
+                                <label for="choix1" class="radbox">
+                                    <input type="radio" id="choix1" name="taille_M" value="150-159cm">
+                                    <span class='rad-text'>150-159cm</span>
+                                </label>
+                                <label for="choix2" class="radbox">
+                                    <input type="radio" id="choix2" name="taille_M" value="160-169cm">
+                                    <span class='rad-text'>160-169cm</span>
+                                </label>
+                                <label for="choix3" class="radbox">
+                                    <input type="radio" id="choix3" name="taille_M" value="170-179cm">
+                                    <span class='rad-text'>170-179cm</span>
+                                </label>
+                                <label for="choix4" class="radbox">
+                                    <input type="radio" id="choix4" name="taille_M" value="180-189cm">
+                                    <span class='rad-text'>180-189cm</span>
+                                </label>
+                                <label for="choix5" class="radbox">
+                                    <input type="radio" id="choix5" name="taille_M" value="+190cm">
+                                    <span class='rad-text'>+ 190cm</span>
+                                </label>
+                                <label for="choix6" class="radbox">
+                                    <input type="radio" id="choix6" name="taille_M" value="Nochoice">
+                                    <span class='rad-text'>Je ne sais pas</span>
+                                </label>
+                                
+                            </div>
+                       
+                            <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                               <h3 class="fs-subtitle" id="QST12women"><i class="fa fa-male" aria-hidden="true"></i>Quelle est la taille de votre partenaire ?</h3>
+                               <label for="choix7" class="radbox">
+                                <input type="radio" id="choix7" name="taille_F" value="150-159cm">
+                                <span class='rad-text'>150-159cm</span>
+                            </label>
+                            <label for="choix8" class="radbox">
+                                <input type="radio" id="choix8" name="taille_F" value="160-169cm">
+                                <span class='rad-text'>160-169cm</span>
+                            </label>
+                            <label for="choix9" class="radbox">
+                                <input type="radio" id="choix9" name="taille_F" value="170-179cm">
+                                <span class='rad-text'>170-179cm</span>
+                            </label>
+                            <label for="choix10" class="radbox">
+                                <input type="radio" id="choix10" name="taille_F" value="180-189cm">
+                                <span class='rad-text'>180-189cm</span>
+                            </label>
+                            <label for="choix11" class="radbox">
+                                <input type="radio" id="choix11" name="taille_F" value="+190cm">
+                                <span class='rad-text'>+ 190cm</span>
+                            </label>
+                            <label for="choix12" class="radbox">
+                                <input type="radio" id="choix12" name="taille_F" value="Nochoice">
+                                <span class='rad-text'>Je ne sais pas</span>
+                            </label>
+                           </div>
+                       </div>
+                  <input type="button" name="previous" class="previous2_1 action-button-previous" value="Previous"/>
+                  <input type="button" name="next" class="next2_1 action-button" value="Next" id="nextQST2" />
+               </div>
+
+               <div class="QST">  <!--QUESTION NUM 3-->
+                <h2 class="fs-title">Vous vous connaissez vraiment ...?</h2>
+                <div class="row">
+                     <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <h3 class="fs-subtitle" ><i class="fa fa-female" aria-hidden="true"></i>Quelle est la couleur de vos yeux ?</h3>
+                        <label for="choix1_3" class="radbox">
+                            <input type="radio" id="choix1_3" name="couleur_M" value="Bleu">
+                            <span class='rad-text'>Bleu</span>
+                        </label>
+                        <label for="choix2_3" class="radbox">
+                            <input type="radio" id="choix2_3" name="couleur_M" value="Marron">
+                            <span class='rad-text'>Marron</span>
+                        </label>
+                        <label for="choix3_3" class="radbox">
+                            <input type="radio" id="choix3_3" name="couleur_M" value="Vert">
+                            <span class='rad-text'>Vert</span>
+                        </label>
+                        <label for="choix4_3" class="radbox">
+                            <input type="radio" id="choix4_3" name="couleur_M" value="Noir">
+                            <span class='rad-text'>Noir</span>
+                        </label>
+                        <label for="choix5_3" class="radbox">
+                            <input type="radio" id="choix5_3" name="couleur_M" value="Mixte">
+                            <span class='rad-text'>Mixte</span>
+                        </label>
+                    </div>
+               
+                    <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                       <h3 class="fs-subtitle" id="QST12women"><i class="fa fa-male" aria-hidden="true"></i>Quelle est la couleur de ses yeux ?</h3>
+                       <label for="choix6_3" class="radbox">
+                        <input type="radio" id="choix6_3" name="couleur_F" value="Bleu">
+                        <span class='rad-text'>Bleu</span>
+                    </label>
+                    <label for="choix7_3" class="radbox">
+                        <input type="radio" id="choix7_3" name="couleur_F" value="Marron">
+                        <span class='rad-text'>Marron</span>
+                    </label>
+                    <label for="choix8_3" class="radbox">
+                        <input type="radio" id="choix8_3" name="couleur_F" value="Vert">
+                        <span class='rad-text'>Vert</span>
+                    </label>
+                    <label for="choix9_3" class="radbox">
+                        <input type="radio" id="choix9_3" name="couleur_F" value="Noir">
+                        <span class='rad-text'>Noir</span>
+                    </label>
+                    <label for="choix10_3" class="radbox">
+                        <input type="radio" id="choix10_3" name="couleur_F" value="Mixte">
+                        <span class='rad-text'>Mixte</span>
+                    </label>
+                    <label for="choix11_3" class="radbox">
+                        <input type="radio" id="choix11_3" name="couleur_F" value="Nochoice">
+                        <span class='rad-text'>Je ne sais pas</span>
+                    </label>
+                   </div>
+               </div>
+          <input type="button" name="previous" class="previous2_1 action-button-previous" value="Previous"/>
+          <input type="button" name="next" class="next2_1 action-button" value="Next" id="nextQST3" />
+       </div>
+
+
+
+       <div class="QST">  <!--QUESTION NUM 4-->
+        <h2 class="fs-title">Vous vous connaissez vraiment ...?</h2>
+        <div class="row">
+             <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <h3 class="fs-subtitle" ><i class="fa fa-female" aria-hidden="true"></i>Quelle est la couleur de vos cheveux ?</h3>
+                <label for="choix1_4" class="radbox">
+                    <input type="radio" id="choix1_4" name="coulchev_M" value="ChatainFonce">
+                    <span class='rad-text'>Chatain foncé</span>
+                </label>
+                <label for="choix2_4" class="radbox">
+                    <input type="radio" id="choix2_4" name="coulchev_M" value="ChatainClair">
+                    <span class='rad-text'>Chatain Clair</span>
+                </label>
+                <label for="choix3_4" class="radbox">
+                    <input type="radio" id="choix3_4" name="coulchev_M" value="Blond">
+                    <span class='rad-text'>Blond</span>
+                </label>
+                <label for="choix4_4" class="radbox">
+                    <input type="radio" id="choix4_4" name="coulchev_M" value="Noir">
+                    <span class='rad-text'>Noir</span>
+                </label>
+                <label for="choix5_4" class="radbox">
+                    <input type="radio" id="choix5_4" name="coulchev_M" value="Autre">
+                    <span class='rad-text'>Autre</span>
+                </label>
+                
+            </div>
+          
+
+            <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12">
+               <h3 class="fs-subtitle" id="QST12women"><i class="fa fa-male" aria-hidden="true"></i>Quelle est la couleur de ses cheveux ?</h3>
+               <label for="choix6_4" class="radbox">
+                <input type="radio" id="choix6_4" name="coulchev_F" value="ChatainFonce">
+                <span class='rad-text'>Chatain foncé</span>
+            </label>
+            <label for="choix7_4" class="radbox">
+                <input type="radio" id="choix7_4" name="coulchev_F" value="ChatainClair">
+                <span class='rad-text'> Chatain Clair</span>
+            </label>
+            <label for="choix8_4" class="radbox">
+                <input type="radio" id="choix8_4" name="coulchev_F" value="Blond">
+                <span class='rad-text'>Blond</span>
+            </label>
+            <label for="choix9_4" class="radbox">
+                <input type="radio" id="choix9_4" name="coulchev_F" value="Noir">
+                <span class='rad-text'>Noir</span>
+            </label>
+            <label for="choix10_4" class="radbox">
+                <input type="radio" id="choix10_4" name="coulchev_F" value="Autre">
+                <span class='rad-text'>Autre</span>
+            </label>
+            <label for="choix11_4" class="radbox">
+                <input type="radio" id="choix11_4" name="coulchev_F" value="Nochoice">
+                <span class='rad-text'>Je ne sais pas</span>
+            </label>
+           </div>
+       </div>
+  <input type="button" name="previous" class="previous2_1 action-button-previous" value="Previous"/>
+  <input type="button" name="next" class="next2_1 action-button" value="Next" id="nextQST4" />
+</div>
+
+
+
+<div class="QST">  <!--QUESTION NUM 5-->
+    <h2 class="fs-title">Vous vous connaissez vraiment ...?</h2>
+    <div class="row">
+         <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <h3 class="fs-subtitle" ><i class="fa fa-female" aria-hidden="true"></i>Quelle est la longueur de vos cheveux ?</h3>
+            <label for="choix1_5" class="radbox">
+                <input type="radio" id="choix1_5" name="longchev_M" value="TresCourt">
+                <span class='rad-text'>Très court</span>
+            </label>
+            <label for="choix2_5" class="radbox">
+                <input type="radio" id="choix2_5" name="longchev_M" value="Court">
+                <span class='rad-text'>court</span>
+            </label>
+            <label for="choix3_5" class="radbox">
+                <input type="radio" id="choix3_5" name="longchev_M" value="Long">
+                <span class='rad-text'>Long</span>
+            </label>
+            <label for="choix4_5" class="radbox">
+                <input type="radio" id="choix4_5" name="longchev_M" value="TresLong">
+                <span class='rad-text'>Très long</span>
+            </label>
+            <label for="choix5_5" class="radbox">
+                <input type="radio" id="choix5_5" name="longchev_M" value="Moyen">
+                <span class='rad-text'>Moyen</span>
+            </label>
+            
+        </div>
+      
+
+        <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12">
+           <h3 class="fs-subtitle" id="QST12women"><i class="fa fa-male" aria-hidden="true"></i>Quelle est la longueur de ses cheveux ?</h3>
+           <label for="choix6_5" class="radbox">
+            <input type="radio" id="choix6_5" name="longchev_F" value="TresCourt">
+            <span class='rad-text'>Très court</span>
+           </label>
+        <label for="choix7_5" class="radbox">
+            <input type="radio" id="choix7_5" name="longchev_F" value="Court">
+            <span class='rad-text'>court</span>
+        </label>
+        <label for="choix8_5" class="radbox">
+            <input type="radio" id="choix8_5" name="longchev_F" value="Long">
+            <span class='rad-text'>Long</span>
+        </label>
+        <label for="choix9_5" class="radbox">
+            <input type="radio" id="choix9_5" name="longchev_F" value="TresLong">
+            <span class='rad-text'>Très long</span>
+        </label>
+        <label for="choix10_5" class="radbox">
+            <input type="radio" id="choix10_5" name="longchev_F" value="Moyen">
+            <span class='rad-text'>Moyen</span>
+        </label>
+        <label for="choix11_5" class="radbox">
+            <input type="radio" id="choix11_5" name="longchev_F" value="Nochoice">
+            <span class='rad-text'>Je ne sais pas</span>
+        </label>
+       </div>
+   </div>
+<input type="button" name="previous" class="previous2_1 action-button-previous" value="Previous"/>
+<input type="button" name="next" class="next2_1 action-button" value="Next" id="nextQST5" />
+</div>
+
+
+<div class="QST" >  <!--QUESTION NUM 6-->            
+    <h2 class="fs-title">Vous vous connaissez vraiment ...?</h2> 
+    <div class="row">
+         <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12" >  
+            <h3 class="fs-subtitle"><i class="fa fa-female" aria-hidden="true"></i> quel est le genre de votre musique préférée ?</h3><br>      
+            <select id="genreMusic_M" class="music" onchange="func1(); flechDownOne('bef1','bef2')">
+            <option selected disabled ="disabled" value="">Choisissez votre réponse</option>
+                                                <option value="1">romantique</option>
+                                                <option value="2">Pop</option>
+                                                <option value="3">Rap</option>
+                                                <option value="4">Jazz</option>
+                                                <option value="5">Kpop</option>
+                                                <option value="5">Chaabi</option>
+                                                <option value="6">Music Français</option>
+                                                <option value="7">Music Anglais</option>
+                                                <option value="8">Music Arabe</option>
+                                                <option value="9">Autre</option>
+                                                <option value="10">J'aime pas la musique</option>
+                                                
+                                            </select>
+        </div>  
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">    
+            <h3 class="fs-subtitle"><i class="fa fa-male" aria-hidden="true"></i> quel est le genre de sa musique préférée ?</h3><br>
+            <select id="genreMusic_F" class="music" onchange="func1(); flechDownOne('bef1','bef2')">
+                <option  selected disabled ="disabled" value="">Choisissez votre réponse</option>
+                <option value="1">romantique</option>
+                <option value="2">Pop</option>
+                <option value="3">Rap</option>
+                <option value="4">Jazz</option>
+                <option value="5">Kpop</option>
+                <option value="5">Chaabi</option>
+                <option value="6">Music Français</option>
+                <option value="7">Music Anglais</option>
+                <option value="8">Music Arabe</option>
+                <option value="9">Autre</option>
+                <option value="10">Il n'aime pas la musique</option>
+                <option value="10">Je ne sais pas</option>
+                                                </select>
+        </div>
+     </div>
+<input type="button" name="previous" class="previous2_1 action-button-previous" value="Previous"/>
+<input type="button" name="next" class="next2_1 action-button" value="Next" id="nextQST6" />
+</div>
+
+
+
+
+
+<div class="QST" >  <!--QUESTION NUM 7-->            
+    <h2 class="fs-title">Vous vous connaissez vraiment ...?</h2> 
+    <div class="row">
+         <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12" >  
+            <h3 class="fs-subtitle"><i class="fa fa-female" aria-hidden="true"></i> Quel est votre signe astrologique ?</h3><br>      
+            <select id="signeAstro_M" class="music" onchange="func1(); flechDownOne('bef1','bef2')">
+                <option  selected disabled ="disabled" value="">Choisissez votre réponse</option>
+                <option value="belier"><img src="img/Belier.png" width="50px" height="50px">Bélier</option>
+                <option value="taureau">Taureau</option>
+                <option value="gemeaux">Gémeaux</option>
+                <option value="Cancer">Cancer</option>
+                <option value="lion">Lion</option>
+                <option value="Vierge">Vierge</option>
+                <option value="Balance">Balance</option>
+                <option value="Scorpion">Scorpion</option>
+                <option value="Sagittaire">Sagittaire</option>
+                <option value="Capricorne">Capricorne</option>
+                <option value="Verseau">Verseau</option>
+                <option value="Poisson">Poisson</option>
+                <option value="jeNeSaisPas">Je ne sais pas</option>
+            
+            </select>
+        </div>  
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">    
+            <h3 class="fs-subtitle"><i class="fa fa-male" aria-hidden="true"></i> Quel est son signe astrologique ?</h3><br>
+            <select id="signeAstro_F" class="music" onchange="func1(); flechDownOne('bef1','bef2')">
+                <option   selected disabled ="disabled" value="">Choisissez votre réponse</option>
+                <option value="belier">Bélier</option>
+                <option value="taureau">Taureau</option>
+                <option value="gemeaux">Gémeaux</option>
+                <option value="Cancer">Cancer</option>
+                <option value="lion">Lion</option>
+                <option value="Vierge">Vierge</option>
+                <option value="Balance">Balance</option>
+                <option value="Scorpion">Scorpion</option>
+                <option value="Sagittaire">Sagittaire</option>
+                <option value="Capricorne">Capricorne</option>
+                <option value="Verseau">Verseau</option>
+                <option value="Poisson">Poisson</option>
+                <option value="jeNeSaisPas">Je ne sais pas</option>
+                
+            </select>
+        </div>
+     </div>
+<input type="button" name="previous" class="previous2_1 action-button-previous" value="Previous"/>
+<input type="button" name="next" class="next2_1 action-button" value="Next" id="nextQST7" />
+</div>
+
+
+               <div class="QST">  <!--QUESTION NUM 8-->
+                       <h2 class="fs-title">Vous vous connaissez vraiment ...?</h2>
+                    <div class="row">   
+                        <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <h3 class="fs-subtitle"> <i class="fa fa-female" aria-hidden="true"></i>Que ne mangez-vous pas ?</h3>
+                            <label for="cbA1" class="hiddenCB">
+                                <input type="checkbox" name="manger_M" id="cbA1" onchange="callFunction_manger()" />
+                                <span class="check-text">poisson</span>
+                            </label>
+                            <label for="cbA2" class="hiddenCB">
+                                <input type="checkbox" name="manger_M" id="cbA2" onchange="callFunction_manger()" />
+                                <span class="check-text">viande</span>
+                            </label>
+                            <label for="cbA3" class="hiddenCB">
+                                <input type="checkbox" name="manger_M" id="cbA3" onchange="callFunction_manger()" />
+                                <span class="check-text">poulet</span>
+                            </label>
+                            <label for="cbA4" class="hiddenCB">
+                                <input type="checkbox" name="manger_M" id="cbA4" onchange="callFunction_manger()" />
+                                <span class="check-text">Aucune</span>
+                            </label>
+                           
+                        </div>
+
+                        <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <h3 class="fs-subtitle"><i class="fa fa-male" aria-hidden="true"></i>qu'est-ce qu'il ne mange pas ?</h3>
+                            <label for="cbA5" class="hiddenCB">
+                                <input type="checkbox" name="manger_F" id="cbA5" onchange="callFunction_manger()" />
+                                <span class="check-text">poisson</span>
+                            </label>
+                            <label for="cbA6" class="hiddenCB">
+                                <input type="checkbox" name="manger_F" id="cbA6" onchange="callFunction_manger()" />
+                                <span class="check-text">viande</span>
+                            </label>
+                            <label for="cbA7" class="hiddenCB">
+                                <input type="checkbox" name="manger_F" id="cbA7" onchange="callFunction_manger()" />
+                                <span class="check-text">poulet</span>
+                            </label>
+                            <label for="cbA8" class="hiddenCB">
+                                <input type="checkbox" name="manger_F" id="cbA8" onchange="callFunction_manger()" />
+                                <span class="check-text">Aucune</span>
+                            </label>
+                           
+                        </div>
+                   </div>
+              <input type="button" name="previous" class="previous2_1 action-button-previous" value="Previous"/>
+              <input type="button" name="next" class="next2_1 action-button" value="Next" id="nextQST8" />
+           </div>
+
+
+
+           <div class="QST">  <!--QUESTION NUM 9-->
+            <h2 class="fs-title">Vous vous connaissez vraiment ...?</h2>
+            <div class="row">
+                 <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <h3 class="fs-subtitle" > <i class="fa fa-female" aria-hidden="true"></i>Aimes-tu les animaux ?</h3>
+                    <label for="choixAnime1" class="radbox">
+                        <input type="radio" id="choixAnime1" name="animeau_M" value="Oui">
+                        <span class='rad-text'>Oui</span>
+                    </label>
+                    <label for="choixAnim2" class="radbox">
+                        <input type="radio" id="choixAnim2" name="animeau_M" value="Non">
+                        <span class='rad-text'>Non</span>
+                    </label>
+                    <div id="animeauAime_Male" style="visibility: hidden;">
+                        <h3 class="fs-subtitle"> lequel aimez-vous le plus ?</h3><br>
+                        <select id="animeauAime_M" class="animeaux" >
+                            <option  disabled ="disabled" value="">Choisissez votre réponse</option>
+                            <option value="chat">Hamster</option>
+                            <option value="Chien">Chien</option>
+                            <option value="hamster">Chat</option>
+                            <option value="Lion">Lion</option>
+                            <option value="Lion">Cheval</option>
+                            <option value="Lion">Tigre</option>
+                            <option value="Lion">Loup</option>
+                            <option value="Lion">Canari</option>
+                            <option value="Lion">Oiseaux</option>
+                            <option value="Autre">Autre</option>
+                           
+                        </select>
+                    </div>
+                </div>
+              
+                
+                <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <h3 class="fs-subtitle" ><i class="fa fa-male" aria-hidden="true"></i>Est-ce qu'il aime les animaux ?</h3>
+                    <label for="choixAnim3" class="radbox">
+                        <input type="radio" id="choixAnim3" name="animeau_F" value="Oui">
+                        <span class='rad-text'>Oui</span>
+                    </label>
+                    <label for="choixAnim4" class="radbox">
+                        <input type="radio" id="choixAnim4" name="animeau_F" value="Non">
+                        <span class='rad-text'>Non</span>
+                    </label>
+                    <label for="choixAnim5" class="radbox">
+                        <input type="radio" id="choixAnim5" name="animeau_F" value="Nochoice">
+                        <span class='rad-text'>Je ne sais pas</span>
+                    </label><br>
+                    <div id="animeauAime_Female" style="visibility: hidden;">
+                        <h3 class="fs-subtitle"> lequel aime-t-il le plus?</h3><br>
+                        <select id="animeauAime_F" class="animeaux" >
+                            <option   disabled ="disabled" value="">Choisissez votre réponse</option>
+                            <option value="chat">Hamster</option>
+                            <option value="Chien">Chien</option>
+                            <option value="hamster">Chat</option>
+                            <option value="Lion">Lion</option>
+                            <option value="Lion">Cheval</option>
+                            <option value="Lion">Tigre</option>
+                            <option value="Lion">Loup</option>
+                            <option value="Lion">Canari</option>
+                            <option value="Lion">Oiseaux</option>
+                            <option value="Autre">Autre</option>
+                            <option value="jeNeSaisPas">Je ne sais pas</option>
+                        </select>
+                    </div>
+               </div>
+           </div>
+        <input type="button" name="previous" class="previous2_1 action-button-previous" value="Previous"/>
+        <input type="button" name="next" class="next2_1 action-button" value="Next" id="nextQST9" />
+        </div>
+
+
+
+        <div class="QST">  <!--QUESTION NUM 10-->
+            <h2 class="fs-title">Vous vous connaissez vraiment ...?</h2>
+         <div class="row">   
+             <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                 <h3 class="fs-subtitle"><i class="fa fa-female" aria-hidden="true"></i>quelles sont vos craintes ?</h3>
+                 <label for="cbB1" class="hiddenCB">
+                    <input type="checkbox" name="crainte_M" id="cbB1" onchange="callFunction_crainte()" />
+                    <span class="check-text">l'obscurité</span>
+                </label>
+                <label for="cbB2" class="hiddenCB">
+                    <input type="checkbox" name="crainte_M" id="cbB2" onchange="callFunction_crainte()" />
+                    <span class="check-text">Insectes</span>
+                </label>
+                <label for="cbB3" class="hiddenCB">
+                    <input type="checkbox" name="crainte_M" id="cbB3" onchange="callFunction_crainte()" />
+                    <span class="check-text">fantômes</span>
+                </label>
+                <label for="cbB4" class="hiddenCB">
+                    <input type="checkbox" name="crainte_M" id="cbB4" onchange="callFunction_crainte()" />
+                    <span class="check-text">tonnerre</span>
+                </label>
+                <label for="cbB5" class="hiddenCB">
+                    <input type="checkbox" name="crainte_M" id="cbB5" onchange="callFunction_crainte()" />
+                    <span class="check-text">espaces clos</span>
+                </label>
+                <label for="cbB6" class="hiddenCB">
+                    <input type="checkbox" name="crainte_M" id="cbB6" onchange="callFunction_crainte()" />
+                    <span class="check-text">Autre</span>
+                </label>
+                
+             </div>
+
+             <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                 <h3 class="fs-subtitle"><i class="fa fa-male" aria-hidden="true"></i>Quelles sont ses craintes ?</h3>
+                 <label for="cbB7" class="hiddenCB">
+                    <input type="checkbox" name="crainte_F" id="cbB7" onchange="callFunction_crainte()" />
+                    <span class="check-text">l'obscurité</span>
+                </label>
+                <label for="cbB8" class="hiddenCB">
+                    <input type="checkbox" name="crainte_F" id="cbB8" onchange="callFunction_crainte()" />
+                    <span class="check-text">Insectes</span>
+                </label>
+                <label for="cbB9" class="hiddenCB">
+                    <input type="checkbox" name="crainte_F" id="cbB9" onchange="callFunction_crainte()" />
+                    <span class="check-text">fantômes</span>
+                </label>
+                <label for="cbB10" class="hiddenCB">
+                    <input type="checkbox" name="crainte_F" id="cbB10" onchange="callFunction_crainte()" />
+                    <span class="check-text">tonnerre</span>
+                </label>
+                <label for="cbB11" class="hiddenCB">
+                    <input type="checkbox" name="crainte_F" id="cbB11" onchange="callFunction_crainte()" />
+                    <span class="check-text">espaces clos</span>
+                </label>
+                <label for="cbB12" class="hiddenCB">
+                    <input type="checkbox" name="crainte_F" id="cbB12" onchange="callFunction_crainte()" />
+                    <span class="check-text">Autre</span>
+                </label>
+                
+             </div>
+        </div>
+   <input type="button" name="previous" class="previous2_1 action-button-previous" value="Previous"/>
+   <input type="button" name="next" class="next2_1 action-button" value="Next" id="nextQST10" />
+</div>
+
+
+
+
+<div class="QST" >  <!--QUESTION NUM 11-->            
+    <h2 class="fs-title">Vous vous connaissez vraiment ...?</h2> 
+    <div class="row">
+         <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12" >  
+            <h3 class="fs-subtitle"><i class="fa fa-female" aria-hidden="true"></i> où préférez-vous être ensemble ?</h3><br>      
+            <select id="place_M" class="music" >
+                <option  selected disabled ="disabled" value="plcM">Choisissez votre réponse</option>
+                <option value="belier">Plage</option>
+                <option value="taureau">La nature</option>
+                <option value="gemeaux">La maison</option>
+                <option value="Cancer">Jungle</option>
+                <option value="lion">Autre</option>
+                
+            
+            </select>
+        </div>  
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">    
+            <h3 class="fs-subtitle"><i class="fa fa-male" aria-hidden="true"></i>où aime-t-il être avec toi ?</h3><br>
+            <select id="place_F" class="music" >
+                <option   selected disabled ="disabled" value="plcF">Choisissez votre réponse</option>
+                <option value="belier">Plage</option>
+                <option value="taureau">La nature</option>
+                <option value="gemeaux">La maison</option>
+                <option value="Cancer">Jungle</option>
+                <option value="lion">Autre</option>
+                <option value="lion">Je ne sais pas</option>
+                
+            </select>
+        </div>
+     </div>
+<input type="button" name="previous" class="previous21 action-button-previous" value="Previous"/>
+<input type="button" name="next" class="next2last action-button" value="Next" id="nextQST11" />
+</div>
+
+
+<div class="QST" >  <!--QUESTION NUM 12  last question -->            
+    <h2 class="fs-title">Vous vous connaissez vraiment ...?</h2> 
+    <div class="row">
+         <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12" >  
+            <h3 class="fs-subtitle"><i class="fa fa-female" aria-hidden="true"></i> Quelle est votre couleur préférée ?</h3><br>      
+            <select id="coulpref_M" class="couleurpreferer" >
+                <option  selected disabled ="disabled" value="">Choisissez votre réponse</option>
+                <option value="belier">Noir</option>
+                <option value="taureau">Rouge</option>
+                <option value="gemeaux">Jaune</option>
+                <option value="Cancer">Bleu</option>
+                <option value="lion">Rose</option>
+                <option value="Vierge">Bleu</option>
+                <option value="Balance">Violet</option>
+                <option value="Scorpion">Orange</option>
+                <option value="Sagittaire">Marron</option>
+                <option value="Capricorne">Autre</option>
+                <option value="Verseau">Aucun</option>
+               
+            
+            </select>
+        </div>  
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">    
+            <h3 class="fs-subtitle"><i class="fa fa-male" aria-hidden="true"></i> Quelle est sa couleur préférée?</h3><br>
+            <select id="coulpref_F" class="couleurpreferer" >
+                <option   selected disabled ="disabled" value="">Choisissez votre réponse</option>
+                <option value="belier">Noir</option>
+                <option value="taureau">Rouge</option>
+                <option value="gemeaux">Jaune</option>
+                <option value="Cancer">Bleu</option>
+                <option value="lion">Rose</option>
+                <option value="Vierge">Bleu</option>
+                <option value="Balance">Violet</option>
+                <option value="Scorpion">Orange</option>
+                <option value="Sagittaire">Marron</option>
+                <option value="Capricorne">Autre</option>
+                <option value="Verseau">Aucun</option>
+                <option value="jeNeSaisPas">Je ne sais pas</option>
+                
+            </select>
+        </div>
+     </div>
+     <input type="button" name="previous" class="previous21 action-button-previous" value="Previous"/>
+            
+    </div>
+
+                                
+             <input type="button" id="lastQST" name="next" class="nextlast lastQSTChap1 action-button" value="Chapitre Suivant"  style="visibility: hidden;" >
+        </fieldset>
+
+<!--=========================================== FIN DU CHAPITRE 1 =============================================== -->
+           
+
+
+            <fieldset id="fild2" >      <!-- CHAPITRE 2 -->
+ 
+                    <div class="QST">    <!-- UNE INTRODUCTION DU PREMIER STEP -->
+                        <h3>Vous avez effectué le premier chapitre:
+                            "DÉCRIVEZ-VOUS"</h3>
+                        <h3>Maintenant vous allez passer au chapitre 2
+                            et comparer vos caractères</h3>
+                        <p>CHAPITRE 2 : VOS CARACTERES</p>
+                         <input type="button" id="commenceTestButton"  name="next" class="next22 action-button" value="Commencer Le Test" />
+                     </div>
+    
+                            
+    
+                  
+<div class="QST">  <!--QUESTION NUM 1-->
+    <h2 class="fs-title">comparer Vous Maintenant..</h2>
+    <div class="row">
+         <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <h3 class="fs-subtitle" ><i class="fa fa-female" aria-hidden="true"></i>fumez-vous?</h3>
+            <label for="choix1_1_2" class="radbox">
+                <input type="radio" id="choix1_1_2" name="fumer_M" value="Non">
+                <span class='rad-text'>Non</span>
+            </label>
+            <label for="choix1_2_2" class="radbox">
+                <input type="radio" id="choix1_2_2" name="fumer_M" value="Oui">
+                <span class='rad-text'>Oui</span>
+            </label>
+            <label for="choix1_3_2" class="radbox">
+                <input type="radio" id="choix1_3_2" name="fumer_M" value="Parfois">
+                <span class='rad-text'>Parfois</span>
+            </label>
+        </div>
+      
+
+        <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12">
+           <h3 class="fs-subtitle" id="QST12women"><i class="fa fa-male" aria-hidden="true"></i>fumez-il .?</h3>
+           <label for="choix1_4_2" class="radbox">
+            <input type="radio" id="choix1_4_2" name="fumer_F" value="Non">
+            <span class='rad-text'>Non</span>
+        </label>
+        <label for="choix1_5_2" class="radbox">
+            <input type="radio" id="choix1_5_2" name="fumer_F" value="Oui">
+            <span class='rad-text'>Oui</span>
+        </label>
+        <label for="choix1_6_2" class="radbox">
+            <input type="radio" id="choix1_6_2" name="fumer_F" value="Parfois">
+            <span class='rad-text'>Parfois</span>
+        </label>
+        <label for="choix1_7_2" class="radbox">
+            <input type="radio" id="choix1_7_2" name="fumer_F" value="jsp">
+            <span class='rad-text'>Je ne sais Pas</span>
+        </label>
+
+       </div>
+   </div>
+
+<input type="button" name="next" class="next2_2 action-button" value="Next" id="nextQST1_2" />
+</div>
+    
+    
+    
+<div class="QST">  <!--QUESTION NUM 2-->
+    <h2 class="fs-title">comparer Vous Maintenant..</h2>
+ <div class="row">   
+     <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12">
+         <h3 class="fs-subtitle"><i class="fa fa-female" aria-hidden="true"></i>Quel sont vos hobby?</h3>
+         <label for="cbC1" class="hiddenCB">
+            <input type="checkbox" name="hobby_M" id="cbC1" onchange="callFunction_hobby()" />
+            <span class="check-text">Dessin</span>
+        </label>
+        <label for="cbC2" class="hiddenCB">
+            <input type="checkbox" name="hobby_M" id="cbC2" onchange="callFunction_hobby()" />
+            <span class="check-text">Danser</span>
+        </label>
+        <label for="cbC3" class="hiddenCB">
+            <input type="checkbox" name="hobby_M" id="cbC3" onchange="callFunction_hobby()" />
+            <span class="check-text">Chanter</span>
+        </label>
+        <label for="cbC4" class="hiddenCB">
+            <input type="checkbox" name="hobby_M" id="cbC4" onchange="callFunction_hobby()" />
+            <span class="check-text">jouer un instrument</span>
+        </label>
+        <label for="cbC5" class="hiddenCB">
+            <input type="checkbox" name="hobby_M" id="cbC5" onchange="callFunction_hobby()" />
+            <span class="check-text">Théâtre et débats.</span>
+        </label>
+        <label for="cbC6" class="hiddenCB">
+            <input type="checkbox" name="hobby_M" id="cbC6" onchange="callFunction_hobby()" />
+            <span class="check-text">Autre</span>
+        </label>
+        
+     </div>
+
+     <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12">
+         <h3 class="fs-subtitle"><i class="fa fa-male" aria-hidden="true"></i>quel sont les hobby de votre partenaire ?</h3>
+         <label for="cbC7" class="hiddenCB">
+            <input type="checkbox" name="hobby_F" id="cbC7" onchange="callFunction_hobby()" />
+            <span class="check-text">Dessin</span>
+        </label>
+        <label for="cbC8" class="hiddenCB">
+            <input type="checkbox" name="hobby_F" id="cbC8" onchange="callFunction_hobby()" />
+            <span class="check-text">Danser</span>
+        </label>
+        <label for="cbC9" class="hiddenCB">
+            <input type="checkbox" name="hobby_F" id="cbC9" onchange="callFunction_hobby()" />
+            <span class="check-text">Chanter</span>
+        </label>
+        <label for="cbC10" class="hiddenCB">
+            <input type="checkbox" name="hobby_F" id="cbC10" onchange="callFunction_hobby()" />
+            <span class="check-text">jouer un instrument</span>
+        </label>
+        <label for="cbC11" class="hiddenCB">
+            <input type="checkbox" name="hobby_F" id="cbC11" onchange="callFunction_hobby()" />
+            <span class="check-text">Théâtre et débats.</span>
+        </label>
+        <label for="cbC12" class="hiddenCB">
+            <input type="checkbox" name="hobby_F" id="cbC12" onchange="callFunction_hobby()" />
+            <span class="check-text">Aucun</span>
+        </label>
+        
+     </div>
+</div>
+<input type="button" name="previous" class="previous2_2 action-button-previous" value="Previous"/>
+<input type="button" name="next" class="next2_2 action-button" value="Next" id="nextQST2_2" />
+</div>
+
+
+<div class="QST">  <!--QUESTION NUM 3-->
+    <h2 class="fs-title">comparer Vous Maintenant..</h2>
+    <div class="row">
+         <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <h3 class="fs-subtitle" ><i class="fa fa-female" aria-hidden="true"></i>Aimez-vous sortir ou rester à la maison ? </h3>
+            <label for="choixSortir1" class="radbox">
+                <input type="radio" id="choixSortir1" name="sortir_M" value="Oui">
+                <span class='rad-text'>Oui,j'aime sortir</span>
+            </label>
+            <label for="choixSortir2" class="radbox">
+                <input type="radio" id="choixSortir2" name="sortir_M" value="Non">
+                <span class='rad-text ResterMaison' style="
+                font-size: 13px;
+            ">Non,Je préfère rester à la maison</span>
+            </label>
+            <div id="sortirAime_Male" style="visibility: hidden;">
+                <h3 class="fs-subtitle AvecQui"style="margin-bottom: -1% ;"> Avec qui ?</h3><br>
+                <select id="sortirAime_M" class="sortir" >
+                    <option disabled ="disabled" value="">Choisissez votre réponse</option>
+                    <option value="amis">Mes Amis</option>
+                    <option value="seule">Seule</option>
+                    <option value="conjoint">Mon Conjoint</option>
+                </select>
+            </div>
+        </div>
+      
+        
+        <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <h3 class="fs-subtitle" ><i class="fa fa-male" aria-hidden="true"></i>Aime-il sortir ou rester à la maison ? </h3>
+            <label for="choixSortir3" class="radbox">
+                <input type="radio" id="choixSortir3" name="sortir_F" value="Oui">
+                <span class='rad-text OuiMaison'>Oui, Il aime sortir</span>
+            </label>
+            <label for="choixSortir4" class="radbox">
+                <input type="radio" id="choixSortir4" name="sortir_F" value="Non">
+                <span class='rad-text ResterMaison'style="
+                font-size: 13px;
+            ">Non,Il préfère rester à la maison</span>
+            </label>
+            <label for="choixSortir5" class="radbox">
+                <input type="radio" id="choixSortir5" name="sortir_F" value="jsp">
+                <span class='rad-text'>Je ne sais pas</span>
+            </label>
+            
+            <div id="sortirAime_Female" style="visibility: hidden;">
+                <h3 class="fs-subtitle AvecQui" style="margin-bottom: -1% ;"> Avec qui ?</h3><br>
+                <select id="sortirAime_F" class="sortir" >
+                    <option  disabled="disabled" value="">Choisissez votre réponse</option>
+                    <option value="amis">Ses Amis</option>
+                    <option value="seule">Seule</option>
+                    <option value="conjoint">Avec vous</option>
+                    <option value="jeNeSaisPas">Je ne sais pas</option>
+                </select>
+            </div>
+       </div>
+   </div>
+<input type="button" name="previous" class="previous2_2 action-button-previous" value="Previous"/>
+<input type="button" name="next" class="next2_2 action-button" value="Next" id="nextQST3_2" />
+</div>
+
+
+
+                
+<div class="QST">  <!--QUESTION NUM 4-->
+    <h2 class="fs-title">comparer Vous Maintenant..</h2>
+    <div class="row">
+         <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <h3 class="fs-subtitle" ><i class="fa fa-female" aria-hidden="true"></i>Etes-vous plutôt :</h3>
+            <label for="choixS1" class="radbox">
+                <input type="radio" id="choixS1" name="vertie_M" value="Introvertie">
+                <span class='rad-text'>Introvertie</span>
+            </label>
+            <label for="choixS2" class="radbox">
+                <input type="radio" id="choixS2" name="vertie_M" value="Extravertie">
+                <span class='rad-text'>Extravertie</span>
+            </label>
+        </div>
+      
+
+        <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12">
+           <h3 class="fs-subtitle" id="QST12women"><i class="fa fa-male" aria-hidden="true"></i>est-il plutôt :</h3>
+           <label for="choixS3" class="radbox">
+            <input type="radio" id="choixS3" name="vertie_F" value="Introvertie">
+            <span class='rad-text'>Introverti</span>
+        </label>
+        <label for="choixS4" class="radbox">
+            <input type="radio" id="choixS4" name="vertie_F" value="Extravertie">
+            <span class='rad-text'>Extraverti</span>
+        </label>
+        <label for="choixS5" class="radbox">
+            <input type="radio" id="choixS5" name="vertie_F" value="Jsp">
+            <span class='rad-text'>Je ne sais pas</span>
+        </label>
+       </div>
+   </div>
+   <input type="button" name="previous" class="previous2_2 action-button-previous" value="Previous"/>
+   <input type="button" name="next" class="next2_2 action-button" value="Next" id="nextQST4_2" />
+   </div>
+
+
+   
+   <div class="QST" >  <!--QUESTION NUM 5 -->            
+    <h2 class="fs-title">comparer Vous Maintenant..</h2> 
+    <div class="row">
+        <div id="qstQualite">
+         <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12" >  
+            <h3 class="fs-subtitle"><i class="fa fa-female" aria-hidden="true"></i> Listez trois de vos principales qualités :</h3><br>      
+            <select id="qualite1_M" class="qualite" >
+                <option selected disabled="disabled" value="">Choisissez votre réponse</option>
+                <option value="Agréable" id="valuee">Agréable</option>
+                <option value="Aimable" id="valuee">Aimable</option>
+                <option value="Ambitieuse" id="valuee">Ambitieuse</option>
+                <option value="Amusante" id="valuee">Amusante</option>
+                <option value="Attentionnée" id="valuee">Attentionnée</option>
+                <option value="Aventureuse" id="valuee">Aventureuse</option>
+                <option value="Compréhensive" id="valuee">Compréhensive</option>
+                <option value="Dévouée" id="valuee">Dévouée</option>
+                <option value="Digne de confiance" id="valuee">Digne de confiance</option>
+                <option value="Douce" id="valuee">Douce</option>
+                <option value="Drôle" id="valuee">Drôle</option>
+                <option value="Flexible" id="valuee">Flexible</option>
+                <option value="Gentille" id="valuee">Gentille</option>
+                <option value="Impulsive" id="valuee">Impulsive</option>
+                <option value="Indépendante" id="valuee">Indépendante</option>
+                <option value="Indulgente" id="valuee">Indulgente</option>
+                <option value="Intelligente" id="valuee">Intelligente</option>
+                <option value="Marrante" id="valuee">Marrante</option>
+                <option value="Optimiste" id="valuee">Optimiste</option>
+                <option value="Réservée" id="valuee">Réservée</option>
+                <option value="Séduisante" id="valuee">Séduisante</option>
+                <option value="Sensible" id="valuee">Sensible</option>
+                <option value="Autreee" id="valuee">Aucun</option>
+            
+            </select>
+            <select id="qualite2_M" class="qualite" >
+                <option  selected disabled="disabled" value="">Choisissez votre réponse</option>
+                <option value="Agréable" id="valuee">Agréable</option>
+                <option value="Aimable" id="valuee">Aimable</option>
+                <option value="Ambitieuse" id="valuee">Ambitieuse</option>
+                <option value="Amusante" id="valuee">Amusante</option>
+                <option value="Attentionnée" id="valuee">Attentionnée</option>
+                <option value="Aventureuse" id="valuee">Aventureuse</option>
+                <option value="Compréhensive" id="valuee">Compréhensive</option>
+                <option value="Dévouée" id="valuee">Dévouée</option>
+                <option value="Digne de confiance" id="valuee">Digne de confiance</option>
+                <option value="Douce" id="valuee">Douce</option>
+                <option value="Drôle" id="valuee">Drôle</option>
+                <option value="Flexible" id="valuee">Flexible</option>
+                <option value="Gentille" id="valuee">Gentille</option>
+                <option value="Impulsive" id="valuee">Impulsive</option>
+                <option value="Indépendante" id="valuee">Indépendante</option>
+                <option value="Indulgente" id="valuee">Indulgente</option>
+                <option value="Intelligente" id="valuee">Intelligente</option>
+                <option value="Marrante" id="valuee">Marrante</option>
+                <option value="Optimiste" id="valuee">Optimiste</option>
+                <option value="Réservée" id="valuee">Réservée</option>
+                <option value="Séduisante" id="valuee">Séduisante</option>
+                <option value="Sensible" id="valuee">Sensible</option>
+                <option value="Autreee" id="valuee">Aucun</option>
+            
+            </select>
+            <select id="qualite3_M" class="qualite" >
+                <option selected disabled="disabled" value="">Choisissez votre réponse</option>
+                <option value="Agréable" id="valuee">Agréable</option>
+                <option value="Aimable" id="valuee">Aimable</option>
+                <option value="Ambitieuse" id="valuee">Ambitieuse</option>
+                <option value="Amusante" id="valuee">Amusante</option>
+                <option value="Attentionnée" id="valuee">Attentionnée</option>
+                <option value="Aventureuse" id="valuee">Aventureuse</option>
+                <option value="Compréhensive" id="valuee">Compréhensive</option>
+                <option value="Dévouée" id="valuee">Dévouée</option>
+                <option value="Digne de confiance" id="valuee">Digne de confiance</option>
+                <option value="Douce" id="valuee">Douce</option>
+                <option value="Drôle" id="valuee">Drôle</option>
+                <option value="Flexible" id="valuee">Flexible</option>
+                <option value="Gentille" id="valuee">Gentille</option>
+                <option value="Impulsive" id="valuee">Impulsive</option>
+                <option value="Indépendante" id="valuee">Indépendante</option>
+                <option value="Indulgente" id="valuee">Indulgente</option>
+                <option value="Intelligente" id="valuee">Intelligente</option>
+                <option value="Marrante" id="valuee">Marrante</option>
+                <option value="Optimiste" id="valuee">Optimiste</option>
+                <option value="Réservée" id="valuee">Réservée</option>
+                <option value="Séduisante" id="valuee">Séduisante</option>
+                <option value="Sensible" id="valuee">Sensible</option>
+                <option value="Autreee" id="valuee">Aucun</option>
+            
+            </select>
+        </div>  
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">    
+            <h3 class="fs-subtitle"><i class="fa fa-male" aria-hidden="true"></i> Listez selon vous ses trois principales qualités :</h3><br>
+            <select id="qualite1_F" class="qualite">
+                <option selected disabled="disabled" value="">Choisissez votre réponse</option>
+               
+                <option value="Agréable" id="valuee">Agréable</option>
+                <option value="Aimable" id="valuee">Aimable</option>
+                <option value="Ambitieuse" id="valuee">Ambitieux</option>
+                <option value="Amusante" id="valuee">Amusant</option>
+                <option value="Attentionnée" id="valuee">Attentionné</option>
+                <option value="Aventureuse" id="valuee">Aventureux</option>
+                <option value="Compréhensive" id="valuee">Compréhensif</option>
+                <option value="Dévouée" id="valuee">Dévouée</option>
+                <option value="Digne de confiance" id="valuee">Digne de confiance</option>
+                <option value="Douce" id="valuee">Douce</option>
+                <option value="Drôle" id="valuee">Drôle</option>
+                <option value="Flexible" id="valuee">Flexible</option>
+                <option value="Gentille" id="valuee">Gentil</option>
+                <option value="Impulsive" id="valuee">Impulsif</option>
+                <option value="Indépendante" id="valuee">Indépendant</option>
+                <option value="Indulgente" id="valuee">Indulgent</option>
+                <option value="Intelligente" id="valuee">Intelligent</option>
+                <option value="Marrante" id="valuee">Marrant</option>
+                <option value="Optimiste" id="valuee">Optimist</option>
+                <option value="Réservée" id="valuee">Réservé</option>
+                <option value="Séduisante" id="valuee">Séduisant</option>
+                <option value="Sensible" id="valuee">Sensibl</option>
+                <option value="Autreee" id="valuee">Aucun</option>
+            
+                
+            </select>
+            <select id="qualite2_F" class="qualite">
+                <option selected disabled="disabled" value="">Choisissez votre réponse</option>
+               
+                <option value="Agréable" id="valuee">Agréable</option>
+                <option value="Aimable" id="valuee">Aimable</option>
+                <option value="Ambitieuse" id="valuee">Ambitieux</option>
+                <option value="Amusante" id="valuee">Amusant</option>
+                <option value="Attentionnée" id="valuee">Attentionné</option>
+                <option value="Aventureuse" id="valuee">Aventureux</option>
+                <option value="Compréhensive" id="valuee">Compréhensif</option>
+                <option value="Dévouée" id="valuee">Dévouée</option>
+                <option value="Digne de confiance" id="valuee">Digne de confiance</option>
+                <option value="Douce" id="valuee">Douce</option>
+                <option value="Drôle" id="valuee">Drôle</option>
+                <option value="Flexible" id="valuee">Flexible</option>
+                <option value="Gentille" id="valuee">Gentil</option>
+                <option value="Impulsive" id="valuee">Impulsif</option>
+                <option value="Indépendante" id="valuee">Indépendant</option>
+                <option value="Indulgente" id="valuee">Indulgent</option>
+                <option value="Intelligente" id="valuee">Intelligent</option>
+                <option value="Marrante" id="valuee">Marrant</option>
+                <option value="Optimiste" id="valuee">Optimist</option>
+                <option value="Réservée" id="valuee">Réservé</option>
+                <option value="Séduisante" id="valuee">Séduisant</option>
+                <option value="Sensible" id="valuee">Sensibl</option>
+                <option value="Autreee" id="valuee">Aucun</option>
+            
+            
+            </select>
+            <select id="qualite3_F" class="qualite" >
+                <option selected disabled="disabled" value="">Choisissez votre réponse</option>
+                <option value="Agréable" id="valuee">Agréable</option>
+                <option value="Aimable" id="valuee">Aimable</option>
+                <option value="Ambitieuse" id="valuee">Ambitieux</option>
+                <option value="Amusante" id="valuee">Amusant</option>
+                <option value="Attentionnée" id="valuee">Attentionné</option>
+                <option value="Aventureuse" id="valuee">Aventureux</option>
+                <option value="Compréhensive" id="valuee">Compréhensif</option>
+                <option value="Dévouée" id="valuee">Dévouée</option>
+                <option value="Digne de confiance" id="valuee">Digne de confiance</option>
+                <option value="Douce" id="valuee">Douce</option>
+                <option value="Drôle" id="valuee">Drôle</option>
+                <option value="Flexible" id="valuee">Flexible</option>
+                <option value="Gentille" id="valuee">Gentil</option>
+                <option value="Impulsive" id="valuee">Impulsif</option>
+                <option value="Indépendante" id="valuee">Indépendant</option>
+                <option value="Indulgente" id="valuee">Indulgent</option>
+                <option value="Intelligente" id="valuee">Intelligent</option>
+                <option value="Marrante" id="valuee">Marrant</option>
+                <option value="Optimiste" id="valuee">Optimist</option>
+                <option value="Réservée" id="valuee">Réservé</option>
+                <option value="Séduisante" id="valuee">Séduisant</option>
+                <option value="Sensible" id="valuee">Sensibl</option>
+                <option value="Autreee" id="valuee">Aucun</option>
+            
+            </select>
+        </div>
+     </div>
+    </div>
+<input type="button" name="previous" class="previous2_2 action-button-previous" value="Previous"/>
+<input type="button" name="next" class="next2_2 action-button" value="Next" id="nextQST5_2" />
+</div>
+
+
+
+<div class="QST" >  <!--QUESTION NUM 6 Avant Dernier -->            
+    <h2 class="fs-title">comparer Vous Maintenant..</h2> 
+    <div class="row">
+        <div id="qstDefaut">
+         <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12" >  
+            <h3 class="fs-subtitle"><i class="fa fa-female" aria-hidden="true"></i> Listez trois de vos principales défauts :</h3><br>      
+            <select id="defaut1_M" class="defaut">
+                <option selected disabled="disabled" value="">Choisissez votre réponse</option>
+                <option value="Agressive" id="valuee">Agressive</option>
+                <option value="Aigrie" id="valuee">Aigrie</option>
+                <option value="Anxieuse" id="valuee">Anxieuse</option>
+                <option value="Arrogante" id="valuee">Arrogante</option>
+                <option value="Asociale" id="valuee">Asociale</option>
+                <option value="Autoritaire" id="valuee">Autoritaire</option>
+                <option value="Bornée" id="valuee">Bornée</option>
+                <option value="Boudeuse" id="valuee">Boudeuse</option>
+                <option value="Capricieuse" id="valuee">Capricieuse</option>
+                <option value="Complexée" id="valuee">Complexée</option>
+                <option value="Compliquée" id="valuee">Compliquée</option>
+                <option value="Égoïste" id="valuee">Égoïste</option>
+                <option value="Envahissante" id="valuee">Envahissante</option>
+                <option value="Étourdie" id="valuee">Étourdie</option>
+                <option value="Grossière" id="valuee">Grossière</option>
+                <option value="Hypocrite" id="valuee">Hypocrite</option>
+                <option value="Immature" id="valuee">Immature</option>
+                <option value="Impatiente" id="valuee">Impatiente</option>
+                <option value="Imprudente" id="valuee">Imprudente</option>
+                <option value="Impulsive" id="valuee">Impulsive</option>
+                <option value="Instable" id="valuee">Instable</option>
+                <option value="Intolérante" id="valuee">Intolérante</option>
+                <option value="Jalouse" id="valuee">Jalouse</option>
+                <option value="Manque de confiance en soie" id="valuee">Manque de confiance en soie</option>
+                <option value="jeNeSaisPas">Aucune</option>
+            
+            </select>
+            <select id="defaut2_M" class="defaut" >
+                <option selected disabled="disabled" value="">Choisissez votre réponse</option>
+                <option value="Agressive" id="valuee">Agressive</option>
+                <option value="Aigrie" id="valuee">Aigrie</option>
+                <option value="Anxieuse" id="valuee">Anxieuse</option>
+                <option value="Arrogante" id="valuee">Arrogante</option>
+                <option value="Asociale" id="valuee">Asociale</option>
+                <option value="Autoritaire" id="valuee">Autoritaire</option>
+                <option value="Bornée" id="valuee">Bornée</option>
+                <option value="Boudeuse" id="valuee">Boudeuse</option>
+                <option value="Capricieuse" id="valuee">Capricieuse</option>
+                <option value="Complexée" id="valuee">Complexée</option>
+                <option value="Compliquée" id="valuee">Compliquée</option>
+                <option value="Égoïste" id="valuee">Égoïste</option>
+                <option value="Envahissante" id="valuee">Envahissante</option>
+                <option value="Étourdie" id="valuee">Étourdie</option>
+                <option value="Grossière" id="valuee">Grossière</option>
+                <option value="Hypocrite" id="valuee">Hypocrite</option>
+                <option value="Immature" id="valuee">Immature</option>
+                <option value="Impatiente" id="valuee">Impatiente</option>
+                <option value="Imprudente" id="valuee">Imprudente</option>
+                <option value="Impulsive" id="valuee">Impulsive</option>
+                <option value="Instable" id="valuee">Instable</option>
+                <option value="Intolérante" id="valuee">Intolérante</option>
+                <option value="Jalouse" id="valuee">Jalouse</option>
+                <option value="Manque de confiance en soie" id="valuee">Manque de confiance en soie</option>
+                <option value="jeNeSaisPas">Aucune</option>
+            
+            </select>
+            <select id="defaut3_M" class="defaut">
+                <option selected disabled="disabled" value="">Choisissez votre réponse</option>
+                <option value="Agressive" id="valuee">Agressive</option>
+                <option value="Aigrie" id="valuee">Aigrie</option>
+                <option value="Anxieuse" id="valuee">Anxieuse</option>
+                <option value="Arrogante" id="valuee">Arrogante</option>
+                <option value="Asociale" id="valuee">Asociale</option>
+                <option value="Autoritaire" id="valuee">Autoritaire</option>
+                <option value="Bornée" id="valuee">Bornée</option>
+                <option value="Boudeuse" id="valuee">Boudeuse</option>
+                <option value="Capricieuse" id="valuee">Capricieuse</option>
+                <option value="Complexée" id="valuee">Complexée</option>
+                <option value="Compliquée" id="valuee">Compliquée</option>
+                <option value="Égoïste" id="valuee">Égoïste</option>
+                <option value="Envahissante" id="valuee">Envahissante</option>
+                <option value="Étourdie" id="valuee">Étourdie</option>
+                <option value="Grossière" id="valuee">Grossière</option>
+                <option value="Hypocrite" id="valuee">Hypocrite</option>
+                <option value="Immature" id="valuee">Immature</option>
+                <option value="Impatiente" id="valuee">Impatiente</option>
+                <option value="Imprudente" id="valuee">Imprudente</option>
+                <option value="Impulsive" id="valuee">Impulsive</option>
+                <option value="Instable" id="valuee">Instable</option>
+                <option value="Intolérante" id="valuee">Intolérante</option>
+                <option value="Jalouse" id="valuee">Jalouse</option>
+                <option value="Manque de confiance en soie" id="valuee">Manque de confiance en soie</option>
+                <option value="jeNeSaisPas">Aucune</option>
+            
+            </select>
+        </div>  
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">    
+            <h3 class="fs-subtitle"><i class="fa fa-male" aria-hidden="true"></i> Listez selon vous ses trois principales défauts :</h3><br>
+            <select id="defaut1_F" class="defaut" >
+                <option selected disabled="disabled" value="">Choisissez votre réponse</option>
+                <option value="Agressive" id="valuee">Agressif</option>
+                <option value="Aigrie" id="valuee">Aigri</option>
+                <option value="Anxieuse" id="valuee">Anxieux</option>
+                <option value="Arrogante" id="valuee">Arrogant</option>
+                <option value="Asociale" id="valuee">Asocial</option>
+                <option value="Autoritaire" id="valuee">Autoritair</option>
+                <option value="Bornée" id="valuee">Borné</option>
+                <option value="Boudeuse" id="valuee">Boudeux</option>
+                <option value="Capricieuse" id="valuee">Capricieux</option>
+                <option value="Complexée" id="valuee">Complexé</option>
+                <option value="Compliquée" id="valuee">Compliqué</option>
+                <option value="Égoïste" id="valuee">Égoïste</option>
+                <option value="Envahissante" id="valuee">Envahissant</option>
+                <option value="Étourdie" id="valuee">Étourdi</option>
+                <option value="Grossière" id="valuee">Grossièr</option>
+                <option value="Hypocrite" id="valuee">Hypocrit</option>
+                <option value="Immature" id="valuee">Immature</option>
+                <option value="Impatiente" id="valuee">Impatient</option>
+                <option value="Imprudente" id="valuee">Imprudent</option>
+                <option value="Impulsive" id="valuee">Impulsif</option>
+                <option value="Instable" id="valuee">Instable</option>
+                <option value="Intolérante" id="valuee">Intolérant</option>
+                <option value="Jalouse" id="valuee">Jaloux</option>
+                <option value="Manque de confiance en soie" id="valuee">Manque de confiance en soie</option>
+                <option value="jeNeSaisPas">Aucune</option>
+                
+            </select>
+            <select id="defaut2_F" class="defaut" >
+                <option selected disabled="disabled" value="">Choisissez votre réponse</option>
+                
+                <option value="Agressive" id="valuee">Agressif</option>
+                <option value="Aigrie" id="valuee">Aigri</option>
+                <option value="Anxieuse" id="valuee">Anxieux</option>
+                <option value="Arrogante" id="valuee">Arrogant</option>
+                <option value="Asociale" id="valuee">Asocial</option>
+                <option value="Autoritaire" id="valuee">Autoritair</option>
+                <option value="Bornée" id="valuee">Borné</option>
+                <option value="Boudeuse" id="valuee">Boudeux</option>
+                <option value="Capricieuse" id="valuee">Capricieux</option>
+                <option value="Complexée" id="valuee">Complexé</option>
+                <option value="Compliquée" id="valuee">Compliqué</option>
+                <option value="Égoïste" id="valuee">Égoïste</option>
+                <option value="Envahissante" id="valuee">Envahissant</option>
+                <option value="Étourdie" id="valuee">Étourdi</option>
+                <option value="Grossière" id="valuee">Grossièr</option>
+                <option value="Hypocrite" id="valuee">Hypocrit</option>
+                <option value="Immature" id="valuee">Immature</option>
+                <option value="Impatiente" id="valuee">Impatient</option>
+                <option value="Imprudente" id="valuee">Imprudent</option>
+                <option value="Impulsive" id="valuee">Impulsif</option>
+                <option value="Instable" id="valuee">Instable</option>
+                <option value="Intolérante" id="valuee">Intolérant</option>
+                <option value="Jalouse" id="valuee">Jaloux</option>
+                <option value="Manque de confiance en soie" id="valuee">Manque de confiance en soie</option>
+                <option value="jeNeSaisPas">Aucune</option>
+            
+            </select>
+            <select id="defaut3_F" class="defaut" >
+                <option selected disabled="disabled" value="">Choisissez votre réponse</option>
+                <option value="Agressive" id="valuee">Agressif</option>
+                <option value="Aigrie" id="valuee">Aigri</option>
+                <option value="Anxieuse" id="valuee">Anxieux</option>
+                <option value="Arrogante" id="valuee">Arrogant</option>
+                <option value="Asociale" id="valuee">Asocial</option>
+                <option value="Autoritaire" id="valuee">Autoritair</option>
+                <option value="Bornée" id="valuee">Borné</option>
+                <option value="Boudeuse" id="valuee">Boudeux</option>
+                <option value="Capricieuse" id="valuee">Capricieux</option>
+                <option value="Complexée" id="valuee">Complexé</option>
+                <option value="Compliquée" id="valuee">Compliqué</option>
+                <option value="Égoïste" id="valuee">Égoïste</option>
+                <option value="Envahissante" id="valuee">Envahissant</option>
+                <option value="Étourdie" id="valuee">Étourdi</option>
+                <option value="Grossière" id="valuee">Grossièr</option>
+                <option value="Hypocrite" id="valuee">Hypocrit</option>
+                <option value="Immature" id="valuee">Immature</option>
+                <option value="Impatiente" id="valuee">Impatient</option>
+                <option value="Imprudente" id="valuee">Imprudent</option>
+                <option value="Impulsive" id="valuee">Impulsif</option>
+                <option value="Instable" id="valuee">Instable</option>
+                <option value="Intolérante" id="valuee">Intolérant</option>
+                <option value="Jalouse" id="valuee">Jaloux</option>
+                <option value="Manque de confiance en soie" id="valuee">Manque de confiance en soie</option>
+                <option value="jeNeSaisPas">Aucune</option>
+            
+            </select>
+        </div>
+     </div>
+    </div>
+<input type="button" name="previous" class="previous22 action-button-previous" value="Previous"/>
+<input type="button" name="next" class="next2last2 action-button" value="Next" id="nextQST6_2" />
+</div>
+
+
+   
+<div class="QST">  <!--QUESTION NUM 7 : LAST question -->
+    <h2 class="fs-title">comparer Vous Maintenant..</h2>
+ <div class="row">   
+     <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12">
+         <h3 class="fs-subtitle"><i class="fa fa-female" aria-hidden="true"></i>Quels sont vos centres d'intérêts : ?</h3>
+         <label for="cbD1" class="hiddenCB">
+            <input type="checkbox" name="centre_M" id="cbD1" onchange="callFunction_centre()" />
+            <span class="check-text">Lecture</span>
+        </label>
+        <label for="cbD2" class="hiddenCB">
+            <input type="checkbox" name="centre_M" id="cbD2" onchange="callFunction_centre()" />
+            <span class="check-text">Aventure</span>
+        </label>
+        <label for="cbD3" class="hiddenCB">
+            <input type="checkbox" name="centre_M" id="cbD3" onchange="callFunction_centre()" />
+            <span class="check-text">Famille</span>
+        </label>
+        <label for="cbD4" class="hiddenCB">
+            <input type="checkbox" name="centre_M" id="cbD4" onchange="callFunction_centre()" />
+            <span class="check-text">Sport</span>
+        </label>
+        <label for="cbD5" class="hiddenCB">
+            <input type="checkbox" name="centre_M" id="cbD5" onchange="callFunction_centre()" />
+            <span class="check-text">Soirées</span>
+        </label>
+        <label for="cbD6" class="hiddenCB">
+            <input type="checkbox" name="centre_M" id="cbD6" onchange="callFunction_centre()" />
+            <span class="check-text">Informatique</span>
+        </label>
+        <label for="cbD7" class="hiddenCB">
+            <input type="checkbox" name="centre_M" id="cbD7" onchange="callFunction_centre()" />
+            <span class="check-text">+Autre</span>
+        </label>
+        
+     </div>
+
+     <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12">
+         <h3 class="fs-subtitle"><i class="fa fa-male" aria-hidden="true"></i>Quels sont ses centres d'intérêts : ?</h3>
+         <label for="cbD8" class="hiddenCB">
+            <input type="checkbox" name="centre_F" id="cbD8" onchange="callFunction_centre()" />
+            <span class="check-text">Lecture</span>
+        </label>
+        <label for="cbD9" class="hiddenCB">
+            <input type="checkbox" name="centre_F" id="cbD9" onchange="callFunction_centre()" />
+            <span class="check-text">Aventure</span>
+        </label>
+        <label for="cbD10" class="hiddenCB">
+            <input type="checkbox" name="centre_F" id="cbD10" onchange="callFunction_centre()" />
+            <span class="check-text">Sport</span>
+        </label>
+        <label for="cbD10" class="hiddenCB">
+            <input type="checkbox" name="centre_F" id="cbD10" onchange="callFunction_centre()" />
+            <span class="check-text">Soirées</span>
+        </label>
+        <label for="cbD11" class="hiddenCB">
+            <input type="checkbox" name="centre_F" id="cbD11" onchange="callFunction_centre()" />
+            <span class="check-text">Informatique</span>
+        </label>
+        <label for="cbD12" class="hiddenCB">
+            <input type="checkbox" name="centre_F" id="cbD12" onchange="callFunction_centre()" />
+            <span class="check-text">+Autre</span>
+        </label>
+        
+     </div>
+</div>
+<input type="button" name="previous" class="previous22 action-button-previous" value="Previous"/>
+</div>
+
+                             
+   <input type="button" id="lastQST2" name="next" class="nextlast lastQSTChap2 action-button" value="Chapitre Suivant" style="visibility: hidden;" >
+
+</fieldset>
+                        
+
+
+
+            <fieldset id="fild3" >   <!-- CHAPITRE 3 -->
+               
+                    <div class="QST">    <!-- UNE INTRODUCTION DU PREMIER STEP -->
+                        <h3>Bravo ! vous avez complété avec succès les chapitres 1 et 2,
+                            vous allez maintenant passer au chapitre 3 :</h3>
+                        <h3>VOS SITUATIONS FAMILIALES</h3>
+                        <p>Dans ce chapitre vous devez renseigner le questionnaire vous concernant
+                             ainsi que celui de votre partenaire. 
+                             Si vous ne connaissez pas les réponses 
+                             concernant votre partenaire vous pouvez valider
+                              la case “Je ne sais pas”</p>
+                         <input type="button" id="commenceTestButton"  name="next" class="next22 action-button" value="Commencer Le Test" />
+                     </div>
+    
+
+
+              
+                     <div class="QST">  <!--QUESTION NUM 1-->
+                        <h2 class="fs-title">devriez-vous vraiment être une famille..?</h2>
+                        <div class="row">
+                             <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <h3 class="fs-subtitle" ><i class="fa fa-female" aria-hidden="true"></i>tu es plus proche de ta mère ou de ton père ?</h3>
+                                <label for="choixA1" class="radbox">
+                                    <input type="radio" id="choixA1" name="proche_M" value="mere">
+                                    <span class='rad-text'>ma mère</span>
+                                </label>
+                                <label for="choixA2" class="radbox">
+                                    <input type="radio" id="choixA2" name="proche_M" value="pere">
+                                    <span class='rad-text'>mon père</span>
+                                </label>
+                    
+                            </div>
+                          
+                    
+                            <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                               <h3 class="fs-subtitle" id="QST12women"><i class="fa fa-male" aria-hidden="true"></i>il est plus proche de sa mère ou de son père ?</h3>
+                               <label for="choixA3" class="radbox">
+                                <input type="radio" id="choixA3" name="proche_F" value="mere">
+                                <span class='rad-text'>sa mère</span>
+                            </label>
+                            <label for="choixA4" class="radbox">
+                                <input type="radio" id="choixA4" name="proche_F" value="pere">
+                                <span class='rad-text'>son père</span>
+                            </label>
+                            <label for="choiA5" class="radbox">
+                                <input type="radio" id="choixA5" name="proche_F" value="jsp">
+                                <span class='rad-text'>Je ne sais pas</span>
+                            </label>
+                              
+                           </div>
+                       </div>
+                       <input type="button" name="next" class="next2_3 action-button" value="Next" id="nextQST1_3" />
+                    </div>
+                            
+
+                    <div class="QST">  <!--QUESTION NUM 2-->
+                        <h2 class="fs-title">devriez-vous vraiment être une famille..?</h2>
+                        <div class="row">
+                             <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <h3 class="fs-subtitle" ><i class="fa fa-female" aria-hidden="true"></i>si votre partenaire est stérile, vous le quitterez?</h3>
+                                <label for="choixB1" class="radbox">
+                                    <input type="radio" id="choixB1" name="sterile_M" value="oui">
+                                    <span class='rad-text'>Oui</span>
+                                </label>
+                                <label for="choixB2" class="radbox">
+                                    <input type="radio" id="choixB2" name="sterile_M" value="non">
+                                    <span class='rad-text'>Non</span>
+                                </label>
+                                
+                            </div>
+                          
+                    
+                            <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                               <h3 class="fs-subtitle" id="QST12women"><i class="fa fa-male" aria-hidden="true"></i>pensez-vous que si vous étier stérile, ton partenaire te quittera ?</h3>
+                               <label for="choixB3" class="radbox">
+                                <input type="radio" id="choixB3" name="sterile_F" value="oui">
+                                <span class='rad-text'>Oui</span>
+                            </label>
+                            <label for="choixB4" class="radbox">
+                                <input type="radio" id="choixB4" name="sterile_F" value="non">
+                                <span class='rad-text'>Non</span>
+                            </label>
+                             <label for="choixB5" class="radbox">
+                                <input type="radio" id="choixB5" name="sterile_F" value="jsp">
+                                <span class='rad-text'>Je ne sais pas</span>
+                            </label>
+                               
+                           </div>
+                       </div>
+                       <input type="button" name="previous" class="previous2_3 action-button-previous" value="Previous"/>
+                      <input type="button" name="next" class="next2_3 action-button" value="Next" id="nextQST2_3" />
+                    </div>
+
+
+                    <div class="QST">  <!--QUESTION NUM 3-->
+                        <h2 class="fs-title">devriez-vous vraiment être une famille..?</h2>
+                        <div class="row">
+                             <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <h3 class="fs-subtitle" ><i class="fa fa-female" aria-hidden="true"></i>si tes parents n'acceptent pas votre marriage avec ton partenaire, tu le quitteras?</h3>
+                                <label for="choixC1" class="radbox">
+                                    <input type="radio" id="choixC1" name="accepte_M" value="oui">
+                                    <span class='rad-text'>Oui</span>
+                                </label>
+                                <label for="choixC2" class="radbox">
+                                    <input type="radio" id="choixC2" name="accepte_M" value="non">
+                                    <span class='rad-text'>Non</span>
+                                </label>
+                    
+                            </div>
+                          
+                    
+                            <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                               <h3 class="fs-subtitle" id="QST12women"><i class="fa fa-male" aria-hidden="true"></i>pensez-vous que si ses parent n'ont pas t'accepter, ton partenaire te quittera ?</h3>
+                               <label for="choixC3" class="radbox">
+                                <input type="radio" id="choixC3" name="accepte_F" value="oui">
+                                <span class='rad-text'>Oui</span>
+                            </label>
+                            <label for="choixC4" class="radbox">
+                                <input type="radio" id="choixC4" name="accepte_F" value="non">
+                                <span class='rad-text'>Non</span>
+                            </label>
+                            <label for="choixC5" class="radbox">
+                                <input type="radio" id="choixC5" name="accepte_F" value="jsp">
+                                <span class='rad-text'>Je ne sais pas</span>
+                            </label>
+                              
+                           </div>
+                       </div>
+                       <input type="button" name="previous" class="previous2_3 action-button-previous" value="Previous"/>
+                      <input type="button" name="next" class="next2_3 action-button" value="Next" id="nextQST3_3" />
+                    </div>
+
+
+
+                    <div class="QST" >  <!--QUESTION NUM 4-->            
+                        <h2 class="fs-title">devriez-vous vraiment être une famille..?</h2> 
+                        <div class="row">
+                             <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12" >  
+                                <h3 class="fs-subtitle"><i class="fa fa-female" aria-hidden="true"></i> en cas de querelles, combien de temps
+                                     prenez-vous pour vous réconcilier avec votre partenaire?
+                                </h3><br>      
+                                <select id="temps_M" class="reconciliation" >
+                                    <option selected disabled="disabled" value="">Choisissez votre réponse</option>
+                                    <option value="moins1">Moins d'un jour</option>
+                                    <option value="moins3">Moins de 3 jours</option>
+                                    <option value="vers5">Vers 5 jours</option>
+                                    <option value="plus5">Plus de 5 jours</option>  
+                                </select>
+                            </div>  
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">    
+                                <h3 class="fs-subtitle"><i class="fa fa-male" aria-hidden="true"></i> en cas de querelles, combien de temps
+                                    ton partenaire prend pour te réconcilier ?</h3><br>
+                                    <select id="temps_F" class="reconciliation" >
+                                        <option selected disabled="disabled" value="">Choisissez votre réponse</option>
+                                        <option value="moins1">Moins d'un jour</option>
+                                        <option value="moins3">Moins de 3 jours</option>
+                                        <option value="vers5">Vers 5 jours</option>
+                                        <option value="plus5">Plus de 5 jours</option>  
+                                    </select>
+                            </div>
+                         </div>
+                    <input type="button" name="previous" class="previous2_3 action-button-previous" value="Previous"/>
+                    <input type="button" name="next" class="next2_3 action-button" value="Next" id="nextQST4_3" />
+                    </div>
+
+
+                    <div class="QST">  <!--QUESTION NUM 5-->
+                        <h2 class="fs-title">devriez-vous vraiment être une famille..?</h2>
+                        <div class="row">
+                             <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <h3 class="fs-subtitle" ><i class="fa fa-female" aria-hidden="true"></i>Aimez-vous les petits enfants?</h3>
+                                <label for="choixD1" class="radbox">
+                                    <input type="radio" id="choixD1" name="aimeEnfant_M" value="oui">
+                                    <span class='rad-text'>Oui</span>
+                                </label>
+                                <label for="choixD2" class="radbox">
+                                    <input type="radio" id="choixD2" name="aimeEnfant_M" value="non">
+                                    <span class='rad-text'>Non</span>
+                                </label>
+                              
+                            </div>
+                          
+                    
+                            <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                               <h3 class="fs-subtitle" id="QST12women"><i class="fa fa-male" aria-hidden="true"></i>ton partenair aime les petits enfants?</h3>
+                               <label for="choixD3" class="radbox">
+                                <input type="radio" id="choixD3" name="aimeEnfant_F" value="oui">
+                                <span class='rad-text'>Oui</span>
+                            </label>
+                            <label for="choixD4" class="radbox">
+                                <input type="radio" id="choixD4" name="aimeEnfant_F" value="non">
+                                <span class='rad-text'>Non</span>
+                            </label>
+                            <label for="choixD5" class="radbox">
+                                <input type="radio" id="choixD5" name="aimeEnfant_F" value="jsp">
+                                <span class='rad-text'>Je ne sais pas</span>
+                            </label>
+                              
+                           </div>
+                       </div>
+                       <input type="button" name="previous" class="previous2_3 action-button-previous" value="Previous"/>
+                      <input type="button" name="next" class="next2_3 action-button" value="Next" id="nextQST5_3" />
+                    </div>
+
+
+
+
+                    <div class="QST">  <!--QUESTION NUM 6-->
+                        <h2 class="fs-title famille">devriez-vous vraiment être une famille..?</h2>
+                        <div class="row">
+                             <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <h3 class="fs-subtitle" ><i class="fa fa-female" aria-hidden="true"></i>Voulez-vous faire des enfants? </h3>
+                                <label for="choixEnfant1" class="radbox">
+                                    <input type="radio" id="choixEnfant1" name="faireEnfant_M" value="oui">
+                                    <span class='rad-text'>Oui</span>
+                                </label>
+                                <label for="choixEnfant2" class="radbox">
+                                    <input type="radio" id="choixEnfant2" name="faireEnfant_M" value="non">
+                                    <span class='rad-text'>Non</span>
+                                </label>
+                                
+                                <div id="Enfant_Male" style="visibility: hidden;">
+                                    <h3 class="fs-subtitle familleAnnee" style="margin-bottom: -3%;"> En quelle année ?</h3><br>
+                                    <select id="Enfant1_M" class="enfant">
+                                        <option disabled="disabled" value="">Choisissez votre réponse</option>
+                                        <option value="amis">Le premier année après le marriage</option>
+                                        <option value="seule">après 2 ans</option>
+                                        <option value="conjoint">après plus de 2 ans</option>
+                                    </select>
+                                    <h3 class="fs-subtitle" style="margin-bottom: -4%;"> Combien ?</h3><br>
+                                    <select id="Enfant2_M" class="enfant" >
+                                        <option disabled="disabled" value="">Choisissez votre réponse</option>
+                                        <option value="amis">un Seul</option>
+                                        <option value="seule">deux</option>
+                                        <option value="conjoint">+ deux</option>
+                                    </select>
+                                </div>
+                            </div>
+                          
+                            
+                            <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <h3 class="fs-subtitle famillePartenaire" ><i class="fa fa-male" aria-hidden="true"></i>ton partenaire veut faire des enfants? </h3>
+                                <label for="choixEnfant3" class="radbox">
+                                    <input type="radio" id="choixEnfant3" name="faireEnfant_F" value="oui">
+                                    <span class='rad-text'>Oui</span>
+                                </label>
+                                <label for="choixEnfant4" class="radbox">
+                                    <input type="radio" id="choixEnfant4" name="faireEnfant_F" value="non">
+                                    <span class='rad-text'>Non</span>
+                                </label>
+                                <label for="choixEnfant5" class="radbox">
+                                    <input type="radio" id="choixEnfant5" name="faireEnfant_F" value="Nochoice">
+                                    <span class='rad-text'>Je ne sais pas</span>
+                                </label>
+                               
+                                <div id="Enfant_Female" style="visibility: hidden;">
+                                    <h3 class="fs-subtitle" style="margin-bottom: -3%; margin-top:0%"> En quelle année ?</h3><br>
+                                    <select id="Enfant1_F" class="enfant" >
+                                        <option disabled="disabled" value="">Choisissez votre réponse</option>
+                                        <option value="amis">Le premier année après le marriage</option>
+                                        <option value="seule">après 2 ans</option>
+                                        <option value="conjoint">après plus de 2 ans</option>
+                                        <option value="jsp">Je ne sais pas</option>
+                                    </select>
+                                    <h3 class="fs-subtitle" style="margin-bottom: -4%; margin-top:0%"> Combien ?</h3><br>
+                                    <select id="Enfant2_F" class="enfant">
+                                        <option disabled="disabled" value="">Choisissez votre réponse</option>
+                                        <option value="amis">un Seul</option>
+                                        <option value="seule">deux</option>
+                                        <option value="conjoint">+ deux</option>
+                                        <option value="jsp">Je ne sais pas</option>
+                                    </select>
+                                </div>
+                           </div>
+                       </div>
+                    <input type="button" name="previous" class="previous2_3 action-button-previous" value="Previous"/>
+                    <input type="button" name="next" class="next2_3 action-button" value="Next" id="nextQST6_3" />
+                    </div>
+
+
+
+                    <div class="QST">  <!--QUESTION NUM 7-->
+                        <h2 class="fs-title">devriez-vous vraiment être une famille..?</h2>
+                        <div class="row">
+                             <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <h3 class="fs-subtitle" ><i class="fa fa-female" aria-hidden="true"></i>As-tu entièrement confiance en ton partenaire ?</h3>
+                                <label for="choixE1" class="radbox">
+                                    <input type="radio" id="choixE1" name="confiance_M" value="oui">
+                                    <span class='rad-text'>Oui</span>
+                                </label>
+                                <label for="choixE2" class="radbox">
+                                    <input type="radio" id="choixE2" name="confiance_M" value="non">
+                                    <span class='rad-text'>Non</span>
+                                </label>
+                                <label for="choixE3" class="radbox">
+                                    <input type="radio" id="choixE3" name="confiance_M" value="peu">
+                                    <span class='rad-text'>Un peu</span>
+                                </label>
+                               
+                            </div>
+                          
+                    
+                            <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                               <h3 class="fs-subtitle" id="QST12women"><i class="fa fa-male" aria-hidden="true"></i>pense-tu que ton partenaire a entièrement confiance en vous ?</h3>
+                               <label for="choixE4" class="radbox">
+                                <input type="radio" id="choixE4" name="confiance_F" value="oui">
+                                <span class='rad-text'>Oui</span>
+                            </label>
+                            <label for="choixE5" class="radbox">
+                                <input type="radio" id="choixE5" name="confiance_F" value="non">
+                                <span class='rad-text'>Non</span>
+                            </label>
+                            <label for="choixE6" class="radbox">
+                                <input type="radio" id="choixE6" name="confiance_F" value="peu">
+                                <span class='rad-text'>Un peu</span>
+                            </label>
+                            <label for="choixE7" class="radbox">
+                                <input type="radio" id="choixE7" name="confiance_F" value="jsp">
+                                <span class='rad-text'>Je ne sais pas</span>
+                            </label>
+                             
+                           </div>
+                       </div>
+                       <input type="button" name="previous" class="previous2_3 action-button-previous" value="Previous"/>
+                      <input type="button" name="next" class="next2_3 action-button" value="Next" id="nextQST7_3" />
+                    </div>
+
+
+
+
+
+                    <div class="QST">  <!--QUESTION NUM 8-->
+                        <h2 class="fs-title">devriez-vous vraiment être une famille..?</h2>
+                        <div class="row">
+                             <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <h3 class="fs-subtitle" ><i class="fa fa-female" aria-hidden="true"></i>As-tu peur de tromper un jour ton partenaire ? </h3>
+                                <label for="choixTromper1" class="radbox">
+                                    <input type="radio" id="choixTromper1" name="tromperr_M" value="oui">
+                                    <span class='rad-text'>Oui</span>
+                                </label>
+                                <label for="choixTromper2" class="radbox">
+                                    <input type="radio" id="choixTromper2" name="tromperr_M" value="non">
+                                    <span class='rad-text'>Non</span>
+                                </label>
+                                <div id="Tromper_Male" style="visibility: hidden;">
+                                    <h3 class="fs-subtitle familleAnnee"> tu pense que ton partenaire te quittera si tu le trompe ?</h3><br>
+                                    <select id="Tromper_M" class="tromper">
+                                        <option disabled="disabled" value="">Choisissez votre réponse</option>
+                                        <option value="oui">Oui</option>
+                                        <option value="non">Non</option>
+                                        <option value="jsp">Je ne sais pas</option>
+                                    </select>
+                                </div>
+                            </div>
+                          
+                            
+                            <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <h3 class="fs-subtitle" ><i class="fa fa-male" aria-hidden="true"></i>As-tu peur qu’un jour ton partenaire te trompe ? </h3>
+                                <label for="choixTromper3" class="radbox">
+                                    <input type="radio" id="choixTromper3" name="tromperr_F" value="oui">
+                                    <span class='rad-text'>Oui</span>
+                                </label>
+                                <label for="choixTromper4" class="radbox">
+                                    <input type="radio" id="choixTromper4" name="tromperr_F" value="non">
+                                    <span class='rad-text'>Non</span>
+                                </label>
+                              
+                                <div id="Tromper_Female" style="visibility: hidden;">
+                                    <h3 class="fs-subtitle">  tu le quittera s’il te trompe ?</h3><br>
+                                    <select id="Tromper_F" class="tromper" >
+                                        <option disabled="disabled" value="">Choisissez votre réponse</option>
+                                        <option value="oui">Oui</option>
+                                        <option value="non">Non</option>
+                                        <option value="jsp">pas certain</option>
+                                    </select>
+                                </div>
+                           </div>
+                       </div>
+                    <input type="button" name="previous" class="previous2_3 action-button-previous" value="Previous"/>
+                    <input type="button" name="next" class="next2_3 action-button" value="Next" id="nextQST8_3" />
+                    </div>
+
+
+
+                    <div class="QST">  <!--QUESTION NUM 9-->
+                        <h2 class="fs-title">devriez-vous vraiment être une famille..?</h2>
+                        <div class="row">
+                             <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <h3 class="fs-subtitle" ><i class="fa fa-female" aria-hidden="true"></i>avez vous des amis garçons ? </h3>
+                                <label for="choixAmis1" class="radbox">
+                                    <input type="radio" id="choixAmis1" name="amis_M" value="oui">
+                                    <span class='rad-text'>Oui</span>
+                                </label>
+                                <label for="choixAmis2" class="radbox">
+                                    <input type="radio" id="choixAmis2" name="amis_M" value="Non">
+                                    <span class='rad-text'>Non</span>
+                                </label>
+                               
+                                <div id="connait_Male" style="visibility: hidden;">
+                                    <h3 class="fs-subtitle"> ton partenaire les connaît?</h3><br>
+                                    <select id="connait_M" class="amis" >
+                                        <option disabled="disabled" value="">Choisissez votre réponse</option>
+                                        <option value="oui">Oui</option>
+                                        <option value="non">Non</option>
+                                    </select>
+                                </div>
+                            </div>
+                          
+                            
+                            <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <h3 class="fs-subtitle" ><i class="fa fa-male" aria-hidden="true"></i>ton partenaire à des amis filles ? </h3>
+                                <label for="choixAmis3" class="radbox">
+                                    <input type="radio" id="choixAmis3" name="amis_F" value="oui">
+                                    <span class='rad-text'>Oui</span>
+                                </label>
+                                <label for="choixAmis4" class="radbox">
+                                    <input type="radio" id="choixAmis4" name="amis_F" value="Non">
+                                    <span class='rad-text'>Non</span>
+                                </label>
+                                
+                                <div id="connait_Female" style="visibility: hidden;">
+                                    <h3 class="fs-subtitle">  tu les connais ?</h3><br>
+                                    <select id="connait_F" class="tromper" >
+                                        <option disabled="disabled" value="">Choisissez votre réponse</option>
+                                        <option value="oui">Oui</option>
+                                        <option value="non">Non</option>
+                                    </select>
+                                </div>
+                           </div>
+                       </div>
+                    <input type="button" name="previous" class="previous2_3 action-button-previous" value="Previous"/>
+                    <input type="button" name="next" class="next2_3 action-button" value="Next" id="nextQST9_3" />
+                    </div>
+
+
+
+
+                    <div class="QST">  <!--QUESTION NUM 10-->
+                        <h2 class="fs-title">devriez-vous vraiment être une famille..?</h2>
+                        <div class="row">
+                             <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <h3 class="fs-subtitle" ><i class="fa fa-female" aria-hidden="true"></i>Avez-vous parfois peur de vous comporter 
+                                    naturellement avec lui de peur de le rendre bouleversé ou triste?</h3>
+                                <label for="choixF1" class="radbox">
+                                    <input type="radio" id="choixF1" name="comporter_M" value="oui">
+                                    <span class='rad-text'>Oui</span>
+                                </label>
+                                <label for="choixF2" class="radbox">
+                                    <input type="radio" id="choixF2" name="comporter_M" value="non">
+                                    <span class='rad-text'>Non</span>
+                                </label>
+                                <label for="choixF3" class="radbox">
+                                    <input type="radio" id="choixF3" name="comporter_M" value="peu">
+                                    <span class='rad-text'>Parfois</span>
+                                </label>
+                               
+                            </div>
+                          
+                    
+                            <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                               <h3 class="fs-subtitle" id="QST12women"><i class="fa fa-male" aria-hidden="true"></i>Pensez-vous qu'il évite parfois de se
+                                    comporter naturellement pour ne pas vous contrarier ou vous rendre triste?
+                            </h3>
+                            <label for="choixF4" class="radbox">
+                                <input type="radio" id="choixF4" name="comporter_F" value="oui">
+                                <span class='rad-text'>Oui</span>
+                            </label>
+                            <label for="choixF5" class="radbox">
+                                <input type="radio" id="choixF5" name="comporter_F" value="non">
+                                <span class='rad-text'>Non</span>
+                            </label>
+                            <label for="choixF6" class="radbox">
+                                <input type="radio" id="choixF6" name="comporter_F" value="peu">
+                                <span class='rad-text'>Parfois</span>
+                            </label>
+                            <label for="choixF7" class="radbox">
+                                <input type="radio" id="choixF7" name="comporter_F" value="jsp">
+                                <span class='rad-text'>Je ne sais pas</span>
+                            </label>
+                           
+                           </div>
+                       </div>
+                       <input type="button" name="previous" class="previous2_3 action-button-previous" value="Previous"/>
+                      <input type="button" name="next" class="next2_3 action-button" value="Next" id="nextQST10_3" />
+                    </div>
+
+
+
+
+
+                    <div class="QST">  <!--QUESTION NUM 11-->
+                        <h2 class="fs-title">devriez-vous vraiment être une famille..?</h2>
+                        <div class="row">
+                             <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <h3 class="fs-subtitle" ><i class="fa fa-female" aria-hidden="true"></i>si votre partenaire ne devient plus beaux comme il l'était, vous le quitterez ?</h3>
+                                <label for="choixG1" class="radbox">
+                                    <input type="radio" id="choixG1" name="belle_M" value="oui">
+                                    <span class='rad-text'>Oui</span>
+                                </label>
+                                <label for="choixG2" class="radbox">
+                                    <input type="radio" id="choixG2" name="belle_M" value="non">
+                                    <span class='rad-text'>Non</span>
+                                </label>  
+                            </div>
+                          
+                            <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                               <h3 class="fs-subtitle" id="QST12women"><i class="fa fa-male" aria-hidden="true"></i>Pensez-vous que si vous perdez votre beauté, il te quittera</h3>
+                            <label for="choixG3" class="radbox">
+                                <input type="radio" id="choixG3" name="belle_F" value="oui">
+                                <span class='rad-text'>Oui</span>
+                            </label>
+                            <label for="choixG4" class="radbox">
+                                <input type="radio" id="choixG4" name="belle_F" value="non">
+                                <span class='rad-text'>Non</span>
+                            </label>
+                            <label for="choixG5" class="radbox">
+                                <input type="radio" id="choixG5" name="belle_F" value="jsp">
+                                <span class='rad-text'>Je ne sais pas</span>
+                            </label>
+                              
+                           </div>
+                       </div>
+                       <input type="button" name="previous" class="previous2_3 action-button-previous" value="Previous"/>
+                      <input type="button" name="next" class="next2_3 action-button" value="Next" id="nextQST11_3" />
+                    </div>
+
+
+                    <div class="QST">  <!--QUESTION NUM 12 Avant last qst-->
+                        <h2 class="fs-title">devriez-vous vraiment être une famille..?</h2>
+                        <div class="row">
+                             <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <h3 class="fs-subtitle" ><i class="fa fa-female" aria-hidden="true"></i>Sortez-vous d'une récente relation ?</h3>
+                                <label for="choixH1" class="radbox">
+                                    <input type="radio" id="choixH1" name="recRelation_M" value="oui">
+                                    <span class='rad-text'>Oui</span>
+                                </label>
+                                <label for="choixH2" class="radbox">
+                                    <input type="radio" id="choixH2" name="recRelation_M" value="non">
+                                    <span class='rad-text'>Non</span>
+                                </label>
+                                
+                            </div>
+                          
+                    
+                            <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                               <h3 class="fs-subtitle" id="QST12women"><i class="fa fa-male" aria-hidden="true"></i>ton partenaire viens de sortir d'une récente relations ?</h3>
+                               <label for="choixH3" class="radbox">
+                                <input type="radio" id="choixH3" name="recRelation_F" value="oui">
+                                <span class='rad-text'>Oui</span>
+                            </label>
+                            <label for="choixH4" class="radbox">
+                                <input type="radio" id="choixH4" name="recRelation_F" value="non">
+                                <span class='rad-text'>Non</span>
+                            </label>
+                            <label for="choixH5" class="radbox">
+                                <input type="radio" id="choixH5" name="recRelation_F" value="jsp">
+                                <span class='rad-text'>Je ne sais pas</span>
+                            </label>
+                              
+                           </div>
+                       </div>
+                       <input type="button" name="previous" class="previous23 action-button-previous" value="Previous"/>
+                      <input type="button" name="next" class="next2last3 action-button" value="Next" id="nextQST12_3" />
+                    </div>
+
+
+
+
+
+                    <div class="QST">  <!--QUESTION NUM 13  last qst-->
+                        <h2 class="fs-title">devriez-vous vraiment être une famille..?</h2>
+                        <div class="row">
+                             <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <h3 class="fs-subtitle" ><i class="fa fa-female" aria-hidden="true"></i>Etiez vous encore en relation avec quelqu'un quand vous l'avez rencontré ?</h3>
+                                <label for="choixI1" class="radbox">
+                                    <input type="radio" id="choixI1" name="rencRelation_M" value="oui">
+                                    <span class='rad-text'>Oui</span>
+                                </label>
+                                <label for="choixI2" class="radbox">
+                                    <input type="radio" id="choixI2" name="rencRelation_M" value="non">
+                                    <span class='rad-text'>Non</span>
+                                </label>
+                                
+                            </div>
+                          
+                    
+                            <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                               <h3 class="fs-subtitle" id="QST12women"><i class="fa fa-male" aria-hidden="true"></i>ton partenaire était en relation avec quelqu'un quand il t'a rencontré ?</h3>
+                               <label for="choixI3" class="radbox">
+                                <input type="radio" id="choixI3" name="rencRelation_F" value="oui">
+                                <span class='rad-text'>Oui</span>
+                            </label>
+                            <label for="choixI4" class="radbox">
+                                <input type="radio" id="choixI4" name="rencRelation_F" value="non">
+                                <span class='rad-text'>Non</span>
+                            </label>
+                            <label for="choixI5" class="radbox">
+                                <input type="radio" id="choixI5" name="rencRelation_F" value="jsp">
+                                <span class='rad-text'>Je ne sais pas</span>
+                            </label>
+                               
+                           </div>
+                       </div>
+                       <input type="button" name="previous" class="previous23 action-button-previous" value="Previous"/>
+                    </div>
+            
+                                                
+                         <input type="button" id="lastQST3" name="next" class="nextlast lastQSTChap3 action-button" value="Chapitre Suivant"  style="visibility: hidden;" >
+                    
+                    </fieldset>
+                                    <!-- FIN DU CHAPITRE 3 -->
+
+
+
+    
+            <fieldset id="fild4">   <!-- CHAPITRE 4 -->
+               
+                
+
+                    <div class="QST">    <!-- UNE INTRODUCTION DU PREMIER STEP -->
+                        <h3>Bravo ! vous avez complété avec succès les chapitres 1,2 et 3,
+                            vous allez maintenant passer au chapitre 4 :</h3>
+                        <h3>Religions & Traditions</h3>
+                        <p>Dans ce chapitre vous devez renseigner le questionnaire vous concernant
+                             ainsi que celui de votre partenaire. 
+                             Si vous ne connaissez pas les réponses 
+                             concernant votre partenaire vous pouvez valider
+                              la case “Je ne sais pas”</p>
+                         <input type="button" id="commenceTestButton"  name="next" class="next22 action-button" value="Commencer Le Test" />
+                     </div>
+    
+                     
+                     
+
+
+
+                     <div class="QST">  <!--QUESTION NUM 1-->
+                        <h2 class="fs-title">Qu’en est-il de vos religions et traditions.. ? </h2>
+                        <div class="row">
+                             <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <h3 class="fs-subtitle" ><i class="fa fa-female" aria-hidden="true"></i>avez-vous la même religion que ton partenaire? </h3>
+                                <label for="choixReligion1" class="radbox">
+                                    <input type="radio" id="choixReligion1" name="religion_M" value="oui">
+                                    <span class='rad-text'>Oui</span>
+                                </label>
+                                <label for="choixReligion2" class="radbox">
+                                    <input type="radio" id="choixReligion2" name="religion_M" value="non">
+                                    <span class='rad-text'>Non</span>
+                                </label>
+                                
+                                <div id="si_oui_M" style="visibility: hidden;">
+                                    <h3 class="fs-subtitle"> si tu change ton religion, ton partenaire l'accepterai ?</h3><br>
+                                    <select id="oui_M" class="religion" >
+                                        <option disabled="disabled" value="">Choisissez votre réponse</option>
+                                        <option value="oui">Oui</option>
+                                        <option value="non">Non</option>
+                                        <option value="jsp">Je ne sais pas</option>
+                                    </select>
+                                </div>
+                                <div id="si_non_M" style="visibility: hidden;">
+                                    <h3 class="fs-subtitle"style="
+                                    margin-top: -31%;
+                                ">cela pose-t-il un problème chez toi ?</h3><br>
+                                    <select id="non_M" class="religion" >
+                                        <option disabled="disabled" value="">Choisissez votre réponse</option>
+                                        <option value="oui">Oui</option>
+                                        <option value="non">Non</option>
+                                    </select>
+                                </div>
+                            </div>
+                          
+                            
+                            <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <h3 class="fs-subtitle familleAnnee" ><i class="fa fa-male" aria-hidden="true"></i>ton partenaire a la même religion que vous ?  </h3>
+                                <label for="choixReligion3" class="radbox">
+                                    <input type="radio" id="choixReligion3" name="religion_F" value="oui">
+                                    <span class='rad-text'>Oui</span>
+                                </label>
+                                <label for="choixReligion4" class="radbox">
+                                    <input type="radio" id="choixReligion4" name="religion_F" value="non">
+                                    <span class='rad-text'>Non</span>
+                                </label>
+                               
+                                <div id="si_oui_F" style="visibility: hidden;">
+                                    <h3 class="fs-subtitle">  si votre partenaire a changé de religion, un problème se posera-t-il ?</h3><br>
+                                    <select id="oui_F" class="religion" >
+                                        <option disabled="disabled" value="">Choisissez votre réponse</option>
+                                        <option value="oui">Oui</option>
+                                        <option value="non">Non</option>
+                                    </select>
+                                </div>
+                                <div id="si_non_F" style="visibility: hidden;">
+                                    <h3 class="fs-subtitle" style="
+                                    margin-top: -31%;
+                                ">  cela pose-t-il un problème chez lui?</h3><br>
+                                    <select id="non_F" class="religion" >
+                                        <option disabled="disabled" value="">Choisissez votre réponse</option>
+                                        <option value="oui">Oui</option>
+                                        <option value="non">Non</option>
+                                        <option value="jsp">Je ne sais pas</option>
+                                    </select>
+                                </div>
+                           </div>
+                       </div>
+                       <input type="button" name="next" class="next2_4 action-button" value="Next" id="nextQST1_4"/>
+                    
+                    </div>
+    
+
+
+
+
+
+
+
+                    <div class="QST">  <!--QUESTION NUM 2 Avant Last Question-->
+                        <h2 class="fs-title">Qu’en est-il de vos religions et traditions.. ?</h2>
+                        <div class="row">
+                             <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <h3 class="fs-subtitle" ><i class="fa fa-female" aria-hidden="true"></i>acceptez-vous les traditions de votre partenaire ?</h3>
+                                <label for="choixJ1" class="radbox">
+                                    <input type="radio" id="choixJ1" name="tradition_M" value="oui">
+                                    <span class='rad-text'>Oui</span>
+                                </label>
+                                <label for="choixJ2" class="radbox">
+                                    <input type="radio" id="choixJ2" name="tradition_M" value="non">
+                                    <span class='rad-text'>Non</span>
+                                </label>
+                              
+                            </div>
+                          
+                    
+                            <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                               <h3 class="fs-subtitle" id="QST12women"><i class="fa fa-male" aria-hidden="true"></i>pensez-vous que votre partenaire accepte tes traditions ?</h3>
+                               <label for="choixJ3" class="radbox">
+                                <input type="radio" id="choixJ3" name="tradition_F" value="oui">
+                                <span class='rad-text'>Oui</span>
+                            </label>
+                            <label for="choixJ4" class="radbox">
+                                <input type="radio" id="choixJ4" name="tradition_F" value="non">
+                                <span class='rad-text'>Non</span>
+                            </label>
+                              
+                           </div>
+                       </div>
+                       <input type="button" name="previous" class="previous24 action-button-previous" value="Previous"/>
+                       <input type="button" name="next" class="next2last4 action-button" value="Next" id="nextQST2_4" />
+                    </div>
+
+
+
+
+
+
+                    <div class="QST">  <!--QUESTION NUM 3 LAst Question -->
+                        <h2 class="fs-title">Qu’en est-il de vos religions et traditions.. ?</h2>
+                        <div class="row">
+                             <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <h3 class="fs-subtitle" ><i class="fa fa-female" aria-hidden="true"></i>concernant vos enfants, vous leur laisserez la 
+                                  liberté de choisir leurs religions ou vous les forcerez à être dans
+                                   la même religion que vous?
+                                </h3>
+                                <label for="choixK1" class="radbox">
+                                    <input type="radio" id="choixK1" name="suivreReligion_M" value="oui">
+                                    <span class='rad-text'>Oui, ils sont libre.</span>
+                                </label>
+                                <label for="choixK2" class="radbox">
+                                    <input type="radio" id="choixK2" name="suivreReligion_M" value="non">
+                                    <span class='rad-text ReligionCss' style="
+                                    font-size: 14px;
+                                ">Non, ils vont suivre ma religion.</span>
+                                </label>
+                                
+                            </div>
+                          
+                    
+                            <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                               <h3 class="fs-subtitle" id="QST12women"><i class="fa fa-male" aria-hidden="true"></i>pensez-vous que votre partenaire laissera la 
+                                   liberté à vos enfants aussi, ou il les forcera à être de la même religion qu'il?</h3>
+                                   <label for="choixK3" class="radbox">
+                                    <input type="radio" id="choixK3" name="suivreReligion_F" value="oui">
+                                    <span class='rad-text'>oui, ils sont libre.</span>
+                                </label>
+                                <label for="choixK4" class="radbox">
+                                    <input type="radio" id="choixK4" name="suivreReligion_F" value="non">
+                                    <span class='rad-text ReligionCss'style="
+                                    font-size: 12px;
+                                ">Non, il les oblige à suivre sa religion</span>
+                                </label>
+                                <label for="choixK5" class="radbox">
+                                    <input type="radio" id="choixK5" name="suivreReligion_F" value="jsp">
+                                    <span class='rad-text'>Je ne sais pas</span>
+                                </label>
+                                  
+                           </div>
+                       </div>
+                       <input type="button" name="previous" class="previous24 action-button-previous" value="Previous"/>
+                    </div>
+            
+                                                
+                       <input type="button" id="lastQST4" name="next" class="nextlast lastQSTChap4 action-button" value="Chapitre Suivant"  style="visibility: hidden;" >
+                    </fieldset>
+
+
+ <!--==================================================== FIN DU CHAPITRE 4 ======================================== -->
+
+
+
+          
+            <fieldset id="fild5">  <!-- CHAPITRE 5   : LAST CHAPITRE -->
+                
+
+                    <div class="QST">    <!-- UNE INTRODUCTION DU PREMIER STEP -->
+                        <h3>Plus qu’un dernier chapitre avant d’obtenir votre résultat
+                            et d’accéder à votre espace client dédié</h3>
+                        <h3>Chapitre 5 : Votre relation à votre avis</h3>
+                        <p>CE DERNIER CHAPITRE NE CONCERNE QUE VOUS</p>
+                         <input type="button" id="commenceTestButton"  name="next" class="next22 action-button" value="Commencer Le Test" />
+                     </div>
+    
+                   
+                     
+
+
+                     <div class="QST">  <!--QUESTION NUM 1-->
+                        <h2 class="fs-title">qu'en est-il de votre opinion sur votre relation.. ? </h2>
+                        <div class="row chapitre5" >
+                             <div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <h3 class="fs-subtitle" >quelqu'un de sa famille est-il au courant de votre relation ?</h3>
+                                <label for="choixCourant1" class="radbox">
+                                    <input type="radio" id="choixCourant1" name="Courant" value="oui">
+                                    <span class='rad-text'>Oui</span>
+                                </label>
+                                <label for="choixCourant2" class="radbox">
+                                    <input type="radio" id="choixCourant2" name="Courant" value="non">
+                                    <span class='rad-text'>Non</span>
+                                </label>
+                                
+                                <div id="non_courant" style="visibility: hidden;">
+                                    <h3 class="fs-subtitle"> voulez-vous que cela se produise ?</h3><br>
+                                    <select id="produise" class="Courant" >
+                                        <option disabled="disabled" value="">Choisissez votre réponse</option>
+                                        <option value="oui">Oui</option>
+                                        <option value="non">Non</option>
+                                        <option value="jsp">Pas Certain</option>
+                                    </select>
+                                </div>
+                            </div>
+                          
+                       </div>
+                       <input type="button" name="next" class="next2_5 action-button" value="Next" id="nextQST1_5" />
+                    </div>
+
+
+
+
+                    <div class="QST">  <!--QUESTION NUM 2-->
+                        <h2 class="fs-title">qu'en est-il de votre opinion sur votre relation.. ? </h2>
+                        <div class="row chapitre5">
+                             <div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <h3 class="fs-subtitle" >Avez-vous des amis en commun ?</h3>
+                                <label for="choixCommun1" class="radbox">
+                                    <input type="radio" id="choixCommun1" name="Commun" value="oui">
+                                    <span class='rad-text'>Oui</span>
+                                </label>
+                                <label for="choixCommun2" class="radbox">
+                                    <input type="radio" id="choixCommun2" name="Commun" value="non">
+                                    <span class='rad-text'>Non</span>
+                                </label>
+                                
+                                <div id="oui_commun" style="visibility: hidden;">
+                                    <h3 class="fs-subtitle"> cela pose-t-il un problème dans votre relation?</h3><br>
+                                    <select id="prob" class="amisCommun" >
+                                        <option disabled="disabled" value="">Choisissez votre réponse</option>
+                                        <option value="oui">Oui</option>
+                                        <option value="non">Non</option>
+                                        <option value="jsp">Parfois</option>
+                                    </select>
+                                </div>
+                            </div>
+                          
+                       </div>
+                       <input type="button" name="previous" class="previous2_5 action-button-previous" value="Previous"/>
+                      <input type="button" name="next" class="next2_5 action-button" value="Next" id="nextQST2_5"/>
+                   </div>
+    
+
+
+
+
+
+
+                   <div class="QST">  <!--QUESTION NUM 3-->
+                    <h2 class="fs-title">qu'en est-il de votre opinion sur votre relation.. ?</h2>
+                    <div class="row chapitre5">
+                         <div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <h3 class="fs-subtitle" >parlez-vous de votre relation avec vos amis?</h3>
+                            <label for="choixL1" class="radbox">
+                                <input type="radio" id="choixL1" name="parleRelation" value="toujours">
+                                <span class='rad-text'>Toujours</span>
+                            </label>
+                            <label for="choixL2" class="radbox">
+                                <input type="radio" id="choixL2" name="parleRelation" value="parfois">
+                                <span class='rad-text'>Parfois</span>
+                            </label>
+                            <label for="choixL3" class="radbox">
+                                <input type="radio" id="choixL3" name="parleRelation" value="occasion">
+                                <span class='rad-text'>A l'occasion</span>
+                            </label>
+                            <label for="choixL4" class="radbox">
+                                <input type="radio" id="choixL4" name="parleRelation" value="jamais">
+                                <span class='rad-text'>Jamais</span>
+                            </label>
+                            
+                        </div>
+                   </div>
+                   <input type="button" name="previous" class="previous2_5 action-button-previous" value="Previous"/>
+                   <input type="button" name="next" class="next2_5 action-button" value="Next" id="nextQST3_5"/>
+                </div>
+
+
+
+                <div class="QST">  <!--QUESTION NUM 4-->
+                    <h2 class="fs-title">qu'en est-il de votre opinion sur votre relation.. ?</h2>
+                    <div class="row chapitre5">
+                         <div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <h3 class="fs-subtitle" >A quelle fréquence vous appellez-vous ?</h3>
+                            <label for="choixM1" class="radbox">
+                                <input type="radio" id="choixM1" name="appel" value="toujours">
+                                <span class='rad-text'>Toujours</span>
+                            </label>
+                            <label for="choixM2" class="radbox">
+                                <input type="radio" id="choixM2" name="appel" value="Detempsentemps">
+                                <span class='rad-text'>De temps en temps</span>
+                            </label>
+                            <label for="choixM3" class="radbox">
+                                <input type="radio" id="choixM3" name="appel" value="occasion">
+                                <span class='rad-text'>A l'occasion</span>
+                            </label>
+                            <label for="choixM4" class="radbox">
+                                <input type="radio" id="choixM4" name="appel" value="jamais">
+                                <span class='rad-text'>jamais</span>
+                            </label>
+                           
+                        </div>
+                   </div>
+                   <input type="button" name="previous" class="previous2_5 action-button-previous" value="Previous"/>
+                   <input type="button" name="next" class="next2_5 action-button" value="Next" id="nextQST4_5"/>
+                </div>
+
+
+                <div class="QST">  <!--QUESTION NUM 5-->
+                    <h2 class="fs-title">qu'en est-il de votre opinion sur votre relation.. ?</h2>
+                    <div class="row chapitre5">
+                         <div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <h3 class="fs-subtitle" >A quelle fréquence vous envoyez-vous des messages ?</h3>
+                            <label for="choixN1" class="radbox">
+                                <input type="radio" id="choixN1" name="msg" value="toujours">
+                                <span class='rad-text'>Toujours</span>
+                            </label>
+                            <label for="choixN2" class="radbox">
+                                <input type="radio" id="choixN2" name="msg" value="Detempsentemps">
+                                <span class='rad-text'>De temps en temps</span>
+                            </label>
+                            <label for="choixN3" class="radbox">
+                                <input type="radio" id="choixN3" name="msg" value="occasion">
+                                <span class='rad-text'>A l'occasion</span>
+                            </label>
+                            <label for="choixN4" class="radbox">
+                                <input type="radio" id="choixN4" name="msg" value="jamais">
+                                <span class='rad-text'>jamais</span>
+                            </label>
+                           
+                        </div>
+                   </div>
+                   <input type="button" name="previous" class="previous2_5 action-button-previous" value="Previous"/>
+                   <input type="button" name="next" class="next2_5 action-button" value="Next" id="nextQST5_5"/>
+                </div>
+
+
+
+
+                <div class="QST" >  <!--QUESTION NUM 6-->            
+                    <h2 class="fs-title">qu'en est-il de votre opinion sur votre relation.. ?</h2> 
+                    <div class="row chapitre5">
+                         <div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12" >  
+                            <h3 class="fs-subtitle"> quelle est la première chose qui vous a attiré lors
+                                 de votre première rencontre ?
+                            </h3><br>      
+                            <select id="PremierRencontre" class="renconctre" >
+                                <option  selected disabled ="disabled" value="">Choisissez votre réponse</option>
+                                <option value="personalite">La Personalité</option>
+                                <option value="moins3">La Timidité</option>
+                                <option value="moins3">La Beauté</option>
+                                <option value="vers5">Le courage</option>
+                                <option value="plus5">L'humour</option>  
+                                <option value="plus5">L'Intelligence</option> 
+                                <option value="plus5">La gentillesse</option> 
+                            </select>
+                        </div>  
+                     </div>
+                <input type="button" name="previous" class="previous2_5 action-button-previous" value="Previous"/>
+                <input type="button" name="next" class="next2_5 action-button" value="Next" id="nextQST6_5" />
+                </div>
+
+
+
+
+
+
+
+                <div class="QST" >  <!--QUESTION NUM 7-->            
+                    <h2 class="fs-title">qu'en est-il de votre opinion sur votre relation.. ?</h2> 
+                    <div class="row chapitre5">
+                         <div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12" >  
+                            <h3 class="fs-subtitle"> qu'est-ce qui vous fera détester votre partenaire?
+                            </h3><br>      
+                            <select id="detester" class="hate" >
+                                <option  selected disabled ="disabled" value="">Choisissez votre réponse</option>
+                                <option value="personalite">Trahison</option>
+                                <option value="moins3">Mensonge</option>
+                                <option value="vers5">Hypocrisie</option>
+                                <option value="plus5">Tromperie</option>  
+                                <option value="plus5">t'ignorer</option> 
+                                <option value="plus5">Ne pas vous donner de valeur</option> 
+                                <option value="plus5">ne pas t'inclure dans ses plans</option> 
+                                <option value="plus5">Tout ce qui précède</option> 
+                                <option value="plus5">Autre</option> 
+                            </select>
+                        </div>  
+                     </div>
+                <input type="button" name="previous" class="previous2_5 action-button-previous" value="Previous"/>
+                <input type="button" name="next" class="next2_5 action-button" value="Next" id="nextQST7_5" />
+                </div>
+
+
+                <div class="QST" >  <!--QUESTION NUM 8 AVANT LAST-->            
+                    <h2 class="fs-title">qu'en est-il de votre opinion sur votre relation.. ?</h2> 
+                    <div class="row chapitre5">
+                         <div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12" >  
+                            <h3 class="fs-subtitle"> 
+                                Quelle est la partie que vous aimez le plus dans le corps de votre partenaire?                                
+                            </h3><br>      
+                            <select id="partieAime" class="partieBody" onchange="func1(); flechDownOne('bef1','bef2')">
+                                <option  selected disabled ="disabled" value="">Choisissez votre réponse</option>
+                                <option value="personalite">sa main</option>
+                                <option value="moins3">ses yeux</option>
+                                <option value="vers5">ses cheveux</option>
+                                <option value="vers5">Bouche</option>
+                                <option value="vers5">Hauteur</option>
+                                <option value="plus5">Autre</option>  
+                            </select>
+                        </div>  
+                     </div>
+                <input type="button" name="previous" class="previous25 action-button-previous" value="Previous"/>
+                <input type="button" name="next" class="next2last5 action-button" value="Next" id="nextQST8_5" />
+                </div>
+
+
+
+                <div class="QST" >  <!--QUESTION NUM 9 LAst QST-->            
+                    <h2 class="fs-title">qu'en est-il de votre opinion sur votre relation.. ?</h2> 
+                    <div class="row chapitre5">
+                         <div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12" >  
+                            <h3 class="fs-subtitle">
+                                quelle année avez-vous rencontré pour la première fois?                                
+                            </h3><br>  
+                            <SELECT id ="annee_renconctre" name = "yyyy" onchange="change_year(this)">
+                            </SELECT>    
+                            <!--<select id="annee_renconctre" class="annee" onchange="func1(); flechDownOne('bef1','bef2')">
+                                <option disabled="disabled" value="">Choisissez votre réponse</option>
+                                <option value="personalite">Personalité</option>
+                                <option value="moins3">Moins de 3 jours</option>
+                                <option value="vers5">Vers 5 jours</option>
+                                <option value="plus5">Plus de 5 jours</option>  
+                            </select>-->
+                        </div>  
+                     </div>
+                     <input type="button" name="previous" class="previous25 action-button-previous" value="Previous"/>
+                 
+                    </div>
+            
+                                               
+                            <input type="submit" id="lastQST5"name="submit" class="submit lastQSTChap5 action-button" value="Submit" style="visibility: hidden;"/>
+                        
+                    </fieldset>
+
+  <!--================================================= FIN DU CHAPITRE 5============================================= -->
+
+            <div id="NbrQst" class="numQST" style="visibility: hidden;">
+                <h3 id="Nbr" style="font-size: 25px;"># 01</h3>
+            </div>
+
+</form>
+       
+</div>
+</div>
+<!-- /.MultiStep Form -->
+
+
+
+<!-- FOOTER -->
+
+    <footer class="footer">
+        <ul>
+            <li><a href="#">Informations légales /</a></li>
+            <li><a href="#">Conditions Générales /</a></li>
+            <li><a href="#">Protection des Données</a></li>
+        </ul>
+        <div class="copywrite">
+            &copy; 2019 My True Companion All Right Reserved.
+        </div>
+    </footer>
+<!--=====================================================================================-->
+        
+    
+</html>

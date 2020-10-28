@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+        <link rel="stylesheet" href="css/payment.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="https://js.stripe.com/v3/"></script>
+        <script src="js/payment.js"></script>
+    </head>
+    <body>
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+              <img class="img-responsive" src="https://www.my-true-companion.com/images/img/logo_footer.png" width="100%" height="300" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTop" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTop">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item mr-2">
+                <a class="nav-link" href="https://www.my-true-companion.com">Accueil <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item mr-2">
+                <a class="nav-link" href="https://www.my-true-companion.com/temoignage">Temoignages</a>
+              </li>
+              <li class="nav-item mr-2">
+                <a class="nav-link" href="https://www.my-true-companion.com/#compatibilite-amoureuse">Compatibilité amoureuse</a>
+              </li>
+              <li class="nav-item mr-2">
+                <a class="nav-link" href="https://www.my-true-companion.com/#fiabilite">Fiabilité</a>
+              </li>
+              <li class="nav-item mr-2">
+                <a class="nav-link" href="https://www.my-true-companion.com/#Statistiques">Statistique</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      
+      <header>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-sm-12">
+              <div class="jumbotron">
+                <h1 class="display-5">Bravo ! vous avez réussi le test de compatibilité amoureuse</h1>
+                <p class="lead">personne n'est parfait mais tout le monde peut être meilleur jour après jour, et chaque relation peut avoir beaucoup de problèmes mais le plus important est de connaître le problème et comment le résoudre</p>
+                <hr class="my-4">
+                <p>Notre rôle c'est de vous aider à améliorer votre relation en proposant beaucoup des conseils & services pour seulement <span>3.9€</span> </p>
+                
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+              <img class="img-fluid" src="images/header_love1.jpg" alt="">
+            </div>
+            
+          </div>
+        </div>
+      </header>
+      <section class="services">
+        <div class="container">
+            <div class="services-body">
+                <h1>Nos services</h1>
+                <p>Le but de notre site c'est de vous proposer les meilleurs conseils et services</p>
+                <div class="services-list row">
+                    <div href="#" class="service-list-item anchor col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                        <i class="fas fa-sort-numeric-up-alt services-big-font-size"></i>
+                        <section>
+                            <h3>Votre note</h3>
+                            <p>Votre note de compatibilité amoureuse est déterminée en prenant en compte l’ensemble des réponses du questionnaire que vous venez de remplir. La note va de 1 à 10, 1 étant la note la plus faible qui veux dire que votre couple n’est pas du tout compatible et, la note 10 est la plus élevée, ce qui signifie que votre couple est compatible et solide !</p>
+                        </section>
+                    </div>
+                    <div href="#" class="service-list-item anchor col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                        <i class="far fa-question-circle services-big-font-size"></i>
+                        <section>
+                            <h3>Conseils personnalisés</h3>
+                            <p>En effet, en prenant en compte les réponses à notre questionnaire nous allons vous proposer, chaque deux semaines, deux conseils personnalisés pour améliorer votre relation de couple. Il vous suffit d’effectuer nos conseils et de nous dire, via votre interface client, si vous avez bien répondu positivement à nos conseils ou pas.</p>
+                        </section>
+                    </div>
+                    <div href="#" class="service-list-item anchor col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                        <i class="fas fa-chart-line services-big-font-size"></i>
+                        <section>
+                            <h3>Evolution note</h3>
+                            <p>Ce produit est une innovation, en effet, au fur et à mesure que vous suivrez le programme proposé, votre note de compatibilité évoluera en temps réel via un graphique disponible dans votre interface client. Vous pouvez ainsi savoir votre degré de compatibilité en temps réel.</p>
+                        </section>
+                    </div>
+                    <div href="#" class="service-list-item anchor col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                        <i class="fas fa-user-circle services-big-font-size"></i>
+                        <section>
+                            <h3>Votre compte</h3>
+                            <p>Vous avez accès, à travers votre compte client, à l’historique de toutes les questions et réponses du test initial mais aussi du suivi des conseils préconisés, bref vous avez tous sous vos yeux, vous verrez c’est très intéressant de connaitre l’analyse de votre couple.</p>
+                        </section>
+                    </div>
+                    <div href="#" class="service-list-item anchor col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                        <i class="fas fa-gift services-big-font-size"></i>
+                        <section>
+                            <h3>Concours gratuit</h3>
+                            <p>Chaque fin de mois, nous tirons au sort un couple et nous lui offrons un séjour d’une valeur de 2’000€ via notre partenaire <a href="lastminute.com" class="anchor">lastminute.com</a>, les heureux gagnant seront mis en relation avec l’opérateur de voyage et disposera d’un coupon d’une valeur de 2’000€ à utiliser à leur guise.</p>
+                        </section>
+                    </div>
+                    <div href="#" class="service-list-item anchor col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                        <i class="fas fa-sign-in-alt services-big-font-size"></i>
+                        <section>
+                            <h3>Accès gratuit</h3>
+                            <p>Vous pourrez gratuitement utiliser nos sites de Fitness à domicile <a href="easyfitnessgo.com" class="anchor">easyfitnessgo.com</a> et <a href="officiel-qi-test.com" class="anchor">officiel-qi-test.com</a> officiel-qi-test.com pour une durée de 6 mois. Une fois votre compte validé vous obtiendrez les accès par email.</p>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- start register payment -->
+
+      <div class="register-payment">
+        <div class="container">
+          <div class="info-service-title text-center mb-5">
+            <h1>Votre note + tous les services: <span class="font-weight-bold">3,90€</span> </h1>
+        </div>
+          <div class="row no-gutters">
+              <div class="div-payment-form">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <form method="post" action="/register" id="payment-form">
+                        <input type="hidden" name="_token" value="9qSKBsiBYajRnAOPqS0lG3kT0CtYacBunIHAWKLb">
+                        <div class="row">
+                          <div class="col-sm-12 col-md-6 col-lg-6">
+                            <h4 class="p-3"><i class="fa fa-lock"></i> 1 : Créez votre compte</h4>
+                            <div class="p-3">
+                                <div class="form-group">
+                                    <label class="font-weight-bold">Nom</label>
+                                    <input type="text" id="lastName" class="form-control " name="lastName" value="vinsmoke" placeholder="Nom" required="">
+                                </div>
+                                <div class="form-group">
+                                    <label class="font-weight-bold">Prénom</label>
+                                    <input type="text" id="firstName" class="form-control " name="firstName" value="sanji" placeholder="Prénom" required="">
+                                </div>
+                                <div class="form-group">
+                                    <label class="font-weight-bold">Pseudo</label>
+                                    <input type="text" id="username" class="form-control " name="username" value="" placeholder="Pseudo" required="">
+                                </div>
+                                <div class="form-group">
+                                    <label class="font-weight-bold">Mot de passe (8 caractères minimum)</label>
+                                    <input type="password" id="password" class="form-control " name="password" value="" placeholder="Mot de passe" required="">
+                                </div>
+                                <div class="form-group">
+                                    <label class="font-weight-bold">Confirmez votre mot de passe</label>
+                                    <input type="password" id="password_confirmation" class="form-control " name="password_confirmation" placeholder="Confirmez votre mot de passe" required="">
+                                </div>
+                                <div class="form-group">
+                                    <label class="font-weight-bold">Adresse email</label>
+                                    <input type="email" id="email" class="form-control " name="email" value="sanji6vinsmock@gmail.com" placeholder="Adresse email" required="">
+                                                                    </div>
+                                <div class="form-group">
+                                    <label class="font-weight-bold">Confirmez votre adresse email</label>
+                                    <input type="email" id="email_confirmation" class="form-control " name="email_confirmation" placeholder="Confirmez votre adresse email" required="">
+                                </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-12 col-md-6 col-lg-6">
+                            <h4 class="p-3"><i class="fa fa-lock"></i> 2 : Paiment securisé</h4>
+                            <div class="p-3">
+                                <div id="stripe-card-errors" class="alert alert-danger d-none">
+                                </div>
+                                <div class="form-group">
+                                    <label class="font-weight-bold">Carte bancaire</label>
+                                    <div>
+                                        <div class="custom-control custom-radio custom-control-inline div-radio">
+                                            <input type="radio" id="visa" name="credit_card" class="custom-control-input radio-input" checked="">
+                                            <label class="custom-control-label" for="visa">
+                                                <img src="https://www.my-true-companion.com/images/visa.png" class="img-fluid visa-img ml-2">
+                                            </label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="mastercard" name="credit_card" class="custom-control-input radio-input">
+                                            <label class="custom-control-label" for="mastercard">
+                                                <img src="https://www.my-true-companion.com/images/master-card.png" class="img-fluid mastercard-img ml-2">
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="font-weight-bold">Numéro de carte bancaire</label>
+                                    <div id="stripe-card-number" class="input empty StripeElement"><div class="__PrivateStripeElement" style="margin: 0px !important; padding: 0px !important; border: none !important; display: block !important; background: transparent !important; position: relative !important; opacity: 1 !important;"><iframe frameborder="0" allowtransparency="true" scrolling="no" name="__privateStripeFrame1245" allowpaymentrequest="true" src="https://js.stripe.com/v3/elements-inner-card-fd84623d24cf21b57597faab88b39dea.html#style[base][color]=%2332325D&amp;style[base][fontWeight]=500&amp;style[base][fontFamily]=Source+Code+Pro%2C+Consolas%2C+Menlo%2C+monospace&amp;style[base][fontSize]=16px&amp;style[base][fontSmoothing]=antialiased&amp;style[base][::placeholder][color]=%23CFD7DF&amp;style[base][:-webkit-autofill][color]=%23e39f48&amp;style[invalid][color]=%23E25950&amp;style[invalid][::placeholder][color]=%23FFCCA5&amp;locale=fr&amp;componentName=cardNumber&amp;wait=true&amp;rtl=false&amp;keyMode=live&amp;apiKey=pk_live_Bxlp7qQ2ehdV6n6psu9ioHhC00cPT1wOjy&amp;origin=https%3A%2F%2Fwww.my-true-companion.com&amp;referrer=https%3A%2F%2Fwww.my-true-companion.com%2Fpaiement&amp;controllerId=__privateStripeController1241" title="Cadre sécurisé pour la saisie du numéro de carte" style="border: none !important; margin: 0px !important; padding: 0px !important; width: 1px !important; min-width: 100% !important; overflow: hidden !important; display: block !important; user-select: none !important; transform: translateZ(0px) !important; height: 19.2px;"></iframe><input class="__PrivateStripeElement-input" aria-hidden="true" aria-label=" " autocomplete="false" maxlength="1" style="border: none !important; display: block !important; position: absolute !important; height: 1px !important; top: 0px !important; left: 0px !important; padding: 0px !important; margin: 0px !important; width: 100% !important; opacity: 0 !important; background: transparent !important; pointer-events: none !important; font-size: 16px !important;"></div></div>
+                                    <span id="stripe-card-number-message" class="text-danger"></span>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-sm-6">
+                                        <label class="font-weight-bold">Date d'expiration</label>
+                                        <div id="stripe-card-expiry" class="input empty StripeElement"><div class="__PrivateStripeElement" style="margin: 0px !important; padding: 0px !important; border: none !important; display: block !important; background: transparent !important; position: relative !important; opacity: 1 !important;"><iframe frameborder="0" allowtransparency="true" scrolling="no" name="__privateStripeFrame1246" allowpaymentrequest="true" src="https://js.stripe.com/v3/elements-inner-card-fd84623d24cf21b57597faab88b39dea.html#style[base][color]=%2332325D&amp;style[base][fontWeight]=500&amp;style[base][fontFamily]=Source+Code+Pro%2C+Consolas%2C+Menlo%2C+monospace&amp;style[base][fontSize]=16px&amp;style[base][fontSmoothing]=antialiased&amp;style[base][::placeholder][color]=%23CFD7DF&amp;style[base][:-webkit-autofill][color]=%23e39f48&amp;style[invalid][color]=%23E25950&amp;style[invalid][::placeholder][color]=%23FFCCA5&amp;locale=fr&amp;componentName=cardExpiry&amp;wait=true&amp;rtl=false&amp;keyMode=live&amp;apiKey=pk_live_Bxlp7qQ2ehdV6n6psu9ioHhC00cPT1wOjy&amp;origin=https%3A%2F%2Fwww.my-true-companion.com&amp;referrer=https%3A%2F%2Fwww.my-true-companion.com%2Fpaiement&amp;controllerId=__privateStripeController1241" title="Cadre sécurisé pour la saisie de la date d'expiration" style="border: none !important; margin: 0px !important; padding: 0px !important; width: 1px !important; min-width: 100% !important; overflow: hidden !important; display: block !important; user-select: none !important; transform: translateZ(0px) !important; height: 19.2px;"></iframe><input class="__PrivateStripeElement-input" aria-hidden="true" aria-label=" " autocomplete="false" maxlength="1" style="border: none !important; display: block !important; position: absolute !important; height: 1px !important; top: 0px !important; left: 0px !important; padding: 0px !important; margin: 0px !important; width: 100% !important; opacity: 0 !important; background: transparent !important; pointer-events: none !important; font-size: 16px !important;"></div></div>
+                                        <span id="stripe-card-expiry-message" class="text-danger"></span>
+                                    </div>
+                                    <div class="form-group col-sm-6">
+                                        <label class="font-weight-bold">Code de vérification</label>
+                                        <div id="stripe-card-cvc" class="input empty StripeElement"><div class="__PrivateStripeElement" style="margin: 0px !important; padding: 0px !important; border: none !important; display: block !important; background: transparent !important; position: relative !important; opacity: 1 !important;"><iframe frameborder="0" allowtransparency="true" scrolling="no" name="__privateStripeFrame1247" allowpaymentrequest="true" src="https://js.stripe.com/v3/elements-inner-card-fd84623d24cf21b57597faab88b39dea.html#style[base][color]=%2332325D&amp;style[base][fontWeight]=500&amp;style[base][fontFamily]=Source+Code+Pro%2C+Consolas%2C+Menlo%2C+monospace&amp;style[base][fontSize]=16px&amp;style[base][fontSmoothing]=antialiased&amp;style[base][::placeholder][color]=%23CFD7DF&amp;style[base][:-webkit-autofill][color]=%23e39f48&amp;style[invalid][color]=%23E25950&amp;style[invalid][::placeholder][color]=%23FFCCA5&amp;locale=fr&amp;componentName=cardCvc&amp;wait=true&amp;rtl=false&amp;keyMode=live&amp;apiKey=pk_live_Bxlp7qQ2ehdV6n6psu9ioHhC00cPT1wOjy&amp;origin=https%3A%2F%2Fwww.my-true-companion.com&amp;referrer=https%3A%2F%2Fwww.my-true-companion.com%2Fpaiement&amp;controllerId=__privateStripeController1241" title="Cadre sécurisé pour la saisie du code de sécurité CVC" style="border: none !important; margin: 0px !important; padding: 0px !important; width: 1px !important; min-width: 100% !important; overflow: hidden !important; display: block !important; user-select: none !important; transform: translateZ(0px) !important; height: 19.2px;"></iframe><input class="__PrivateStripeElement-input" aria-hidden="true" aria-label=" " autocomplete="false" maxlength="1" style="border: none !important; display: block !important; position: absolute !important; height: 1px !important; top: 0px !important; left: 0px !important; padding: 0px !important; margin: 0px !important; width: 100% !important; opacity: 0 !important; background: transparent !important; pointer-events: none !important; font-size: 16px !important;"></div></div>
+                                        <span id="stripe-card-cvc-message" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="form-check">
+                                        <input type="checkbox" id="conditions" class="form-check-input " name="conditions" required="">
+                                        <label class="form-check-label" for="conditions">
+                                            J’ai lu et accepté les conditions générales de ventes <br>
+                                            <a href="https://www.my-true-companion.com/conditions-generales" title="Conditions générales de vente" target="_blank">(Lire les Conditions générales de vente)</a>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group text-center mb-0">
+                                    <input type="submit" class="btn btn-danger payment-btn px-3 py-2" value="Découvrez votre note de compatibilité">
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                    </form>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="div-info-service text-center mt-2 px-3 pb-3">
+                        
+                        <div class="info-service-img">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="p-2 bd-highlight">
+                                    <img src="https://www.my-true-companion.com/images/mcafee.png" class="img-fluid">
+                                </div>
+                                <div class="p-2 bd-highlight">
+                                    <img src="https://www.my-true-companion.com/images/scanalert.png" class="img-fluid">
+                                </div>
+                                <div class="p-2 bd-highlight">
+                                    <img src="https://www.my-true-companion.com/images/truste.png" class="img-fluid">
+                                </div>
+                                <div class="p-2 bd-highlight">
+                                    <img src="https://www.my-true-companion.com/images/ssl.png" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="info-service-text">
+                                *L'utilisation du service my-true-companion.com suppose l'inscription du Client au préalable. L'inscription est gratuite ainsi que le test de compatibilité amoureuse. Le Client conclu ainsi un contrat gratuit avec my-true-companion.com sur la base des présentes Conditions générales de Vente. Les résultats du test de compatibilité amoureuse et des services affiliés sont payants moyennant un coût de 3,90 euro ttc, à cela s’ajoute des frais d’inscription au site pour un montant de 20 euro ttc exigibles à la date de validation d’accès aux résultats du test. Une fois ces frais acquittés, le client aura accès à son interface client qui lui permettra de d’avoir accès aux services du site cités ci-dessus. Ce service est facturable à hauteur de 19,90euro ttc/mois avec un minimum de 3 mois incompressible, passé ces trois mois ce service est renouvelable tacitement.
+                            </p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- end register payment -->
+
+      <!-- Section: Testimonials -->
+      <section class="text-center my-5">
+        <div class="container">
+          <!-- Section heading -->
+          <h2 class="h1-responsive font-weight-bold my-5">Derniers témoignages</h2>
+
+          <div class="wrapper-carousel-fix">
+            <!-- Carousel Wrapper -->
+            <div id="carousel-example-1" class="carousel no-flex testimonial-carousel slide carousel-fade" data-ride="carousel"
+              data-interval="false">
+              <!--Slides-->
+              <div class="carousel-inner" role="listbox">
+                <!--First slide-->
+                <div class="carousel-item active">
+                  <div class="testimonial">
+                    <!--Avatar-->
+                    <div class="avatar mx-auto mb-4">
+                      <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(30).jpg" class="rounded-circle img-fluid"
+                        alt="First sample avatar image">
+                    </div>
+                    <h4 class="font-weight-bold">Marie</h4>
+                    <h6 class="font-weight-bold my-3"><span>Date du test :</span> 06/10/2020 - il y a 1 jour</h6>
+                    <!--Content-->
+                    <p>
+                      Bon j’ai fait le test pour mon 2e mari, ça a bien fonctionné et on a eu une bonne note mais au final je suis quand même resté seule avec mon petit chien Coco. J’ai adoré ce service c’était vraiment chouette mais il est, à mon avis, plus adapté aux jeunes couples que j’encourage vivement à le faire.
+                    </p>
+                  </div>
+                </div>
+                <!--First slide-->
+                <!--Second slide-->
+                <div class="carousel-item">
+                  <div class="testimonial">
+                    <!--Avatar-->
+                    <div class="avatar mx-auto mb-4">
+                      <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(31).jpg" class="rounded-circle img-fluid"
+                        alt="Second sample avatar image">
+                    </div>
+                    <h4 class="font-weight-bold">Astride & Julien</h4>
+                    <h6 class="font-weight-bold my-3"><span>Date du test :</span> 04/10/2020 - il y a 3 jours</h6>
+                    <!--Content-->
+                    <p>
+                      Merci MyTrueCompanion, chez nous, comme vous pouvez le constater ça a marché, notre note était bonne dès le départ (7,9) et nous sommes arrivé à la fin du programme à 9,2. En tout cas chapeau, votre système fonctionne super bien. On recommande!
+                    </p>
+                  </div>
+                </div>
+                <!--Second slide-->
+                <!--Third slide-->
+                <div class="carousel-item">
+                  <div class="testimonial">
+                    <!--Avatar-->
+                    <div class="avatar mx-auto mb-4">
+                      <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(3).jpg" class="rounded-circle img-fluid"
+                        alt="Third sample avatar image">
+                    </div>
+                    <h4 class="font-weight-bold">Justine & Thomas</h4>
+                    <h6 class="font-weight-bold my-3"><span>Date du test :</span> 04/10/2020 - il y a 3 jours</h6>
+                    <!--Content-->
+                    <p>
+                      Nous on a fait le test et le suivi pour s’amuser alors qu’on est déjà ensemble depuis 3 ans, franchement c’est cool et on se prend vite au jeu, nous on attendait les prochains conseils avec impatience et on les respectait à la lettre. On aurait bien aimé que les conseils continues et deviennent un peu plus chaud, si vous voyez ce qu’on veut dire.
+                    </p>
+                  </div>
+                </div>
+                <!--Third slide-->
+              </div>
+              <!--Slides-->
+              <!--Controls-->
+              <a class="carousel-control-prev left carousel-control" href="#carousel-example-1" role="button"
+                data-slide="prev">
+                <span class="icon-prev" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next right carousel-control" href="#carousel-example-1" role="button"
+                data-slide="next">
+                <span class="icon-next" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+              <!--Controls-->
+            </div>
+            <!-- Carousel Wrapper -->
+          </div>
+        </div>
+      </section>
+      <!-- Section: Testimonials v.2 -->
+
+      <footer class="page-footer font-small red-theme-dark pt-3">
+          <!-- Footer Links -->
+          <div class="text-xs-center ">
+              <!-- Grid row -->
+              <div class="container">
+                  <div class="row mt-3 ">
+                      <!-- Grid column -->
+                      <div class="col-lg-4 col-sm-4 col-12  mx-auto mb-4">
+                          <!-- Content -->
+                          <img class="img-fluid mx-auto d-block mt-sm-4" src="https://www.my-true-companion.com/images/img/logo_footer.png" alt="Site de rencontre par affinités">
+                      </div>
+                      <div class="col-lg-4 col-sm-4 col-12  mx-auto mb-4">
+                          <!-- Links -->
+                          <h6 class="text-uppercase font-weight-bold">MY TRUE COMPANION</h6>
+                          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 100%;">
+                          <p>
+                              <a href="https://www.my-true-companion.com/informations_legales"><span class="ItemText">Informations légales<br></span></a>
+                          </p>
+                          <p>
+                              <a href="https://www.my-true-companion.com/protection-des-donnees"><span class="ItemText">Protection des données<br></span></a>
+                          </p>
+                          <p>
+                              <a href="https://www.my-true-companion.com/conditions-generales"><span class="ItemText">Conditions générales<br></span></a>
+                          </p>
+                          <p>
+                              <a href="https://www.my-true-companion.com/contact"><span class="ItemText">Contact<br></span></a>
+                          </p>
+                      </div>
+                      <div class="col-lg-4 col-sm-4 col-12  mx-auto mb-4">
+                          <div class="row">
+                              <div class="col-lg-12 mx-auto ">
+                                  <h6 class="text-uppercase font-weight-bold">A PROPOS DE MY TRUE COMPANION</h6>
+                                  <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 100%;">
+                              </div>
+                              <div class="col-lg-6 mx-auto ">
+                                  <!-- Links -->
+                                  <p>
+                                      <a href="#inscription"><span class="ItemText">Commencer le test</span></a>
+                                  </p>
+                                  <p>
+                                      <a href="#compatibilite-amoureuse"><span class="ItemText">Qu’est ce que la compatibilité amoureuse</span></a>
+                                  </p>
+                                  <p>
+                                      <a href="#fiabilite"><span class="ItemText">Fiabilité</span> </a>
+                                  </p>
+                              </div>
+                              <div class="col-lg-6  mx-auto">
+                                  <!-- Links -->
+                                  <p>
+                                      <a href="#Statistiques"><span class="ItemText">Statistiques  <br></span></a>
+                                  </p>
+                                  <p>
+                                      <a href="#temoignage"><span class="ItemText">Témoignages <br></span></a>
+                                  </p>
+                                  <p>
+                                      <a href="#services"><span class="ItemText">Services <br></span></a>
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                      <!-- Grid column -->
+                  </div>
+              </div>
+              <!-- Grid row -->
+          </div>
+          <!-- Footer Links -->
+          <div style="background-color: #860010;">
+              <div class="container">
+                  <!-- Grid row-->
+                  <div class="row pt-2 pb-2 d-flex align-items-center">
+                      <!-- Grid column -->
+                      <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                          <span class="mr-2">Suivez-nous !</span>
+                          <!-- Facebook -->
+                          <a class="fb-ic">
+                              <i class="fab fa-facebook-f white-text mr-2"> </i>
+                          </a>
+                          <!--Linkedin -->
+                          <a class="li-ic">
+                              <i class="fab fa-youtube white-text mr-2"> </i>
+                          </a>
+                      </div>
+                      <div class="col-md-6 col-lg-5 text-center text-md-right mb-4 mb-md-0">
+                          <span class="mr-2">Mobile</span>
+                          <a class="li-ic"><i class="fab fa-apple white-text mr-2"></i> </a>
+                          <a class="li-ic"><i class="fab fa-android white-text mr-2"></i> </a>
+                      </div>
+                      <!-- Grid column -->
+                  </div>
+                  <!-- Grid row-->
+              </div>
+          </div>
+          <!-- Copyright -->
+          <div class="footer-copyright text-center py-3 ">
+      
+              <div class="container ">
+                  <div class="row">
+                      <div class="col-sm-6 col-12 ftxte">
+                          <span class="ItemText">© 2019 My True Companion All Right Reserved.</span>
+                      </div>
+                      <div class="col-sm-6 col--12 ftxte">
+                          <span id="web" class="ItemText">Copyright © 2020 : Created with <i class="fa fa-heart fa-1x fa-beat clr"></i> by Fesweb <a href="https://www.fesweb.net/" title="Agence web au maroc" class="myagency">Agence web Maroc </a></span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- Copyright -->
+      </footer>
+    </body>
+</html>

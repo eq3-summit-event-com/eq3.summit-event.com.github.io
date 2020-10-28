@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>my true companion</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/accueil.js"></script>
+    </head>
+    <body>
+        <!--
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark justify-content-between">
+            <a class="navbar-brand" href="#">
+                <img src="https://www.my-true-companion.com/images/img/logo_footer.png" width="100%" height="300" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#">Features</a>
+                <a class="nav-item nav-link" href="#">Pricing</a>
+                <a class="nav-item nav-link disabled" href="#">Disabled</a>
+              </div>
+            </div>
+        </nav>
+        -->
+        <nav>
+            <a href="#">
+                <img src="https://www.my-true-companion.com/images/img/logo_footer.png" alt="">
+            </a>
+        </nav>
+        <header>
+            
+            <section>
+                <div class="login">
+                    <h2>Login</h2> 
+                    <form action="login" method="post">
+                        <div class="form-group">
+                          <!--<label for="exampleInputEmail1">Email address</label>-->
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                          <!--<label for="exampleInputPassword1">Password</label>-->
+                          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
+                </div>
+                <div class="get-started">
+                    <form method="get">
+                        <div>
+                            <h3>Testez votre compatibilité amoureuse</h3>
+                            <div class="couple">
+                                <div class="person">
+                                    <h4>Je suis :</h4>
+                                    <input type="radio" id="mysex_h" name="mysex" value="homme">
+                                    <label for="homme">Homme</label><br>
+                                    <input type="radio" id="mysex_f" name="mysex" value="femme">
+                                    <label for="femme">Femme</label><br>
+                                </div>
+                                <div class="partner">
+                                    <h4>Partenaire :</h4>
+                                    <input type="radio" id="ursex_f" name="yoursexc" value="femme">
+                                    <label for="femme">Femme</label><br>
+                                    <input type="radio" id="ursex_h" name="yoursexc" value="homme">
+                                    <label for="homme">Homme</label><br>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <span class="home-error-civilite_fb" id="home-error-civilite_fb"></span>
+                                <button type="button" value="LogIn" id="start-test" class="btn form-control login_btn" >
+                                <span> Testez la compatibilité de votre couple</span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                    
+                </div>
+            </section>
+        </header>
+
+        <footer class="page-footer font-small red-theme-dark pt-3">
+            <!-- Footer Links -->
+            <div class="text-xs-center ">
+                <!-- Grid row -->
+                <div class="container">
+                    <div class="row mt-3 ">
+                        <!-- Grid column -->
+                        <div class="col-lg-4 col-sm-4 col-12  mx-auto mb-4">
+                            <!-- Content -->
+                            <img class="img-fluid mx-auto d-block mt-sm-4" src="https://www.my-true-companion.com/images/img/logo_footer.png" alt="Site de rencontre par affinités">
+                        </div>
+                        <div class="col-lg-4 col-sm-4 col-12  mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase font-weight-bold">MY TRUE COMPANION</h6>
+                            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 100%;">
+                            <p>
+                                <a href="https://www.my-true-companion.com/informations_legales"><span class="ItemText">Informations légales<br></span></a>
+                            </p>
+                            <p>
+                                <a href="https://www.my-true-companion.com/protection-des-donnees"><span class="ItemText">Protection des données<br></span></a>
+                            </p>
+                            <p>
+                                <a href="https://www.my-true-companion.com/conditions-generales"><span class="ItemText">Conditions générales<br></span></a>
+                            </p>
+                            <p>
+                                <a href="https://www.my-true-companion.com/contact"><span class="ItemText">Contact<br></span></a>
+                            </p>
+                        </div>
+                        <div class="col-lg-4 col-sm-4 col-12  mx-auto mb-4">
+                            <div class="row">
+                                <div class="col-lg-12 mx-auto ">
+                                    <h6 class="text-uppercase font-weight-bold">A PROPOS DE MY TRUE COMPANION</h6>
+                                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 100%;">
+                                </div>
+                                <div class="col-lg-6 mx-auto ">
+                                    <!-- Links -->
+                                    <p>
+                                        <a href="#inscription"><span class="ItemText">Commencer le test</span></a>
+                                    </p>
+                                    <p>
+                                        <a href="#compatibilite-amoureuse"><span class="ItemText">Qu’est ce que la compatibilité amoureuse</span></a>
+                                    </p>
+                                    <p>
+                                        <a href="#fiabilite"><span class="ItemText">Fiabilité</span> </a>
+                                    </p>
+                                </div>
+                                <div class="col-lg-6  mx-auto">
+                                    <!-- Links -->
+                                    <p>
+                                        <a href="#Statistiques"><span class="ItemText">Statistiques  <br></span></a>
+                                    </p>
+                                    <p>
+                                        <a href="#temoignage"><span class="ItemText">Témoignages <br></span></a>
+                                    </p>
+                                    <p>
+                                        <a href="#services"><span class="ItemText">Services <br></span></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                </div>
+                <!-- Grid row -->
+            </div>
+            <!-- Footer Links -->
+            <div style="background-color: #860010;">
+                <div class="container">
+                    <!-- Grid row-->
+                    <div class="row pt-2 pb-2 d-flex align-items-center">
+                        <!-- Grid column -->
+                        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                            <span class="mr-2">Suivez-nous !</span>
+                            <!-- Facebook -->
+                            <a class="fb-ic">
+                                <i class="fab fa-facebook-f white-text mr-2"> </i>
+                            </a>
+                            <!--Linkedin -->
+                            <a class="li-ic">
+                                <i class="fab fa-youtube white-text mr-2"> </i>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-lg-5 text-center text-md-right mb-4 mb-md-0">
+                            <span class="mr-2">Mobile</span>
+                            <a class="li-ic"><i class="fab fa-apple white-text mr-2"></i> </a>
+                            <a class="li-ic"><i class="fab fa-android white-text mr-2"></i> </a>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row-->
+                </div>
+            </div>
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3 ">
+        
+                <div class="container ">
+                    <div class="row">
+                        <div class="col-sm-6 col-12 ftxte">
+                            <span class="ItemText">© 2019 My True Companion All Right Reserved.</span>
+                        </div>
+                        <div class="col-sm-6 col--12 ftxte">
+                            <span id="web" class="ItemText">Copyright © 2020 : Created with <i class="fa fa-heart fa-1x fa-beat clr"></i> by Fesweb <a href="https://www.fesweb.net/" title="Agence web au maroc" class="myagency">Agence web Maroc </a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        
+    </body>
+</html>
