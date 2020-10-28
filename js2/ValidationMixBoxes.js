@@ -499,7 +499,7 @@ $("input[type='radio'][name='tromperr_M']").change(function(){
                     /* }
                 })   */       
             }
-            else if ($('choixTromper4').is(':checked'))
+            else if ($('#choixTromper4').is(':checked'))
             {
                 document.getElementById('Tromper_Female').style.visibility = "hidden";
                 button.removeAttr('disabled');
