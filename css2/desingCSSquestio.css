@@ -1,0 +1,319 @@
+
+/* Desing CSS  OF THE PAGE */    /*  PS WE CAN NOT USE IT IN THE SCSS FILE, IT WON'T WORK*/
+
+/* WHOLE PAGE */
+
+body{
+    background-color: transparent;
+    
+    height:100%; /* force the BODY element to match the height of the HTML element */
+    
+    }
+    
+    
+    
+    html { 
+      min-height:100%;/* make sure it is at least as tall as the viewport */
+    position:relative;
+    background: url("../img/back2.jpg") no-repeat center center fixed; 
+    
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+    }
+    
+    /*==================================================*/
+    
+    
+    /* LOGO */
+    
+    .logo{
+    margin-left:320px;
+    margin-top: -100px;
+    
+    }
+    
+    /*================================*/
+    
+    /* LOGIN AND HOME DIV */
+    
+    .login{
+    width: 300px;
+    height: 120px;
+    background-color: brown;
+    box-shadow: 1px 1px 1px 1px black;
+    border-radius: 0 2% 2% 2%;
+    border: 1px solid brown;
+    opacity: 0.8;
+    position: relative;
+    left: 900px;
+    
+    }
+    
+    /*==================================*/
+    
+    /* BACKGROUND FORMULAIRE */
+    
+    
+    .questionnaire{
+    width: 978px;
+    height: 550px;
+    background-image: url("../img/3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(255,255,255,0.7);
+    box-shadow: 1px 1px 1px 1px black;
+    border-radius: 0 2% 2% 2%;
+    border: 1px solid black;
+    position: relative;
+    top:130px;
+    left: 225px;
+    }
+    
+    /*=======================================*/
+    
+    /* LOVE BOY ARROW */
+
+    .arrow{
+        position: absolute;
+        left: 87%;
+        top: 2%;
+
+    }
+
+    /*===========================================*/
+
+
+
+
+.Introduction{
+  margin-top: -18%;
+    margin-left: -25%;
+    width: 80%;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+}
+
+.Introduction h3{
+  font-size: 38px;
+    font-weight: bold;
+}
+
+
+
+
+    /* NUM OF QUESTION */
+    
+    .numQST{
+    width: 12%;
+    height: 43px;
+    background-color: #afec54;
+    text-shadow: 0 1px 2px #7ec416;
+    box-shadow: 1px 1px 1px 1px green;
+    border-radius: 0 8% 0% 8%;
+    border: none;
+    border-bottom-right-radius: 9px;
+    border-top-right-radius: 9px;
+    background-image: linear-gradient(transparent,rgba(0,0,0,.2));
+    box-shadow: -1px -1px 6.72px 0.28px rgba(0,0,0,.4);
+    padding: 11px 10px 10px 20px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    position: relative;
+    cursor: pointer;
+    transition: left .3s;
+    transition-property: left;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    top: -510px;
+    left:-229px;
+    
+    }
+    
+    
+    
+    .numQST:hover{
+    width: 80px;
+    transition: left .3s;
+    transition-property: left;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    }
+    
+    
+    .numQST h3{
+    position: relative;
+    font-weight: bold;
+    color: black;;
+    font-size: 22px;
+    top: -20px;
+    left: -5px;
+    width: 50px;
+    }
+    .numQST h3:hover{
+    color: white;
+    }
+    
+    /*====================================*/
+    
+    
+    
+    .men{
+    position: relative;
+    left:-250px;
+    top: -118px;
+    width: 483px;
+    height: 545px;
+    background: transparent;
+    border-radius: 0 2% 2% 2%;
+    box-shadow: 1px 1px 1px 1px black;
+    border-radius: 0 2% 2% 2%;
+    border: 1px solid black;
+    }
+    
+    .menQST{
+    position: relative;
+    top: 73px;
+    width: 46%;
+    left:1%;
+    
+    }
+    
+    
+    .women{
+    position: relative;
+    top: -23%;
+    left: 112%;
+    width: 113%;
+    height: 100.5%;
+    background: transparent;
+    border-radius: 0 2% 2% 2%;
+    box-shadow: 1px 1px 1px 1px black;
+    border-radius: 0 2% 2% 2%;
+    border: 1px solid black;
+    
+    }
+    
+    .womenQST{
+    position: absolute;
+    top: 60%;
+    left: 56%;
+    width: 45%;
+    }
+    
+    /* PROGRESSBAR */
+    
+    #progressbar{
+        position: relative;
+        top: 52px;
+        left: 15px;
+        width: 50%;
+       
+    }
+    #progressbar li{
+        color: black;
+    }
+    
+    /* ==================================*/
+    
+    /* THERMOMETRE */
+    
+    .thermo{
+            position: absolute;
+            width: 49px;
+            height: 555px;
+            background: rgb(189, 189, 189);
+            top:18%;
+            left:94%;
+            border-radius: 23.5px;
+            border:6px solid white;
+    
+    
+          }
+          .thermo_inside{
+            position: absolute;
+            width: 33px;
+            height: 547px;
+            background: rgb(239,239,239);
+            top:18.7%;
+            left:94.6%;
+            border-radius: 23.5px;
+            filter: blur(4px);
+          
+          }
+          .thermo_purcentage{
+            position: absolute;
+            width: 33px;
+            height: 3%;
+            background-image: url("../img/bubble2.gif");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: red;
+            opacity: 0.5;
+            top:52.7%;
+            left:94.6%;
+            border-radius: 23.5px;
+            
+          }
+    
+          .heartThermo{
+              position: absolute;
+              top:57%;
+              left:93%;  
+              
+          }
+          
+    
+    /*========================================*/
+    
+    /* FOOTER */
+    
+    footer
+    {
+        height: 10px;
+    
+        margin-top: 50%;
+        margin-left: 35%;
+    }
+     li{
+        display: inline-block;
+    }
+    footer .copywrite{
+        margin-left: 90px;
+        font-weight: bold;
+    }
+    
+    
+    /*==============================*/
+    
+
+.chapitre5{
+  margin-top: 21px !important;
+}
+   
+
+
+
+
+
+
+    @media (max-width: 767px)   /* pour telephone*/
+    {
+      
+        
+        .logo{
+            margin-top: -144px;
+            margin-left: 0px;
+        }
+      }
+
+
+
+
+
+

@@ -1,0 +1,1206 @@
+
+/* FOR FORMULAIRE : */
+
+/*custom font*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+/*basic reset*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*form styles*/
+#msform {
+    text-align: center;
+    position: relative;
+    margin-top: 30px;
+}
+
+#msform fieldset {
+    background-image: url("../img/chap1vf.jpg");
+    background-repeat: none;
+    background-size: cover;
+ 
+    border: 0 none;
+    border-radius: 0px;
+   // -webkit-box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    padding: 20px 30px;
+    //-webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 168%;
+    height: 549px;
+    left: -36%;
+    //margin: 0 10%;
+    margin-top: 6%;
+    /*stacking fieldsets above each other*/
+    position: relative;
+}
+
+
+/*Hide all except first fieldset*/
+#msform fieldset:not(:first-of-type) {
+    display: none;
+}
+
+
+/*FOR INTRODUCTION OF EACH STEP: */
+
+#msform fieldset .QST{
+    background: transparent;
+    /*border: 0 none;
+    border-radius: 0px;
+    -webkit-box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);*/
+    color: black;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    padding: 20px 30px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 94%;
+    left: -6%;
+    margin: 0 10%;
+    /*stacking fieldsets above each other*/
+    position: relative;
+}
+
+#msform fieldset .QST h3{
+    font-weight: bold;
+    font-size: 30px;
+    color: black;
+}
+
+
+#msform fieldset .QST #commenceTestButton{
+    top: 100%;
+    left: 37%;
+    opacity: 0.9;
+}
+
+/*Hide all except first fieldset*/
+#msform fieldset .QST:not(:first-of-type) {
+    display: none;
+}
+
+.row{
+    margin-top: -55px;
+}
+
+
+
+/*buttons*/
+#msform .action-button {
+
+    width: 34%;
+    font-size: 22px;
+    position: absolute;
+    background: red;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 10px 5px;
+    top:480px;
+    left:57%;
+}
+
+#msform .action-button[disabled]
+{
+    outline: none;
+    width: 34%;
+    font-size: 22px;
+    position: absolute;
+    background: #ffffffa6;
+    opacity: 0.65;
+    font-weight: bold;
+    color: black;
+    font-weight: bold;
+    border: 0 none;
+    border-radius: 25px;
+    cursor: not-allowed;;
+    padding: 10px 5px;
+    top:480px;
+    left:57%;
+}
+
+#msform .action-button:hover, #msform .action-button:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #ee0979;
+}
+
+#msform .action-button-previous {
+
+   width: 250px;
+    font-size: 22px;
+    position: absolute;
+    background: #9ed54c;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 10px 5px;
+    top:482px;
+    left:40px;
+}
+
+#msform .action-button-previous:hover, #msform .action-button-previous:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #C5C5F1;
+}
+
+/*headings*/
+.fs-title {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: black;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.fs-subtitle {
+    font-weight: normal;
+    font-size: 13px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+
+/*FOR QUESTIONS OF EACH STEP : */
+
+
+/*buttons*/
+#msform .QST .action-button {
+    outline: none;
+    width: 30%;
+    font-size: 22px;
+    position: absolute;
+    background: red;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 10px 5px;
+    top:480px;
+    left:62%;
+}
+
+
+#msform .QST .action-button[disabled] {
+    outline: none;
+    width: 30%;
+    font-size: 22px;
+    position: absolute;
+    background: #ffffffa6;
+    opacity: 0.65;
+    font-weight: bold;
+    color: black;
+    font-weight: bold;
+    border: 0 none;
+    border-radius: 25px;
+    cursor: not-allowed;;
+    padding: 10px 5px;
+    top:480px;
+    left:62%;
+}
+
+
+
+#msform .QST .action-button:hover, #msform .QST .action-button:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #ee0979;
+}
+
+#msform .QST .action-button-previous {
+    outline: none;
+   width: 39%;
+    font-size: 22px;
+    position: absolute;
+    background: #9ed54c;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 10px 5px;
+    top:482px;
+    left:-1%;
+}
+
+#msform .QST .action-button-previous:hover, #msform .QST .action-button-previous:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #C5C5F1;
+}
+
+/*headings*/
+.QST .fs-title {
+    font-size: 33px;
+    text-transform: uppercase;
+    color: black;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.QST .fs-subtitle {
+    color: black;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: underline;
+    text-decoration-color: crimson;
+    text-decoration-style: double;
+   // margin-left: -15%;
+}
+
+.col-lg-6 {
+    //width: 50%;
+    /* height: 500px !important; */
+    /* text-align: center; */
+    margin-top: 8%;
+}
+
+
+
+/*progressbar FOR STEPS */
+#progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    /*CSS counters to number the steps*/
+    counter-reset: step;
+}
+
+#progressbar li {
+    list-style-type: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 9px;
+    width: 33.33%;
+    float: left;
+    position: relative;
+    letter-spacing: 1px;
+}
+
+#progressbar li:before {
+    content: counter(step);
+    counter-increment: step;
+    width: 24px;
+    height: 24px;
+    line-height: 26px;
+    display: block;
+    font-size: 12px;
+    color: white;
+    background: gray;
+    border-radius: 25px;
+    margin: 0 auto 10px auto;
+}
+
+/*progressbar connectors*/
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: black;
+    position: absolute;
+    left: -50%;
+    top: 9px;
+    z-index: -1; /*put it behind the numbers*/
+}
+
+#progressbar li:first-child:after {
+    /*connector not needed before the first step*/
+    content: none;
+}
+
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+#progressbar li.active:before, #progressbar li.active:after {
+    background: red;
+    color: white;
+}
+
+
+/* FOR TYPE OF INPUTS OF THE FORMULAIRE */
+
+/* FOR THE SELECT BOX */
+select{
+    height: 25px;
+    color: black;
+    font-weight: bold;
+    font-family: initial;
+    background-color: antiquewhite;
+    border-radius: 8px;
+    border: 1px solid #c54949;
+    display: table-column;
+    left: 159px;
+    text-align: center;
+}
+
+select:focus{
+    border: 1px solid #fd0000;
+    border-radius: 8px;
+    outline: none;
+}
+
+/* FOR THE CHECKBOX */
+
+.hiddenCB {
+    position: relative;
+    cursor: pointer;
+    border: none;
+    outline :none;
+  
+  }
+  .hiddenCB .check-text:hover{
+      background-color: red;
+  }
+
+  .hiddenCB input[type="checkbox"] {
+    display:none;
+  }
+  
+  .hiddenCB .check-text {
+    content: '';
+    font-size: 17px;
+    display: inline-flex;
+    //width: 221px;
+    width: fit-content;
+   padding: 14px;
+    margin-right: 5px;
+    height: 33px;
+    background-color : fff;
+    border: 2px solid #f2f2f2;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+  }
+  
+  input[type="checkbox"]:checked + .check-text
+  {
+    content: '';
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    //width: 221px;
+    width: fit-content;
+   padding: 14px;
+    height: 33px;
+    color: #fff;
+    background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+  }
+
+
+
+
+
+/* FOR THE RADIO BOX */
+
+
+
+.radbox {
+    position: relative;
+    cursor: pointer;
+    border: none;
+    outline :none;
+  
+  }
+  
+  .radbox .rad-text:hover{
+    background-color: red;
+    
+}
+
+
+  .radbox input[type='radio'] {
+    display:none;
+  }
+  
+  .radbox .rad-text {
+    content: '';
+    display: inline-flex;
+   // width: 221px;
+   width: fit-content;
+   padding: 14px;
+    margin-right: 5px;
+    height: 33px;
+    background-color : fff;
+    border: 2px solid #f2f2f2;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+  }
+  
+  input[type="radio"]:checked + .rad-text
+  {
+    content: '';
+    font-size: 17px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+   // width: 221px;
+   width: fit-content;
+    padding: 14px;
+    height: 33px;
+    color: #fff;
+    background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+  }
+
+
+
+
+
+
+
+
+
+/* */
+/*
+@media (max-width:908px) and (min-width:880px)
+{
+    .heartThermo{
+        top:57% !important;
+    }
+   // .thermo_purcentage{
+       // top: 57.7% !important;
+        
+    // }
+}
+/*@media (max-width:1067px) and (min-width:987px)
+{
+   // .thermo_purcentage{
+      // top: 57.7% !important;
+       
+    //}
+} */
+/*
+@media (max-width:1100px) and (min-width:987px)
+{
+    .logo{
+        margin-left: 91% !important;
+        margin-top:-24px !important;
+       
+    }
+}   */
+
+@media (max-width:940px) and (min-width:768px)
+{
+    .logo{
+        margin-left: 91% !important;
+        width: 348px !important;
+        height: 320px !important;
+        margin-top: -26% !important;
+    }
+    
+    #progressbar{
+        top:-19px !important;
+    }
+    .thermo{
+        top:18% !important;
+        left: 91% !important;
+        height: 452px !important;
+    }
+
+    .thermo_inside{
+        top:18.3% !important;
+        left: 91.8% !important;
+        height: 422px !important;
+    }
+    .heartThermo{
+        top: 50.5% !important;
+        left: 89.2% !important;
+    }
+    .thermo_purcentage{
+        width: 35px !important;
+        left: 91.8% !important;
+    }
+
+    #msform fieldset{
+        margin-top: -5% !important;
+    }
+}   
+
+
+@media (max-width:1066px) and (min-width:941px)
+{
+    /*.logo{
+        margin-left: 91% !important;
+        width: 348px !important;
+        height: 320px !important;
+        margin-top: -26% !important;
+    }
+    */
+    #progressbar{
+        top:27px !important;
+    }
+    .thermo{
+        top:18% !important;
+        left: 91% !important;
+        height: 470px !important;
+    }
+
+    .thermo_inside{
+        top:19.3% !important;
+        left: 91.8% !important;
+        height: 454px !important;
+    }
+    .heartThermo{
+        top: 50.5% !important;
+        left: 89.8% !important;
+    }
+    .thermo_purcentage{
+        width: 33px !important;
+        left: 91.8% !important;
+    }
+
+    #msform fieldset{
+        margin-top: 0% !important;
+    }
+    .radbox .rad-text {
+        width: 99px;
+        height: 24px;
+        font-size: 12px ;
+
+    }
+ 
+    input[type="radio"]:checked + .rad-text
+  {
+    width: 99px;
+    height: 24px;
+    font-size: 12px ;
+  }
+
+
+
+  .hiddenCB .check-text{
+    width: 99px;
+    height: 24px;
+    font-size: 12px ;
+  }
+  
+  input[type="checkbox"]:checked + .check-text{
+    width: 99px;
+    height: 24px;
+  }
+
+
+  .next2_1, .next2_2, .next2_3, .next2_4, .next2_5, .next2last, .next2last2, .next2last3, .next2last4, .next2last5{
+      font-size:18px !important;
+  }
+  .previous2_1, .previous2_2, .previous2_3, .previous2_4, .previous2_5, .previous21, .previous22, .previous23, .previous24, .previous25{
+      font-size: 13px !important;
+  } 
+
+  .nextlast, .nextlast2, .nextlast3, .nextlast4{
+      font-size: 12px !important;
+  }
+
+  
+  .ResterMaison{
+      font-size: 9px !important;
+      padding-top: 19px !important;
+    padding-bottom: 19px !important;
+      
+  }
+ 
+  .AvecQui{
+      margin-bottom: -4% !important;
+  }
+
+
+
+  .famille{
+      margin-top:-1%;
+  }
+  
+  .famillePartenaire{
+    margin-top: -5%;
+  }
+
+  .familleAnnee{
+    margin-top: 0%;
+  }
+
+
+
+
+
+  .ReligionCss{
+    font-size: 9px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}   
+
+
+
+@media (max-width:1244px) and (min-width:1067px)
+{
+    .thermo{
+        height: 484px !important;
+    }
+    .thermo_inside{
+        height: 473px !important;
+    }
+    .heartThermo{
+        top: 50% !important;
+        left: 92.5% !important;
+        
+    }
+
+    .thermo_purcentage{
+        //top: 55.5% !important;
+        width: 39px !important;
+        left: 94.5% !important;
+    }
+}   
+
+
+@media (max-width: 767px)   /* pour telephone*/
+{
+    
+    html { 
+       // background-color: #8d8cdd;
+        background: url("../img/sunset.jpg") no-repeat center center fixed !important; 
+        
+        backdrop-filter: blur(5px);
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      
+        
+        }
+    
+        #progressbar {
+     width: -webkit-fill-available;
+      position: relative;
+    top: -7px !important;
+    left: 1% !important;
+    color: white;
+        }
+
+        #progressbar li{
+            color: black !important;
+        }
+    .logo{
+        margin-top: -144px;
+        margin-left: -39px !important;
+        width: 300px;
+        
+    }
+    .login{
+        visibility: hidden;
+    }
+    
+    
+    
+    .fa-home:before {
+        content: "\f015";
+        font-size: 25px;
+        margin-left: -128px;
+        /* padding-top: 25px; */
+    }
+    .thermo{
+        height: 409px !important;
+        top: 18% !important;
+        left: 85% !important;
+    }
+
+    .thermo_inside{
+        height: 375px !important;
+        top: 18.5% !important;
+        left: 86% !important;
+    }
+
+    .thermo_purcentage{
+        //top: 69.7% !important;
+        left: 86.8% !important;
+    }
+    .heartThermo{
+        top: 51.2% !important;
+        left: 82% !important;
+        
+    }
+
+    footer{
+        margin-left:20% !important
+    }
+    footer .copywrite {
+        margin-left: -21px !important;
+    }
+    #msform fieldset {
+        width: 70%;
+        left: 6%;
+        top: -67px !important;
+        background: url("../img/1.jpg");
+        background-position: 0%;
+    }
+    #msform fieldset .QST {
+        width: 89%;
+        font-size: 12px;
+    }
+    #msform fieldset .QST h3{
+        font-size: 11px;
+        margin-bottom: 5%;
+
+    }
+
+
+
+
+    .QST .fs-title{
+        font-size: 14px;
+    padding-bottom: 13%;
+    padding-top: 5%;
+    }
+    #msform fieldset .QST #commenceTestButton{
+        width: 70%;
+        font-size: 12px;
+        margin-left: -25%;
+    }
+    .col-lg-6{
+        margin-left: -3%;
+    }
+
+
+    .numQST{
+        width: 15% !important;
+        height: 32px !important;
+        top: -608px !important;
+        left: 46px !important;
+    }
+    .numQST h3{
+       font-size: 17px !important;
+    }
+
+    /*.OuiMaison{
+        font-size: 11px !important;
+    }*/
+
+    .radbox .rad-text {
+        width: 99px;
+        height: 24px;
+        font-size: 12px ;
+
+    }
+ 
+    input[type="radio"]:checked + .rad-text
+  {
+    width: 99px;
+    height: 24px;
+    font-size: 12px ;
+  }
+
+
+
+  .hiddenCB .check-text{
+    width: 99px;
+    height: 24px;
+    font-size: 12px ;
+  }
+  
+  input[type="checkbox"]:checked + .check-text{
+    width: 99px;
+    height: 24px;
+  }
+
+
+  .next2_1, .next2_2, .next2_3, .next2_4, .next2_5, .next2last, .next2last2, .next2last3, .next2last4, .next2last5{
+      font-size:18px !important;
+  }
+  .previous2_1, .previous2_2, .previous2_3, .previous2_4, .previous2_5, .previous21, .previous22, .previous23, .previous24, .previous25{
+      font-size: 13px !important;
+  } 
+
+  .nextlast, .nextlast2, .nextlast3, .nextlast4{
+      font-size: 12px !important;
+  }
+
+  
+  .ResterMaison{
+      font-size: 9px !important;
+      padding-top: 19px !important;
+    padding-bottom: 19px !important;
+      
+  }
+ 
+  .AvecQui{
+      margin-bottom: -4% !important;
+  }
+
+
+
+  .famille{
+      margin-top:-1%;
+  }
+  
+  .famillePartenaire{
+    margin-top: -5%;
+  }
+
+  .familleAnnee{
+    margin-top: 0%;
+  }
+
+
+
+
+
+  .ReligionCss{
+    font-size: 9px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+/*
+@media(max-width:692px) and (min-width:615px)
+{
+    .heartThermo{
+        top: 64.2% !important;
+        left: 83% !important;
+    }
+    .thermo_purcentage{
+       // top: 65.2% !important;
+        left: 86.2% !important;
+    }
+}*/
+
+@media (max-width: 550px)
+{
+    .heartThermo{
+        top: 50.2% !important;
+        left: 82% !important;
+        
+    }
+    .thermo{
+        height: 388px !important;
+    }
+}
+
+@media (max-width: 767px) and (min-width:691px)
+{
+    .heartThermo{
+        top: 50.0% !important;
+        left: 83% !important;
+        
+    }
+
+    .thermo_purcentage{
+       // top: 64.7% !important;
+        left: 86% !important;
+    }
+    .thermo{
+        height: 429px !important;
+    }
+    .thermo_inside{
+        height: 424px !important;
+    }
+}
+
+@media (max-width: 690px) and (min-width:550px)
+{
+    .heartThermo{
+        top: 50.8% !important;
+        left: 83% !important;
+        
+    }
+
+    .thermo_purcentage{
+        //top: 67.7% !important;
+        left: 86.2% !important;
+    }
+}
+
+@media (max-width: 999px) and (min-width: 992px )    
+{
+    .numQST{
+        width: 15% !important;
+        height: 39px !important;
+        top: -536px !important;
+        left: -164px !important;
+    }
+}
+/*
+@media  (max-width: 860px) and (min-width: 768px )  
+{
+    .heartThermo{
+        top: 63.5% !important;
+        left: 89.2% !important;
+        
+    }
+
+    .thermo_purcentage{
+       // top: 63.7% !important;
+        width: 39px !important;
+        left: 91.8% !important;
+    }
+    .thermo_inside{
+        top: 22.7% !important;
+        left: 91.8% !important;
+    }
+
+    .thermo{
+        top: 22% !important;
+        left: 91% !important;
+    }
+}
+*/
+@media (max-width: 1314px) and (min-width:1213px)
+{
+    .heartThermo{
+        top: 51.1% !important;
+        left: 93% !important;
+        
+    }
+    .thermo{
+        height: 516px !important;
+    }
+    .thermo_inside{
+        height: 509px !important;
+    }
+    .thermo_purcentage{
+      //  top: 52.5% ;
+        width: 38.5px ;
+        left: 94.5% ;
+    }
+}
+
+
+@media (max-width: 1590px) and (min-width:1315px)
+{
+    .heartThermo{
+        top: 51.3% !important;
+        left: 93% !important;
+        
+    }
+    .thermo{
+        height: 583px !important;
+    }
+   /* .thermo_inside{
+        height: 509px !important;
+    }
+    .thermo_purcentage{
+      //  top: 52.5% ;
+        width: 38.5px ;
+        left: 94.5% ;
+    }*/
+}
+/*
+@media (max-width: 1213px) and (min-width:1067px)
+{
+    .heartThermo{
+        top: 55% !important;
+        left: 92.5% !important;
+        
+    }
+
+    .thermo_purcentage{
+        //top: 55.5% !important;
+        width: 39px !important;
+        left: 94.5% !important;
+    }
+}*/
+/*
+@media (min-width: 861px) and (max-width:879px)
+{
+    .heartThermo{
+        top: 59% !important;
+        left: 92.5% !important;
+        
+    }
+
+    .thermo_purcentage{
+        //top: 59.5% !important;
+        width: 39px !important;
+        left: 94.5% !important;
+    }
+}*/
+/*
+@media  (min-width: 860px ) and (max-width:860px) 
+{
+    .heartThermo{
+        top: 62% !important;
+        left: 89.5% !important;
+        
+    }
+
+    .thermo_purcentage{
+     //   top: 62.5% !important;
+        width: 39px !important;
+        left: 91.5% !important;
+    }
+}*/
+/*
+@media  (max-width: 987px) and (min-width: 909px )  
+{
+    .heartThermo{
+        top: 57% !important;
+        left: 92.5% !important;
+        
+    }
+
+    .thermo_purcentage{
+        //top: 57.5% !important;
+        width: 39px !important;
+        left: 94.5% !important;
+    }
+}
+
+*/
+@media  (max-width: 991px) and (min-width: 768px ) 
+{
+    .radbox .rad-text {
+        width: 99px;
+        height: 24px;
+        font-size: 12px ;
+
+    }
+ 
+    input[type="radio"]:checked + .rad-text
+  {
+    width: 99px;
+    height: 24px;
+    font-size: 12px ;
+  }
+
+  #msform fieldset .QST h3{
+    font-size: 15px;
+    margin-bottom: 2%;
+
+}
+.QST .fs-title {
+    font-size: 18px;
+}
+  .hiddenCB .check-text{
+    width: 99px;
+    height: 24px;
+    font-size: 12px ;
+  }
+  
+  input[type="checkbox"]:checked + .check-text{
+    width: 99px;
+    height: 24px;
+  }
+
+
+  .next2_1, .next2_2, .next2_3, .next2_4, .next2_5, .next2last, .next2last2, .next2last3, .next2last4, .next2last5{
+      font-size:18px !important;
+  }
+  .previous2_1, .previous2_2, .previous2_3, .previous2_4, .previous2_5, .previous21, .previous22, .previous23, .previous24, .previous25{
+      font-size: 13px !important;
+  } 
+
+  .nextlast, .nextlast2, .nextlast3, .nextlast4{
+      font-size: 12px !important;
+  }
+
+  
+  .ResterMaison{
+      font-size: 9px !important;
+      padding-top: 19px !important;
+    padding-bottom: 19px !important;
+      
+  }
+ 
+  .AvecQui{
+      margin-bottom: -4% !important;
+  }
+
+
+
+  .famille{
+      margin-top:-1%;
+  }
+  
+  .famillePartenaire{
+    margin-top: -5%;
+  }
+
+  .familleAnnee{
+    margin-top: 0%;
+  }
+
+
+
+
+
+  .ReligionCss{
+    font-size: 9px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+@media  (max-width: 987px) and (min-width: 768px )  
+{
+    .logo{
+        
+        margin-left: 75% !important;
+        width: 300px;
+        
+    }
+
+   
+   
+}
+
+
+@media  (max-width: 991px) and (min-width: 768px )  
+{
+    #msform fieldset {
+        width: 80% ;
+        left: 9%;
+        height: 643px;
+    }
+    .login{
+        visibility: hidden;
+    }
+    #msform fieldset .QST {
+       // width: 80%;
+        margin: 3%;
+        left: 0%;
+    }
+    .numQST{
+        width: 9% !important;
+        height: 39px !important;
+        top: -573px !important;
+        left: 91px !important;
+    }
+    #msform .QST .action-button {
+        top: 535px;
+    }
+    #msform .QST .action-button[disabled]{
+        top: 535px;
+    }
+    #msform .QST .action-button-previous{
+        top: 541px;
+    }
+}
+
+@media (max-width:1292px) and  (min-width: 1000px )  
+{
+    .login{
+        visibility: hidden;
+    }
+    .numQST{
+        width: 15% !important;
+        height: 37px !important;
+        top: -541px !important;
+        left: -163px !important;
+    }
+}
+
+@media (max-width:2500px) and  (min-width: 1000px )   
+{
+   /* #msform fieldset {
+        width: 88%;
+        left: -6%;
+    }*/
+    #msform fieldset .QST {
+       // width: 80%;
+        margin-left: 43px;
+        left: 0%;
+    }
+}
