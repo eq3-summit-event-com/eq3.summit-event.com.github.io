@@ -1,0 +1,207 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+nav {
+  height: 50px;
+  background-color: #d03e53;
+}
+
+nav img {
+  height: 100%;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("../images/background_image1.webp");
+  background-position: 50%;
+  background-size: cover;
+}
+
+header section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 150px auto;
+  height: 400px;
+  width: 800px;
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+@media only screen and (max-width: 800px) {
+  header section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 400px;
+  }
+}
+
+header section .login {
+  background: rgba(255, 255, 255, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-content: center;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  text-align: center;
+}
+
+header section .login form h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header section .login form input {
+  display: block;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  border-radius: 20px;
+}
+
+header section .get-started {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #FFF;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  /* For Safari 5.1 to 6.0 */
+  /* For Internet Explorer 10 */
+  /* Standard syntax */
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(240, 68, 66, 0.5)), to(rgba(208, 62, 83, 0.5)));
+  background: linear-gradient(to bottom right, rgba(240, 68, 66, 0.5), rgba(208, 62, 83, 0.5));
+  /* Fallback for browsers that don't support gradients */
+  background-color: rgba(240, 68, 66, 0.5);
+}
+
+header section .get-started h3 {
+  font-size: 1.2rem;
+}
+
+header section .get-started .couple {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header section .get-started .couple h3 {
+  font-size: 30px;
+}
+
+header section .get-started .couple .person {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+header section .get-started .couple .partner {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+header section .get-started input[type=submit] {
+  background: none;
+  border: 1px solid #FFF;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  -webkit-transition: color .5s ease, background .5s ease;
+  transition: color .5s ease, background .5s ease;
+}
+
+header section .get-started input[type=submit]:hover {
+  background-color: #FFF;
+  color: #d03e53;
+  -webkit-transition: all .5 ease;
+  transition: all .5 ease;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+form input[type=text] {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+/* start footer */
+footer.page-footer {
+  bottom: 0;
+  color: #fff;
+  font-family: Ubuntu,sans-serif;
+}
+
+footer.page-footer a {
+  color: #fff;
+}
+
+footer.page-footer p {
+  padding: 0;
+  margin: 0;
+}
+
+footer.page-footer img {
+  height: 84px;
+}
+
+.red-theme-dark {
+  background-color: #940012 !important;
+}
+
+.red-theme-dark hr {
+  background-color: #6d000d !important;
+  margin: 10px 0 !important;
+  border-bottom: .5px solid #bf0017;
+  height: .5px;
+}
+
+span.ItemText {
+  color: #fff;
+  font-size: 12px;
+}
+
+/* end footer */
+/*# sourceMappingURL=style.css.map */

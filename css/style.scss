@@ -1,0 +1,166 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+$background-color-start: rgba(240, 68, 66, .5);
+$background-color-end: rgba(208, 62, 83, .5);
+$login-button-color: rgb(208, 62, 83);
+$white: #FFF;
+
+@mixin linear-gradient($start, $end) {
+    /* For Safari 5.1 to 6.0 */
+    background: -webkit-linear-gradient(top left, $start, $end);
+    /* For Internet Explorer 10 */
+    background: -ms-linear-gradient(top left, $start, $end);
+    /* Standard syntax */
+    background: linear-gradient(to bottom right ,$start, $end);
+    /* Fallback for browsers that don't support gradients */
+    background-color: $start;
+}
+
+@mixin bRadius($radius){
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -o-border-radius : $radius;
+    border-radius: $radius;
+}
+
+nav{
+    height: 50px;
+    background-color: rgb(208, 62, 83);
+    img{
+        height: 100%;
+    }
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../images/background_image1.webp');
+    background-position: 50%;
+    background-size: cover;
+    
+
+    section{
+        display: flex;
+        margin: 150px auto;
+        height: 400px;
+        width: 800px;
+        
+        box-shadow:  0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        @media only screen and (max-width: 800px) {
+            flex-direction: column;
+            width: 400px;
+        }
+        .login
+        {
+            background: rgba(255, 255, 255, .8);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            justify-content: center;
+            flex-basis: 50%;
+            
+            text-align: center;
+            form{
+                h2{
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                }
+                input{
+                    display: block;
+                    flex-basis: 100%;
+                    @include bRadius(20px);
+                }
+            }
+        }
+        .get-started{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: $white;
+            flex-basis: 50%;
+            
+            @include linear-gradient($background-color-start, $background-color-end);
+            h3{
+                font-size: 1.2rem;
+            }
+            .couple{
+                h3{
+                    font-size: 30px;
+                }
+                display: flex;
+                .person{
+                    flex-basis: 50%;
+                }
+                .partner{
+                    flex-basis: 50%;
+                }
+            }
+            input[type=submit]{
+                background: none;
+                border: 1px solid #FFF;
+                color: white;
+                padding: 5px 10px;
+                @include bRadius(3px);
+                cursor: pointer;
+                transition: color .5s ease, background .5s ease;
+
+                &:hover{
+                    background-color: #FFF;
+                    color: $login-button-color;
+                    transition: all .5 ease;
+                }
+            }
+        }
+    }
+
+    
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    input[type=text]{
+        flex-basis: 50%;
+    }
+}
+
+/* start footer */
+
+footer.page-footer {
+    bottom: 0;
+    color: #fff;
+    font-family: Ubuntu,sans-serif;
+    a {
+      color: #fff;
+    }
+    p {
+      padding: 0;
+      margin: 0;
+    }
+    img{
+      height: 84px;
+    }
+  }
+  .red-theme-dark {
+    background-color: #940012!important;
+    hr {
+      background-color: #6d000d!important;
+      margin: 10px 0!important;
+      border-bottom: .5px solid #bf0017;
+      height: .5px;
+    }
+  }
+  
+  span.ItemText {
+    color: #fff;
+    font-size: 12px;
+  }
+  
+  /* end footer */

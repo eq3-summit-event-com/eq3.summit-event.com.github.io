@@ -1,0 +1,384 @@
+nav {
+  background-color: #D00000;
+}
+
+nav .img-responsive {
+  width: auto;
+  height: 50px;
+}
+
+nav a, nav span {
+  color: white !important;
+}
+
+header {
+  height: auto;
+}
+
+header .container .row .jumbotron {
+  vertical-align: center;
+  background: none;
+}
+
+header .container .row .jumbotron h1 {
+  color: rgba(255, 0, 0, 0.7);
+}
+
+header .container .row .jumbotron .lead p {
+  color: red;
+}
+
+header .container .row .jumbotron p span {
+  font-size: 24px;
+  color: red;
+}
+
+.services {
+  /*height: 1480px;*/
+  padding: 100px 0;
+  width: 100%;
+}
+
+.services .services-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  top: -100px;
+  height: 220px;
+  background-color: #e9204f;
+  color: #FFF;
+  width: 100%;
+  padding: 60px 80px;
+  border-radius: 4px;
+}
+
+.services .services-header h1 {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  font-size: 40px;
+  text-transform: capitalize;
+}
+
+.services .services-header .get-started {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.services .services-header .get-started div {
+  text-align: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 18px 43px;
+  outline: 2px solid #e9204f;
+  border: 2px solid #fff;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #e9204f;
+  background-color: #FFF;
+  border-radius: 2px;
+}
+
+.services .services-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.services .services-body h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000 !important;
+}
+
+.services .services-body .services-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.services .services-body .services-list div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 420px;
+  padding: 5% 40px;
+  color: #000;
+  background-color: none;
+  -webkit-transition: background-color .5s ease, color .5s ease;
+  transition: background-color .5s ease, color .5s ease;
+}
+
+.services .services-body .services-list div i {
+  margin-bottom: 50px;
+}
+
+.services .services-body .services-list div section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
+  /*animation: moveOut .5s ease forwards;*/
+}
+
+.services .services-body .services-list div h3 {
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000 !important;
+}
+
+.services .services-body .services-list div p {
+  color: #101010;
+  margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 26px;
+  margin: 20px 0;
+  font-family: "Roboto", Sans-serif;
+}
+
+.services .services-body .services-list div p a {
+  color: #F00;
+}
+
+@media (min-width: 992px) {
+  .services .services-body .services-list div:nth-of-type(1), .services .services-body .services-list div:nth-of-type(4), .services .services-body .services-list div:nth-of-type(5) {
+    background-color: #f3f3f3;
+  }
+  .services .services-body .services-list div:nth-of-type(1) section i, .services .services-body .services-list div:nth-of-type(4) section i, .services .services-body .services-list div:nth-of-type(5) section i {
+    color: #f3f3f3;
+  }
+}
+
+@media (max-width: 991px) {
+  .services .services-body .services-list div:nth-of-type(2n+1) {
+    background-color: #f3f3f3;
+  }
+  .services .services-body .services-list div:nth-of-type(2n+1) section i {
+    color: #f3f3f3;
+  }
+}
+
+.services .services-body .services-list div:hover {
+  background-color: #e9204f;
+  color: #fff !important;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.services .services-body .services-list div:hover p, .services .services-body .services-list div:hover h3, .services .services-body .services-list div:hover i {
+  color: #fff !important;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.services .services-body .services-list div:hover p a {
+  color: #F0F;
+}
+
+.services .services-body .services-list div:hover section {
+  /*animation: moveIn .5s ease forwards;*/
+  color: #fff !important;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  -webkit-transition: all .5 ease;
+  transition: all .5 ease;
+}
+
+.services .services-body > p {
+  color: #747474;
+  width: 50%;
+  text-align: center;
+  line-height: 27px;
+  font-size: 16px;
+  font-family: "Roboto", Sans-serif;
+  margin-bottom: 100px;
+}
+
+.anchor {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.services-big-font-size {
+  color: #e9204f;
+  font-size: 60px;
+}
+
+.services-small-font-size {
+  color: #fff;
+  font-size: 20px;
+}
+
+.register-payment h1 span {
+  font-size: 36px;
+  color: red;
+}
+
+/**
+ * The CSS shown here will not be introduced in the Quickstart guide, but shows
+ * how you can use CSS to style your Element's container.
+ */
+.StripeElement {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 40px;
+  padding: 10px 12px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: white;
+  -webkit-box-shadow: 0 1px 3px 0 #e6ebf1;
+          box-shadow: 0 1px 3px 0 #e6ebf1;
+  -webkit-transition: box-shadow 150ms ease;
+  -webkit-transition: -webkit-box-shadow 150ms ease;
+  transition: -webkit-box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease, -webkit-box-shadow 150ms ease;
+}
+
+.StripeElement--focus {
+  -webkit-box-shadow: 0 1px 3px 0 #cfd7df;
+          box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.StripeElement--invalid {
+  border-color: #fa755a;
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
+}
+
+.div-payment-form .mastercard-img, .div-payment-form .visa-img {
+  width: 65px;
+  height: 40px;
+}
+
+.testimonial-carousel .testimonial {
+  margin-right: 23%;
+  margin-left: 23%;
+}
+
+.testimonial h6 {
+  color: #90949c;
+}
+
+.testimonial h6 span {
+  color: #4267b2;
+}
+
+.testimonial-carousel .carousel-control.left::before {
+  content: "\2039";
+}
+
+.testimonial-carousel .carousel-control::before {
+  font-size: 5rem;
+  color: rgba(0, 0, 0, 0.6);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.testimonial-carousel .carousel-control.right::before {
+  content: "\203a";
+}
+
+.testimonial-carousel .carousel-control:hover::before {
+  color: #000;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.testimonial-carousel .carousel-control::before {
+  font-size: 5rem;
+  color: rgba(0, 0, 0, 0.6);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+/* start footer */
+footer.page-footer {
+  bottom: 0;
+  color: #fff;
+  font-family: Ubuntu,sans-serif;
+}
+
+footer.page-footer a {
+  color: #fff;
+}
+
+footer.page-footer p {
+  padding: 0;
+  margin: 0;
+}
+
+footer.page-footer img {
+  height: 84px;
+}
+
+.red-theme-dark {
+  background-color: #940012 !important;
+}
+
+.red-theme-dark hr {
+  background-color: #6d000d !important;
+  margin: 10px 0 !important;
+  border-bottom: .5px solid #bf0017;
+  height: .5px;
+}
+
+span.ItemText {
+  color: #fff;
+  font-size: 12px;
+}
+
+/* end footer */
+/*# sourceMappingURL=payment.css.map */
